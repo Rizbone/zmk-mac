@@ -410,7 +410,7 @@
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N5)				// %
-				&kp LA(LC(E))			// €
+				&kp LA(E)				// €
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
@@ -447,8 +447,8 @@
 
 				&kp ESC	
 				&kp RBKT  				// +
-				&kp GRAVE				// Spitze
-				&kp LS(GRAVE)			// Spitze
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
 				&kp X
 				
@@ -481,7 +481,7 @@
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N5)				// %
-				&kp LA(LC(E))			// €
+				&kp LA(E)				// €
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
@@ -1191,8 +1191,8 @@
 				
 				&kp ESC
 				&kp RBKT  				// +
-				&kp GRAVE				// Spitze
-				&kp LS(GRAVE)			// Spitze
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
 				&kp LA(N7)				// grader strich
 				
@@ -1225,7 +1225,7 @@
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N5)				// %
-				&kp LA(LC(E))			// €
+				&kp LA(E)				// €
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
@@ -1296,7 +1296,7 @@
 				&none	
 				&none	
 				&none
-				&none
+				&kp LS(N3) 				// 
 				&kp LS(N4) 				// $
 				&kp LS(GRAVE)			// Grad
 
