@@ -1343,9 +1343,9 @@
 				&kp LC(LA(F5))
 
 				&kp LA(LG(X))
-				&kp LG(LS(LEFT))
+				&kp LG(LS(PAGE_UP))
 				&kp LG(LA(LC(UP)))
-				&kp LG(LS(RIGHT))
+				&kp LG(LS(PAGE_DN))
 				&kp LG(LS(UP))
 				&kp LG(Q)			
 
