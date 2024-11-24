@@ -238,17 +238,42 @@
     	};
 
 		
-
-		// pw
-
 		mPw1: mPw1 {
             label = "mPw1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= <&macro_send "Test">;
+				= <&kp LS(C)>
+				, <&kp G>
+				, <&kp T>
+				, <&kp S>
+				, <&kp I>
+				, <&kp R>
+				, <&kp E>
+				, <&kp N>
+				, <&kp N0>
+				, <&kp N7>
+				, <&kp LS(MINUS)>
+				, <&kp LS(N1)>
+                ; 
     	};
-		
+
+
+		mPw2: mPw2 {
+            label = "mPw2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= <&kp P>
+				, <&kp R>
+				, <&kp E>
+				, <&kp T>
+				, <&kp N3>
+				, <&kp N2>
+				, <&kp K>
+				, <&kp X>
+                ; 
+    	};
 
 
 
