@@ -252,7 +252,7 @@
 			label = "mPw2";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_send "PRET32KX">;
+			bindings = <&macro_send "‰PRET32KX">;
 		};
 
 
@@ -1322,9 +1322,9 @@
 				&kp LC(LA(F5))
 
 				&kp LA(LG(X))
-				&kp LG(LS(PAGE_UP))
+				&kp LG(LS(PG_UP))
 				&kp LG(LA(LC(UP)))
-				&kp LG(LS(PAGE_DN))
+				&kp LG(LS(PG_DN))
 				&kp LG(LS(UP))
 				&kp LG(Q)			
 
