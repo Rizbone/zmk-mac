@@ -376,8 +376,8 @@
 
 				&kp ESC	
 				&kp RBKT  				// +
-				&kp GRAVE				// Spitze
-				&kp LS(GRAVE)			// Spitze
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
 				&kp X
 				
@@ -1355,8 +1355,8 @@
 				&kp LC(LA(F11))
 				&kp LC(LA(F12))
 				&kp LSHFT
-				&kp LCTL
-				&kp DELETE
+				&kp LGUI
+				&kp LG(DELETE)
 
 				&kp LA(LG(M))
 				&kp LG(LA(LC(LEFT)))
