@@ -238,23 +238,6 @@
     	};
 
 
-		// pw
-
-		mPw1: mPw1 {
-            label = "mPw1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-				= <&macro_send "C" "G" "T" "S" "I" "R" "E" "N" "0" "7" "?" "!">;
-    	};
-		
-		mPw2: mPw2 {
-			label = "mPw2";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_send "‰PRET32KX">;
-		};
-
 
 
 	};
@@ -1247,7 +1230,7 @@
 				&none					//
 				&none					//
 
-				&mPw2
+				&none
 				&none					//
 				&none
 				&kp RA(M)				// 
@@ -1263,7 +1246,7 @@
 				&none
 				&none					//
 
-				&mPw1
+				&none
 				&none					//
 				&none
 				&none
