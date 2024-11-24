@@ -245,36 +245,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= <&macro_press &kp LS(C)>
-				, <&macro_press &kp G>
-				, <&macro_press &kp T>
-				, <&macro_press &kp S>
-				, <&macro_press &kp I>
-				, <&macro_press &kp R>
-				, <&macro_press &kp E>
-				, <&macro_press &kp N>
-				, <&macro_press &kp N0>
-				, <&macro_press &kp N7>
-				, <&macro_press &kp LS(MINUS)>
-				, <&macro_press &kp LS(N1)>
-                ; 
+				= <&macro_send "C" "G" "T" "S" "I" "R" "E" "N" "0" "7" "?" "!">;
     	};
-
+		
 		mPw2: mPw2 {
-            label = "mPw2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-				= <&macro_press &kp P>
-				, <&macro_press &kp R>
-				, <&macro_press &kp E>
-				, <&macro_press &kp T>
-				, <&macro_press &kp N3>
-				, <&macro_press &kp N2>
-				, <&macro_press &kp K>
-				, <&macro_press &kp X>
-                ; 
-    	};
+			label = "mPw2";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_send "PRET32KX">;
+		};
 
 
 
