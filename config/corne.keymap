@@ -7,7 +7,6 @@
 // ZMK Big
 
 
-
 // ------- MAC -------------------
 
 #define mCHAR 0
@@ -237,6 +236,47 @@
 				, <&macro_release  &kp LALT>
                 ; 
     	};
+
+
+		// pw
+
+		mPw1: mPw1 {
+            label = "mPw1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= <&macro_press &kp LS(C)>
+				, <&macro_press &kp G>
+				, <&macro_press &kp T>
+				, <&macro_press &kp S>
+				, <&macro_press &kp I>
+				, <&macro_press &kp R>
+				, <&macro_press &kp E>
+				, <&macro_press &kp N>
+				, <&macro_press &kp N0>
+				, <&macro_press &kp N7>
+				, <&macro_press &kp LS(MINUS)>
+				, <&macro_press &kp LS(N1)>
+                ; 
+    	};
+
+		mPw2: mPw2 {
+            label = "mPw2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= <&macro_press &kp P>
+				, <&macro_press &kp R>
+				, <&macro_press &kp E>
+				, <&macro_press &kp T>
+				, <&macro_press &kp N3>
+				, <&macro_press &kp N2>
+				, <&macro_press &kp K>
+				, <&macro_press &kp X>
+                ; 
+    	};
+
+
 
 	};
 
@@ -562,9 +602,9 @@
 
 				&kp LG(LS(Y))
 				&kp LG(LC(A))	
-				&kp LG(LC(E))	
+				&kp LG(LC(T))	
 				&kp LG(LC(B))	
-				&kp LG(LC(V))	
+				&kp LG(LC(X))	
 				&kp BSPC					
 
 				// ----------------------------------------
@@ -578,9 +618,9 @@
 				
 				&kp LC(LS(F10))
 				&kp LS(LC(TAB))			 	// 
-				&kp LG(LC(F))	
+				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LG(LC(W))	
+				&kp LG(LC(Y))	
 				&kp ENTER					// -
 				
 				// ----------------------------------------
@@ -867,7 +907,7 @@
 				&kp LC(LA(F8))	
 				&kp LC(LA(F9))	
 				&kp LC(LA(F10))	
-				&kp LC(LA(L))	
+				&kp LC(LA(J))
 				
 				// ----------------------------------------
 
@@ -878,12 +918,12 @@
 				&kp LG(C)			
 				&kp LG(X)
 
-				&kp LC(LA(J))
+				&kp LC(LA(O))	
 				&kp LG(V)
 				&kp LC(LA(T))	
 				&kp LC(LA(U))	
 				&kp LC(LA(V))	
-				&kp LC(LA(O))	
+				&kp ENTER
 
 				// ----------------------------------------
 
@@ -940,7 +980,7 @@
 				&kp LC(LA(LS(F8)))	
 				&kp LC(LA(LS(F9)))
 				&kp LC(LA(LS(F10)))
-				&kp LC(LS(LA(L)))
+				&kp LC(LS(LA(J)))
 				
 				// ----------------------------------------
 
@@ -951,12 +991,13 @@
 				&kp LG(LS(C))			
 				&kp LG(LS(X))
 
-				&kp LC(LS(LA(J)))
+				&kp LC(LS(LA(O)))
 				&kp LG(LS(V))	
 				&kp LC(LS(LA(T)))	
 				&kp LC(LS(LA(U)))	
 				&kp LC(LS(LA(V)))
-				&kp LC(LS(LA(O)))	
+				&kp ENTER
+					
 
 				// ----------------------------------------
 
@@ -1227,7 +1268,7 @@
 				&none					//
 				&none					//
 
-				&none					//
+				&mPw2
 				&none					//
 				&none
 				&kp RA(M)				// 
@@ -1243,7 +1284,7 @@
 				&none
 				&none					//
 
-				&none					//
+				&mPw1
 				&none					//
 				&none
 				&none
