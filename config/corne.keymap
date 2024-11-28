@@ -583,7 +583,7 @@
 				&kp TAB
 				&kp LG(Y)
 
-				&kp LG(LS(Y))
+				&kp DELETE
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
@@ -654,13 +654,13 @@
 				&kp LS(TAB)
 				&kp UP						
 				&kp TAB
-				&kp LG(LA(Y))
+				&kp LG(LS(Y))
 
-				&kp LG(LA(LS(Y)))
+				&kp INSERT
 				&kp LG(KP_PLUS)
-				&kp PG_UP
+				&kp LG(PG_UP)
 				&kp LG(KP_MINUS)
-				&kp DELETE
+				&kp PG_UP
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -674,9 +674,9 @@
 
 				&kp LC(LS(F11))	
 				&kp LCTL				
-				&kp PG_DN
+				&kp LG(PG_DN)
 				&kp LGUI			
-				&kp INSERT
+				&kp PG_DN
 				&kp ENTER
 
 				// ----------------------------------------
