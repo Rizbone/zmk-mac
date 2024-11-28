@@ -243,18 +243,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= <&kp LS(C)>
-				, <&kp G>
-				, <&kp T>
-				, <&kp S>
-				, <&kp I>
-				, <&kp R>
-				, <&kp E>
-				, <&kp N>
-				, <&kp N0>
-				, <&kp N7>
-				, <&kp LS(MINUS)>
-				, <&kp LS(N1)>
+				= < &macro_tap &kp LS(C)>
+				, < &macro_tap &kp G &kp T &kp S &kp I &kp R &kp E &kp N &kp N0 &kp N7 >
+				, < &macro_tap &kp LS(MINUS)>
+				, < &macro_tap &kp LS(N1)>
                 ; 
     	};
 
@@ -264,18 +256,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= <&kp P>
-				, <&kp R>
-				, <&kp E>
-				, <&kp T>
-				, <&kp N3>
-				, <&kp N2>
-				, <&kp K>
-				, <&kp X>
+				= <&macro_tap &kp P &kp R &kp E &kp T &kp N3 &kp N2 &kp K &kp X >
                 ; 
     	};
-
-
 
 
 	};
@@ -625,12 +608,12 @@
 				
 				// ----------------------------------------
 
-				&kp LSHFT
+				&kp LG(TAB)
 				&kp LG(LEFT)				// @Home 
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(TAB)
+				&kp LG(LC(Z))
 
 				&kp LG(LC(P))	
 				&kp LG(LS(LEFT))				// @Home 
@@ -698,12 +681,12 @@
 
 				// ----------------------------------------
 
-				&kp LSHIFT						
+				&kp LG(LS(TAB))					
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
 				&kp LG(LS(RIGHT))				// @End  
-				&kp LG(LS(TAB))
+				&kp LG(LC(LS(Z)))	
 				
 				&kp LG(LA(LC(O)))		
 				&kp LG(LS(LEFT))				// @Home 
@@ -1356,7 +1339,7 @@
 				&kp LC(LA(F12))
 				&kp LSHFT
 				&kp LGUI
-				&kp LG(DELETE)
+				&kp LG(BACKSPACE)
 
 				&kp LA(LG(M))
 				&kp LG(LA(LC(LEFT)))
