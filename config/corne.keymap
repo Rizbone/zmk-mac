@@ -576,7 +576,7 @@
 
 				// ----------------------------------------
 
-				&kp LG(LC(H))	
+				&kp ESC
 				&kp LG(UP)					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
@@ -599,7 +599,7 @@
 				&kp RIGHT 					// @Right
 				&kp LG(LC(G))	
 				
-				&kp LC(LS(F10))
+				&kp LG(TAB)
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
@@ -608,14 +608,14 @@
 				
 				// ----------------------------------------
 
-				&kp LG(TAB)
+				&kp LG(LC(H))
 				&kp LG(LEFT)				// @Home 
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(Z))
 
-				&kp LG(LC(P))	
+				&kp LC(LS(F10))
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -649,7 +649,7 @@
 
 				// ----------------------------------------
 
-				&kp LG(LC(LS(H)))	
+				&kp ESC
 				&kp LG(LS(UP))					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						
@@ -672,7 +672,7 @@
 				&kp RIGHT
 				&kp LG(LC(LS(G)))	
 
-				&kp LC(LS(F11))	
+				&kp LG(LS(TAB))					
 				&kp LCTL				
 				&kp LG(PG_DN)
 				&kp LGUI			
@@ -681,14 +681,14 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(TAB))					
+				&kp LG(LC(LS(H)))	
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(Z)))	
 				
-				&kp LG(LA(LC(O)))		
+				&kp LC(LS(F11))	
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
