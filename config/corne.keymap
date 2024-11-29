@@ -410,7 +410,7 @@
 				&mFuncReset
 				&mPrgReset
 				&mNavReset
-				&to mNRhard
+				&mMdNr
 			>;		
 		};
 
@@ -1372,7 +1372,7 @@
 				&kp LA(LG(U))
 				&mPrgReset					
 				&mNavReset
-				&mNrReset
+				&to mNRhard
 
 				// ----------------------------------------
 			>;
@@ -1448,7 +1448,7 @@
 				&kp LA(LG(O))
 				&mPrgReset					//
 				&mNavReset
-				&mNrReset
+				&to mNRhard
 
 				// ----------------------------------------
 			>;
