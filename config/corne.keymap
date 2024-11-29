@@ -587,7 +587,7 @@
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
-				&kp LG(LC(X))	
+				&kp LG(LC(Y))	
 				&kp BSPC					
 
 				// ----------------------------------------
@@ -603,7 +603,7 @@
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LG(LC(Y))	
+				&kp LG(LC(X))	
 				&kp ENTER					// -
 				
 				// ----------------------------------------
@@ -615,7 +615,7 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(Z))
 
-				&kp LC(LS(F10))
+				&mReset
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -627,7 +627,7 @@
 				&sl mSYM
 				&kp SPACE				
 				&sl mFUNC
-				&mReset 
+				&mPrgReset
 				&sl mSNAV
 				&mMdNr
 
@@ -658,9 +658,9 @@
 
 				&kp INSERT
 				&kp LG(KP_PLUS)
-				&kp LG(PG_UP)
-				&kp LG(KP_MINUS)
 				&kp PG_UP
+				&kp LG(KP_MINUS)
+				&kp LG(LC(LS(X)))	
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -674,9 +674,9 @@
 
 				&kp LG(LS(TAB))					
 				&kp LCTL				
-				&kp LG(PG_DN)
-				&kp LGUI			
 				&kp PG_DN
+				&kp LGUI			
+				&kp LG(LC(LS(Y)))	
 				&kp ENTER
 
 				// ----------------------------------------
@@ -688,7 +688,7 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(Z)))	
 				
-				&kp LC(LS(F11))	
+				&mReset
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -700,7 +700,7 @@
 				&sl mSYM
 				&kp SPACE				
 				&sl mFUNC
-				&mReset 
+				&mPrgReset 
 				&mNavReset
 				&mMdNr					// 
 
