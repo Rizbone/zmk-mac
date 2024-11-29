@@ -247,6 +247,7 @@
 				, < &macro_tap &kp G &kp T &kp S &kp I &kp R &kp E &kp N &kp N0 &kp N7 >
 				, < &macro_tap &kp LS(MINUS)>
 				, < &macro_tap &kp LS(N1)>
+				, < &macro_tap &kp ENTER>
                 ; 
     	};
 
@@ -257,6 +258,7 @@
             #binding-cells = <0>;
             bindings
 				= <&macro_tap &kp P &kp R &kp E &kp T &kp N3 &kp N2 &kp K &kp X >
+				, <&macro_tap &kp ENTER>
                 ; 
     	};
 
