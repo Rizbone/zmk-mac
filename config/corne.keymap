@@ -222,20 +222,6 @@
 
 		// Reset
 
-		mResetESC: mResetESC {
-            label = "mResetESC";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-				= <&to mCHAR>
-				, <&macro_release  &kp LGUI>
-				, <&macro_release  &kp LCTL>
-				, <&macro_release  &kp LSHFT>
-				, <&macro_release  &kp LALT>
-				, <&macro_tap &kp ESC>
-                ; 
-    	};
-
 		mReset: mReset {
             label = "mReset";
             compatible = "zmk,behavior-macro";
@@ -602,7 +588,7 @@
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
-				&kp LG(LC(X))	
+				&kp LC(LS(F12))
 				&kp BSPC					
 
 				// ----------------------------------------
@@ -618,7 +604,7 @@
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&mReset
+				&kp LC(LS(F10))
 				&kp ENTER					// -
 				
 				// ----------------------------------------
@@ -628,9 +614,9 @@
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(LC(Z))
+				&kp LG(LC(Y))
 
-				&kp LG(LC(Y))	
+				&kp 
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -675,7 +661,7 @@
 				&kp LG(KP_PLUS)
 				&kp PG_UP
 				&kp LG(KP_MINUS)
-				&kp LG(LC(LS(X)))	
+				&kp LC(LS(F13))
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -691,7 +677,7 @@
 				&kp LCTL				
 				&kp PG_DN
 				&kp LGUI			
-				&mReset
+				&kp LC(LS(F11))
 				&kp ENTER
 
 				// ----------------------------------------
