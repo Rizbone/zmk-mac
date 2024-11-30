@@ -614,9 +614,9 @@
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(LC(Y))
+				&kp LG(LC(Z))
 
-				&kp 
+				&kp LG(LC(X))
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -689,7 +689,7 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(Z)))	
 				
-				&kp LG(LC(LS(Y)))	
+				&kp LG(LC(LS(X)))	
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
