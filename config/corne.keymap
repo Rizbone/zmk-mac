@@ -579,7 +579,7 @@
 
 				// ----------------------------------------
 
-				&kp ESC
+				&mReset
 				&kp LG(UP)					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
@@ -652,7 +652,7 @@
 
 				// ----------------------------------------
 
-				&kp ESC
+				&mReset
 				&kp LG(LS(UP))					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						
