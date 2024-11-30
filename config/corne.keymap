@@ -590,7 +590,7 @@
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
-				&kp LG(LC(Y))	
+				&kp LG(LC(X))	
 				&kp BSPC					
 
 				// ----------------------------------------
@@ -606,7 +606,7 @@
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LG(LC(X))	
+				&mReset
 				&kp ENTER					// -
 				
 				// ----------------------------------------
@@ -618,7 +618,7 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(Z))
 
-				&mReset
+				&kp LG(LC(Y))	
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -679,7 +679,7 @@
 				&kp LCTL				
 				&kp PG_DN
 				&kp LGUI			
-				&kp LG(LC(LS(Y)))	
+				&mReset
 				&kp ENTER
 
 				// ----------------------------------------
@@ -691,7 +691,7 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(Z)))	
 				
-				&mReset
+				&kp LG(LC(LS(Y)))	
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
