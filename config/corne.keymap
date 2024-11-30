@@ -229,11 +229,11 @@
             #binding-cells = <0>;
             bindings
 				= <&to mCHAR>
-				, <&kp LC(LG(LA(NUBS)))>
 				, <&macro_release  &kp LGUI>
 				, <&macro_release  &kp LCTL>
 				, <&macro_release  &kp LSHFT>
 				, <&macro_release  &kp LALT>
+				, <&macro_tap &kp ESC>
                 ; 
     	};
 
