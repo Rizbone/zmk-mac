@@ -591,6 +591,7 @@
 				&kp LC(LS(F12))
 				&kp BSPC					
 
+
 				// ----------------------------------------
 
 				&sl mSShift
@@ -630,7 +631,7 @@
 				&sl mFUNC
 				&sl mPRG
 				&sl mSNAV
-				&sl mNR
+				&mMdNr
 
 				// ----------------------------------------							
 			>;
@@ -703,7 +704,7 @@
 				&sl mFUNC
 				&sl mPRG
 				&mNavReset
-				&sl mNR
+				&mMdNr
 
 				// ----------------------------------------							
 			>;
@@ -773,12 +774,12 @@
 		
 				// ----------------------------------------
 
-				&none
-				&none
-				&none
+				&sl mSYM
+				&kp SPACE				
+				&sl mFUNC
 				&sl mSPRG					// deep						
 				&mNavReset
-				&none
+				&mMdNr
 
 				// ----------------------------------------
 
@@ -849,12 +850,12 @@
 		
 				// ----------------------------------------
 
-				&none						//
-				&none						//
-				&none
-				&trans						// 
+				&sl mSYM
+				&kp SPACE
+				&sl mFUNC
+				&sl mPRG 
 				&mNavReset
-				&none						// 
+				&mMdNr				
 
 				// ----------------------------------------
 
@@ -930,9 +931,9 @@
 				&mModSGuiReset
 				&sl mGUI					//
 				&sl mSFUNC					// deep
-				&none
+				&mReset
 				&mNavReset
-				&none						//
+				&to mNRhard					//
 
 				// ----------------------------------------
 			>;
@@ -1003,10 +1004,10 @@
 
 				&mModCtlReset
 				&sl mOGUI					//
-				&trans						// 
-				&none
+				&sl mFUNC						// 
+				&mReset
 				&mNavReset
-				&none						//
+				&to mNRhard						//
 
 				// ----------------------------------------       
 			>;
@@ -1076,12 +1077,12 @@
 
 				// ----------------------------------------
 		
-				&none						//
+				&sl mSYM
 				&kp LG(SPC)
-				&none						// 
-				&none						//
+				&sl mFUNC
+				&sl mPRG
 				&mNavReset
-				&none						// 
+				&mMdNr
 
 				// ----------------------------------------
 			>;
@@ -1147,12 +1148,12 @@
 
 				// ----------------------------------------
 		
-				&none						//
+				&sl mSYM
 				&kp LG(LA(SPC))
-				&none						// 
-				&none						//
+				&sl mFUNC
+				&sl mPRG						//
 				&mNavReset
-				&none						// 
+				&mMdNr
 			>;
 		};
 		
@@ -1223,10 +1224,10 @@
 
 				&sl mSSYM				// deep
 				&kp SPACE
-				&none					//
-				&none					//
+				&sl mFUNC				
+				&sl mPRG						
 				&mNavReset
-				&none					//
+				&mMdNr				
 
 				// ----------------------------------------
 			>;
@@ -1293,12 +1294,12 @@
 
 				// ----------------------------------------
 
-				&trans					//
+				&sl mSYM					
 				&kp SPACE
-				&none					//
-				&none					//
+				&sl mFUNC				
+				&sl mPRG				
 				&mNavReset
-				&none					//
+				&mMdNr				
 
 				// ----------------------------------------
 			>;
@@ -1320,11 +1321,11 @@
 				// ----------------------------------------
 
 				&kp ESC
-				&kp LC(LA(F1))
-				&kp LC(LA(F2))
-				&kp LC(LA(F3))
-				&kp LC(LA(F4))
-				&kp LC(LA(F5))
+				&kp LG(F1)
+				&kp LG(F2)
+				&kp LG(F3)
+				&kp LG(F4)
+				&kp LG(F5)
 
 				&kp LA(LG(X))
 				&kp LG(LS(PG_UP))
@@ -1347,16 +1348,16 @@
 				&kp LG(LA(LC(DOWN)))
 				&kp LG(LA(LC(RIGHT)))
 				&kp LG(LS(DOWN))
-				&kp LA(ENTER)				// 
+				&kp LA(LG(ENTER))				// 
 
 				// ----------------------------------------
 
 				&kp LS(LG(S))
-				&kp LC(LA(F6))
-				&kp LC(LA(F7))
-				&kp LC(LA(F8))
-				&kp LC(LA(F9))
-				&kp LC(LA(F10))
+				&kp LG(F6)
+				&kp LG(F7)
+				&kp LG(F8)
+				&kp LG(F9)
+				&kp LG(F10)
 
 				&kp LC(LA(LG(F1)))
 				&kp LC(LA(LG(F2)))
@@ -1367,12 +1368,12 @@
 
 				// ----------------------------------------
 		
-				&kp LG(P)				
+				&sl mSYM
 				&kp LG(SPACE)
-				&kp LA(LG(U))
+				&sl mFUNC
 				&mPrgReset					
 				&mNavReset
-				&to mNRhard
+				&mMdNr
 
 				// ----------------------------------------
 			>;
@@ -1443,12 +1444,12 @@
 
 				// ----------------------------------------
 		
-				&kp LG(LS(P))				
+				&sl mSYM
 				&kp LG(LA(SPACE))
-				&kp LA(LG(O))
+				&sl mFUNC
 				&mPrgReset					//
 				&mNavReset
-				&to mNRhard
+				&mMdNr
 
 				// ----------------------------------------
 			>;
