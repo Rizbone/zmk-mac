@@ -233,83 +233,6 @@
     	};
 
 
-		// Chain Stickys
-
-		mSSideShiftChain: mSSideShiftChain
-		{
-            label = "mSSideShiftChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sl mSSShift>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mSSShift>
-                ;
-    	};
-
-		mNrChain: mNrChain
-		{
-            label = "mNrChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sl mNR>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mNR>
-				;
-    	};
-
-				
-		mNavChain: mNavChain
-		{
-            label = "mNavChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sl mNAV>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mNAV>
-                ;
-    	};
-
-		mPrgChain: mPrgChain
-		{
-            label = "mPrgChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to mCHAR>
-                , <&macro_press &sl mPRG>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mPRG>
-                ;
-    	};
-
-		mFuncChain: mFuncChain
-		{
-            label = "mFuncChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sl mFUNC>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mFUNC>
-                ;
-    	};
-
-		mSymChain: mSymChain
-		{
-            label = "mSymChain";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sl mSYM>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mSYM>
-                ;
-    	};
-
-
 
 		// Reset 
 
@@ -1462,12 +1385,12 @@
 
 				// ----------------------------------------
 		
-				&mSymChain
-				&mSSideShiftChain
-				&mFuncChain
-				&mPrgChain
-				&mSSideShiftChain
-				&mNrChain
+				&mSymReset
+				&sl mSSShift
+				&mFuncReset
+				&mPrgReset
+				&sl mSSShift
+				&mNrReset
 
 				// ----------------------------------------
 			>;
@@ -1538,12 +1461,12 @@
 
 				// ----------------------------------------
 		
-				&mSymChain
-				&mSSideShiftChain
-				&mFuncChain
-				&mPrgChain
-				&mSSideShiftChain
-				&mNrChain
+				&mSymReset
+				&sl mSSShift
+				&mFuncReset
+				&mPrgReset
+				&sl mSSShift
+				&mNrReset
 
 				// ----------------------------------------
 			>;
