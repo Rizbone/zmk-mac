@@ -1326,7 +1326,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 14 - SideShift =	Side Shift					|
+		// Layer 14 - mSSideShift =	Side Shift					|
 		// -----------------------------------------------------|
 
 		mac_mSShift
@@ -1338,43 +1338,27 @@
 				// ----------------------------------------
 
 				&kp LG(P)
-				&kp LG(F1)
-				&kp LG(F2)
-				&kp LG(F3)
-				&kp LG(F4)
-				&kp LG(F5)
+				&none
+				&none
+				&none
+				&none
+				&none
 
-				&kp LA(LG(X))
-				&kp LG(LS(PG_UP))
-				&kp LG(LA(LC(UP)))
-				&kp LG(LS(PG_DN))
-				&kp LG(F11)
-				&kp LG(Q)			
+				&kp LG(LA(F1))
+				&kp LG(LA(F2))
+				&kp LG(LA(F3))
+				&kp LG(LA(F4))
+				&kp LG(LA(F5))
+				&kp LG(LA(F6))
 
 				// ----------------------------------------
 		
-				&sl mSSShift
+				&sl mSShift
 				&kp LC(LA(F11))
 				&kp LC(LA(F12))
 				&kp LSHFT
 				&kp LGUI
 				&kp LG(BACKSPACE)
-
-				&kp LA(LG(M))
-				&kp LG(LA(LC(LEFT)))
-				&kp LG(LA(LC(DOWN)))
-				&kp LG(LA(LC(RIGHT)))
-				&kp LG(F12)
-				&kp LA(LG(ENTER))				// 
-
-				// ----------------------------------------
-
-				&kp LS(LG(S))
-				&kp LG(F6)
-				&kp LG(F7)
-				&kp LG(F8)
-				&kp LG(F9)
-				&kp LG(F10)
 
 				&kp LC(LA(LG(F1)))
 				&kp LC(LA(LG(F2)))
@@ -1382,6 +1366,22 @@
 				&kp LC(LA(LG(F4)))
 				&kp LC(LA(LG(F5)))
 				&kp LC(LA(LG(F6)))
+
+				// ----------------------------------------
+
+				&kp LS(LG(S))
+				&bt BT_SEL 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
+				&bt BT_CLR
+
+				&kp LC(LA(LG(F7)))
+				&kp LC(LA(LG(F8)))
+				&kp LC(LA(LG(F9)))	
+				&kp LC(LA(LG(F10)))
+				&kp LC(LA(LG(F11)))
+				&kp LC(LA(LG(F12)))
 
 				// ----------------------------------------
 		
@@ -1397,12 +1397,8 @@
 		};
 
 
-						
-
-
-
 		// -----------------------------------------------------|
-		// Layer 15 - mSSideShift =	Side Shift					|
+		// Layer 15 - SSideShift =	S Side Shift				|
 		// -----------------------------------------------------|
 
 		mac_mSSShift
@@ -1414,50 +1410,50 @@
 				// ----------------------------------------
 
 				&sys_reset
-				&none
-				&none
-				&none
-				&kp LC(LA(DELETE))
-				&kp LG(L)
+				&kp LG(LC(F11))
+				&kp LG(LC(F12))
+				&kp LG(LC(F13))
+				&kp LG(LC(F14))
+				&kp LG(LC(F15))
 
-				&kp LG(LA(F7))
-				&kp LG(LA(F8))
-				&kp LG(LA(F9))
-				&kp LG(LA(F10))
-				&kp LG(LA(F11))
-				&kp LG(LA(F12))
+				&kp LA(LG(X))
+				&kp LG(LS(PG_UP))
+				&kp LG(LA(LC(UP)))
+				&kp LG(LS(PG_DN))
+				&kp LG(F11)
+				&kp LG(Q)			
 
 				// ----------------------------------------
 		
-				&sl mSShift
-				&none
-				&none
-				&none
-				&kp LA(LG(C))
-				&kp LS(DELETE)
+				&sl mSSShift
+				&kp LG(LC(F1))
+				&kp LG(LC(F2))
+				&kp LG(LC(F3))
+				&kp LG(LC(F4))
+				&kp LG(LC(F5))
 
-				&kp LG(LA(F1))	
-				&kp LG(LA(F2))
-				&kp LG(LA(F3))
-				&kp LG(LA(F4))
-				&kp LG(LA(F5))
-				&kp LG(LA(F6))
+				&kp LA(LG(M))
+				&kp LG(LA(LC(LEFT)))
+				&kp LG(LA(LC(DOWN)))
+				&kp LG(LA(LC(RIGHT)))
+				&kp LG(F12)
+				&kp LA(LG(ENTER))				// 
 
 				// ----------------------------------------
 
-				&none
-				&bt BT_SEL 0
-				&bt BT_SEL 1
-				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&bt BT_CLR
+				&kp LS(LG(S))
+				&kp LG(LC(F6))
+				&kp LG(LC(F7))
+				&kp LG(LC(F8))
+				&kp LG(LC(F9))
+				&kp LG(LC(F10))
 
-				&kp LC(LA(LG(F7)))
-				&kp LC(LA(LG(F8)))
-				&kp LC(LA(LG(F9)))	
-				&kp LC(LA(LG(F10)))
-				&kp LC(LA(LG(F11)))
-				&kp LC(LA(LG(F12)))
+				&kp LC(LA(LG(F1)))
+				&kp LC(LA(LG(F2)))
+				&kp LC(LA(LG(F3)))	
+				&kp LC(LA(LG(F4)))
+				&kp LC(LA(LG(F5)))
+				&kp LC(LA(LG(F6)))
 
 				// ----------------------------------------
 		
