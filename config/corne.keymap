@@ -220,6 +220,20 @@
 
 
 
+		mSSideshiftChain: mSSideshiftChain
+		{
+            label = "mSSideshiftChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &sl mSSideShift>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mSSideShift>
+                ;
+    	};
+
+
+
 		// Reset
 
 		mReset: mReset {
@@ -703,7 +717,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&mNavReset
+				&sl mNAV
 				&mMdNr
 
 				// ----------------------------------------							
@@ -775,10 +789,10 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&kp SPACE				
+				&to mNRhard				
 				&sl mFUNC
 				&sl mSPRG					// deep						
-				&mNavReset
+				&sl mNAV
 				&mMdNr
 
 				// ----------------------------------------
@@ -851,10 +865,10 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&kp SPACE
+				&to mNRhard
 				&sl mFUNC
 				&sl mPRG 
-				&mNavReset
+				&sl mNAV
 				&mMdNr				
 
 				// ----------------------------------------
@@ -865,7 +879,7 @@
 
 
 
-					
+				
 
 
 		// -----------------------------------------------------|
@@ -931,9 +945,9 @@
 				&mModSGuiReset
 				&sl mGUI					//
 				&sl mSFUNC					// deep
+				&sl mPrg
 				&mReset
-				&mNavReset
-				&to mNRhard					//
+				&mMdNr
 
 				// ----------------------------------------
 			>;
@@ -1005,9 +1019,9 @@
 				&mModCtlReset
 				&sl mOGUI					//
 				&sl mFUNC						// 
+				&sl mPrg
 				&mReset
-				&mNavReset
-				&to mNRhard						//
+				&mMdNr						//
 
 				// ----------------------------------------       
 			>;
@@ -1081,7 +1095,7 @@
 				&kp LG(SPC)
 				&sl mFUNC
 				&sl mPRG
-				&mNavReset
+				&sl mNAV
 				&mMdNr
 
 				// ----------------------------------------
@@ -1152,7 +1166,7 @@
 				&kp LG(LA(SPC))
 				&sl mFUNC
 				&sl mPRG						//
-				&mNavReset
+				&sl mNAV
 				&mMdNr
 			>;
 		};
@@ -1226,7 +1240,7 @@
 				&kp SPACE
 				&sl mFUNC				
 				&sl mPRG						
-				&mNavReset
+				&sl mNAV
 				&mMdNr				
 
 				// ----------------------------------------
@@ -1298,7 +1312,7 @@
 				&kp SPACE
 				&sl mFUNC				
 				&sl mPRG				
-				&mNavReset
+				&sl mNAV
 				&mMdNr				
 
 				// ----------------------------------------
@@ -1368,11 +1382,11 @@
 
 				// ----------------------------------------
 		
-				&sl mSYM
-				&kp LG(SPACE)
-				&sl mFUNC
-				&mPrgReset					
-				&mNavReset
+				&mSymReset
+				&mSSideshiftChain
+				&mFuncReset
+				&mPrgReset
+				&mSSideshiftChain
 				&mMdNr
 
 				// ----------------------------------------
@@ -1444,11 +1458,11 @@
 
 				// ----------------------------------------
 		
-				&sl mSYM
-				&kp LG(LA(SPACE))
-				&sl mFUNC
-				&mPrgReset					//
-				&mNavReset
+				&mSymReset
+				&mSSideshiftChain
+				&mFuncReset
+				&mPrgReset
+				&mSSideshiftChain
 				&mMdNr
 
 				// ----------------------------------------
