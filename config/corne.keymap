@@ -1417,11 +1417,11 @@
 				&kp LG(LC(F15))
 
 				&kp LA(LG(X))
-				&kp LG(LS(PG_UP))
+				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
-				&kp LG(LS(PG_DN))
-				&kp LG(F11)
-				&kp LG(Q)			
+				&kp LG(LA(LC(LS(RIGHT))))
+				&kp LG(LA(F13))
+				&kp LA(LG(BACKSPACE))				
 
 				// ----------------------------------------
 		
@@ -1436,8 +1436,8 @@
 				&kp LG(LA(LC(LEFT)))
 				&kp LG(LA(LC(DOWN)))
 				&kp LG(LA(LC(RIGHT)))
-				&kp LG(F12)
-				&kp LA(LG(ENTER))				// 
+				&kp LG(LA(F14))
+				&kp LA(LG(ENTER))				
 
 				// ----------------------------------------
 
@@ -1448,12 +1448,12 @@
 				&kp LG(LC(F9))
 				&kp LG(LC(F10))
 
-				&kp LC(LA(LG(F1)))
-				&kp LC(LA(LG(F2)))
-				&kp LC(LA(LG(F3)))	
-				&kp LC(LA(LG(F4)))
-				&kp LC(LA(LG(F5)))
-				&kp LC(LA(LG(F6)))
+				&kp LG(LA(F7))
+				&kp LG(LA(F8))
+				&kp LG(LA(F9))
+				&kp LG(LA(F10))
+				&kp LG(LA(F11))
+				&kp LG(LA(F12))
 
 				// ----------------------------------------
 		
