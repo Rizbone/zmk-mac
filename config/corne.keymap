@@ -109,7 +109,20 @@
 
 
 
-		//Reset Daumen
+		// Reset Stickys
+
+		mSideShiftReset: mSideShiftReset
+		{
+            label = "mSideShiftReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to mCHAR>
+                , <&macro_press &sl mSShift>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mSShift>
+				;
+    	};
 
 		mNrReset: mNrReset
 		{
@@ -178,6 +191,8 @@
     	};
 
 
+		// Special Layer Reset
+
 		mModSGuiReset: mModSGuiReset
 		{
             label = "mModSGuiReset";
@@ -190,7 +205,6 @@
 				, <&macro_release &sk LS(LGUI)>
                 ;
     	};
-
 
 		mModCtlReset: mModCtlReset
 		{
@@ -219,6 +233,7 @@
     	};
 
 
+		// Chain Stickys
 
 		mSSideShiftChain: mSSideShiftChain
 		{
@@ -232,9 +247,71 @@
                 ;
     	};
 
+		mNrChain: mNrChain
+		{
+            label = "mNrChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &sl mNR>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mNR>
+				;
+    	};
+
+				
+		mNavChain: mNavChain
+		{
+            label = "mNavChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &sl mNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mNAV>
+                ;
+    	};
+
+		mPrgChain: mPrgChain
+		{
+            label = "mPrgChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to mCHAR>
+                , <&macro_press &sl mPRG>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mPRG>
+                ;
+    	};
+
+		mFuncChain: mFuncChain
+		{
+            label = "mFuncChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &sl mFUNC>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mFUNC>
+                ;
+    	};
+
+		mSymChain: mSymChain
+		{
+            label = "mSymChain";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &sl mSYM>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl mSYM>
+                ;
+    	};
 
 
-		// Reset
+
+		// Reset 
 
 		mReset: mReset {
             label = "mReset";
@@ -248,7 +325,10 @@
 				, <&macro_release  &kp LALT>
                 ; 
     	};
+		
 
+
+		// Pass Wort Macros
 		
 		mPw1: mPw1 {
             label = "mPw1";
@@ -387,7 +467,7 @@
 
 				// ----------------------------------------
 
-				&sl mSShift
+				&mSideShiftReset
 				&kp N1				
 				&kp N2				
 				&kp N3				
@@ -531,7 +611,7 @@
 
 				// ----------------------------------------
 	
-				&sl mSShift
+				&mSideShiftReset
 				&kp LS(C)
 				&kp LS(T)
 				&kp LS(I)
@@ -1382,12 +1462,12 @@
 
 				// ----------------------------------------
 		
-				&mSymReset
+				&mSymChain
 				&mSSideShiftChain
-				&mFuncReset
-				&mPrgReset
+				&mFuncChain
+				&mPrgChain
 				&mSSideShiftChain
-				&mMdNr
+				&mNrChain
 
 				// ----------------------------------------
 			>;
@@ -1458,12 +1538,12 @@
 
 				// ----------------------------------------
 		
-				&mSymReset
+				&mSymChain
 				&mSSideShiftChain
-				&mFuncReset
-				&mPrgReset
+				&mFuncChain
+				&mPrgChain
 				&mSSideShiftChain
-				&mMdNr
+				&mNrChain
 
 				// ----------------------------------------
 			>;
