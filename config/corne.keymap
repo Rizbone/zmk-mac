@@ -220,15 +220,15 @@
 
 
 
-		mSSideshiftChain: mSSideshiftChain
+		mSSideShiftChain: mSSideShiftChain
 		{
-            label = "mSSideshiftChain";
+            label = "mSSideShiftChain";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &sl mSSideShift>
+                = <&macro_press &sl mSSShift>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl mSSideShift>
+				, <&macro_release &sl mSSShift>
                 ;
     	};
 
@@ -1383,10 +1383,10 @@
 				// ----------------------------------------
 		
 				&mSymReset
-				&mSSideshiftChain
+				&mSSideShiftChain
 				&mFuncReset
 				&mPrgReset
-				&mSSideshiftChain
+				&mSSideShiftChain
 				&mMdNr
 
 				// ----------------------------------------
@@ -1459,10 +1459,10 @@
 				// ----------------------------------------
 		
 				&mSymReset
-				&mSSideshiftChain
+				&mSSideShiftChain
 				&mFuncReset
 				&mPrgReset
-				&mSSideshiftChain
+				&mSSideShiftChain
 				&mMdNr
 
 				// ----------------------------------------
