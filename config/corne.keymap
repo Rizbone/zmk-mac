@@ -1025,7 +1025,7 @@
 				&mModSGuiReset
 				&sl mGUI					//
 				&sl mSFUNC					// deep
-				&sl mPrg
+				&sl mPRG
 				&mReset
 				&mMdNr
 
@@ -1099,7 +1099,7 @@
 				&mModCtlReset
 				&sl mOGUI					//
 				&sl mFUNC						// 
-				&sl mPrg
+				&sl mPRG
 				&mReset
 				&mMdNr						//
 
