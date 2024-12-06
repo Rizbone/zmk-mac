@@ -1461,7 +1461,7 @@
 				&sl mSSShift
 				&mFuncReset
 				&mPrgReset
-				&sl mSSShift
+				&kp LG(LA(SPACE))
 				&mNrReset
 
 				// ----------------------------------------
