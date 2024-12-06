@@ -668,7 +668,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp ESC
 				&kp LG(LS(UP))					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						
@@ -949,7 +949,7 @@
 				&sl mGUI					//
 				&sl mSFUNC					// deep
 				&sl mPRG
-				&mReset
+				&mNavReset
 				&mMdNr
 
 				// ----------------------------------------
@@ -1389,7 +1389,7 @@
 				&sl mSSShift
 				&mFuncReset
 				&mPrgReset
-				&sl mSSShift
+				&kp LG(SPACE)
 				&mNrReset
 
 				// ----------------------------------------
