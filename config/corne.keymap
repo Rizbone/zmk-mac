@@ -334,7 +334,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N1 &kp N2  &kp N3 &kp LA(L)  &kp G  &kp M  &kp A  &kp I  &kp L  & DOT  &kp C  &kp O  &kp M>
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N1 &kp N2  &kp N3 &kp LA(L)  &kp G  &kp M  &kp A  &kp I  &kp L  &kp DOT  &kp C  &kp O  &kp M>
                 ; 
     	};
 
@@ -814,7 +814,7 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(F1))
+				&kp ESC
 				&kp LG(LS(N1))				// 11
 				&kp LG(LS(N2))				// 12
 				&kp LG(LS(N3))				// 13
@@ -826,7 +826,7 @@
 				&kp LG(LS(N8))				// 18
 				&kp LG(LS(N9))				// 19
 				&kp LG(LS(N0))				// 20
-				&kp LG(LS(F4))
+				&kp BACKSPACE
 
 				// ----------------------------------------
 
@@ -842,11 +842,11 @@
 				&kp LC(LG(N8))			//
 				&kp LC(LG(N9))			//
 				&kp LC(LG(N0))			//
-				&kp LG(LS(F5))
+				&kp ENTER
 
 				// ----------------------------------------
 
-				&kp LG(LS(F3))
+				&kp LSHFT
 				&kp LS(LA(N1))			// 21 			
 				&kp LS(LA(N2))			// 22
 				&kp LS(LA(N3))			// 23
@@ -858,12 +858,12 @@
 				&kp LS(LA(N8))			// 28
 				&kp LS(LA(N9))			// 29
 				&kp LS(LA(N0))			// 30
-				&kp LG(LS(F6))
+				&kp RSHFT
 		
 				// ----------------------------------------
 
 				&sl mSYM
-				&to mNRhard				
+				&mReset
 				&sl mFUNC
 				&sl mSPRG					// deep						
 				&sl mNAV
@@ -890,7 +890,7 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(F7))
+				&kp ESC
 				&kp F1
 				&kp F2
 				&kp F3
@@ -902,7 +902,7 @@
 				&kp F8
 				&kp F9
 				&kp F10
-				&kp LG(LS(F10))
+				&kp BACKSPACE
 		
 				// ----------------------------------------
 
@@ -918,11 +918,11 @@
 				&kp LG(N8)					// 18
 				&kp LG(N9)					// 19
 				&kp LG(N0)					// 20
-				&kp LG(LS(F11))
+				&kp ENTER
 
 				// ----------------------------------------
 
-				&kp LG(LS(F9))
+				&kp LSHFT
 				&kp F11
 				&kp F12
 				&kp F13
@@ -934,12 +934,12 @@
 				&kp F18
 				&kp F19
 				&kp F20
-				&kp LG(LS(F12))
+				&kp RSHFT
 		
 				// ----------------------------------------
 
 				&sl mSYM
-				&to mNRhard
+				&mReset
 				&sl mFUNC
 				&sl mPRG 
 				&sl mNAV
@@ -968,7 +968,7 @@
 
 				// ----------------------------------------
 	
-				&kp LC(LA(X))	
+				&kp ESC
 				&kp LC(LA(F1))	
 				&kp LC(LA(F2))	
 				&kp LC(LA(F3))	
@@ -980,7 +980,7 @@
 				&kp LC(LA(F8))	
 				&kp LC(LA(F9))	
 				&kp LC(LA(F10))	
-				&kp LC(LA(J))
+				&kp BACKSPACE
 				
 				// ----------------------------------------
 
@@ -1000,7 +1000,7 @@
 
 				// ----------------------------------------
 
-				&kp LC(LA(Y))	
+				&kp LSHFT
 				&kp LC(LA(S))
 				&kp LC(LA(C))	
 				&kp LC(LA(D))	
@@ -1012,7 +1012,7 @@
 				&kp LC(LA(M))	
 				&kp LC(LA(N))	
 				&kp LC(LA(E))
-				&kp LC(LA(W))
+				&kp RSHFT
 				
 				// ----------------------------------------
 
@@ -1041,7 +1041,7 @@
 
 			// ----------------------------------------
 	
-				&kp LC(LA(LS(X)))	
+				&kp ESC
 				&kp LC(LA(LS(F1)))	
 				&kp LC(LA(LS(F2)))	
 				&kp LC(LA(LS(F3)))	
@@ -1053,7 +1053,7 @@
 				&kp LC(LA(LS(F8)))	
 				&kp LC(LA(LS(F9)))
 				&kp LC(LA(LS(F10)))
-				&kp LC(LS(LA(J)))
+				&kp BACKSPACE
 				
 				// ----------------------------------------
 
@@ -1074,7 +1074,7 @@
 
 				// ----------------------------------------
 
-				&kp LC(LA(LS(Y)))	
+				&kp LSHFT
 				&kp LC(LS(LA(S)))	
 				&kp LC(LS(LA(C)))
 				&kp LC(LS(LA(D)))
@@ -1086,7 +1086,7 @@
 				&kp LC(LS(LA(M)))
 				&kp LC(LS(LA(N)))
 				&kp LC(LS(LA(E)))
-				&kp LC(LA(LS(W)))	
+				&kp RSHFT
 				
 				// ----------------------------------------
 
