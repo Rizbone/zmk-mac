@@ -252,9 +252,9 @@
 
 
 		// Pass Wort Macros
-		
-		mPw1: mPw1 {
-            label = "mPw1";
+
+		mPw0: mPw0 {
+            label = "mPw0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -265,6 +265,18 @@
 				, < &macro_tap &kp ENTER>
                 ; 
     	};
+		
+		mPw1: mPw1 {
+            label = "mPw1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp LS(C)>
+				, < &macro_tap &kp G &kp T &kp S &kp I &kp R &kp E &kp N &kp N0 &kp N7 >
+				, < &macro_tap &kp LS(MINUS)>
+				, < &macro_tap &kp LS(N1)>
+                ; 
+    	};
 
 
 		mPw2: mPw2 {
@@ -273,9 +285,68 @@
             #binding-cells = <0>;
             bindings
 				= <&macro_tap &kp P &kp R &kp E &kp T &kp N3 &kp N2 &kp K &kp X >
-				, <&macro_tap &kp ENTER>
                 ; 
     	};
+
+
+		mPw3: mPw3 {
+            label = "mPw3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= <&macro_tap &kp D &kp O &kp R &kp I &kp A &kp N &kp D &kp E &kp R &kp B &kp O &kp S &kp S &kp N1 &kp N0 &kp N0 &kp LS(N1) >
+                ; 
+    	};
+
+		mPw4: mPw4 {
+            label = "mPw4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= <&macro_tap &kp N0  &kp N7  &kp N0  &kp N9  &kp N0  &kp N7>
+                ; 
+    	};
+
+		
+
+		// Email
+
+		mEm1: mEm1 {
+            label = "mEm1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp M  &kp A  &kp I  &kp L  &kp B  &kp O  &kp X  &kp DOT  &kp O  &kp R  &kp G>
+                ; 
+    	};
+
+		mEm2: mEm2 {
+            label = "mEm2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp I  &kp C  &kp L  &kp O  &kp U  &kp D  &kp DOT  &kp C  &kp O  &kp M>
+                ; 
+    	};
+
+		mEm3: mEm3 {
+            label = "mEm3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N1 &kp N2  &kp N3 &kp LA(L)  &kp G  &kp M  &kp A  &kp I  &kp L  & DOT  &kp C  &kp O  &kp M>
+                ; 
+    	};
+
+		mEm4: mEm4 {
+            label = "mEm4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp A  &kp O  &kp L  &kp DOT  &kp C  &kp O  &kp M>
+                ; 
+    	};
+
 
 
 	};
