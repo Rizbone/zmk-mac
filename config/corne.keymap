@@ -1021,7 +1021,7 @@
 				&sl mSFUNC					// deep
 				&sl mPRG
 				&mNavReset
-				&mMdNr
+				&to mNRhard
 
 				// ----------------------------------------
 			>;
@@ -1095,7 +1095,7 @@
 				&sl mFUNC						// 
 				&sl mPRG
 				&mReset
-				&mMdNr						//
+				&to mNRhard
 
 				// ----------------------------------------       
 			>;
@@ -1306,12 +1306,12 @@
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
 				&kp SLASH 				// -
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&kp RSHFT
 		
 				// ----------------------------------------
 
 				&sl mSSYM				// deep
-				&kp SPACE
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
 				&sl mFUNC				
 				&sl mPRG						
 				&sl mNAV
@@ -1334,56 +1334,56 @@
 
 				// ----------------------------------------
 				
-				&none	
+				&kp ESC
 				&none					//
-				&kp LS(EQUAL)			//
-				&kp EQUAL				// 
+				&none					//
+				&none					//
 				&none					//
 				&none					//
 
-				&mPw2
-				&none					//
-				&none
-				&kp RA(M)				// 
-				&none					//
+				&bt BT_CLR
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
+				&bt BT_SEL 0
 				&kp BACKSPACE			// 
 
 				// ----------------------------------------
 
 				&sl mSShift
 				&none					//
-				&none					//
-				&none
+				&kp LS(EQUAL)			//
+				&kp EQUAL				// 
 				&none
 				&none					//
 
+				&mPw0
 				&mPw1
-				&none					//
-				&none
-				&none
-				&none
+				&mPw2
+				&mPw3
+				&mPw4
 				&kp ENTER
 
 				// ----------------------------------------
 
 				&kp LG(LS(TAB))
-				&none	
-				&none
+				&kp LA(N)				// ~
+				&kp RA(M)				// my
 				&kp LS(N3) 				// $
 				&kp LS(N4) 				// $
 				&kp LS(GRAVE)			// Grad
 
-				&kp LA(N)				// ~
 				&none
-				&none
-				&none
-				&none
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&mEm1
+				&mEm2
+				&mEm3
+				&mEm4
+				&kp RSHFT
 
 				// ----------------------------------------
 
 				&sl mSYM					
-				&kp SPACE
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
@@ -1408,11 +1408,11 @@
 
 				// ----------------------------------------
 
+				&kp ESC
+				&none
+				&kp LC(LG(LA(C)))
+				&kp LS(LG(S))
 				&kp LG(P)
-				&none
-				&none
-				&none
-				&none
 				&none
 
 				&kp LG(LA(F1))
@@ -1420,7 +1420,7 @@
 				&kp LG(LA(F3))
 				&kp LG(LA(F4))
 				&kp LG(LA(F5))
-				&kp LG(LA(F6))
+				&kp LG(LC(Q))
 
 				// ----------------------------------------
 		
@@ -1436,23 +1436,23 @@
 				&kp LC(LA(LG(F3)))	
 				&kp LC(LA(LG(F4)))
 				&kp LC(LA(LG(F5)))
-				&kp LC(LA(LG(F6)))
+				&kp ENTER
 
 				// ----------------------------------------
 
-				&kp LS(LG(S))
-				&bt BT_SEL 0
-				&bt BT_SEL 1
-				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&bt BT_CLR
+				&kp LSHFT
+				&none
+				&kp LC(LG(LA(K)))
+				&kp LC(LG(LA(O)))
+				&kp LC(LG(LA(U)))
+				&none
 
+				&kp LC(LA(LG(F6)))
 				&kp LC(LA(LG(F7)))
-				&kp LC(LA(LG(F8)))
-				&kp LC(LA(LG(F9)))	
+				&kp LC(LA(LG(F8)))	
+				&kp LC(LA(LG(F9)))
 				&kp LC(LA(LG(F10)))
-				&kp LC(LA(LG(F11)))
-				&kp LC(LA(LG(F12)))
+				&kp RSHFT
 
 				// ----------------------------------------
 		
@@ -1481,50 +1481,50 @@
 				// ----------------------------------------
 
 				&sys_reset
-				&kp LG(LC(F11))
-				&kp LG(LC(F12))
-				&kp LG(LC(F13))
-				&kp LG(LC(F14))
-				&kp LG(LC(F15))
+				&kp LG(LS(F1))
+				&kp LG(LS(F2))
+				&kp LG(LS(F3))
+				&kp LG(LS(F4))
+				&none
 
-				&kp LA(LG(X))
+				&kp LG(LC(Q))
 				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
 				&kp LG(LA(LC(LS(RIGHT))))
-				&kp LG(LA(F13))
-				&kp LA(LG(BACKSPACE))				
+				&kp LG(LA(F12))
+				&kp BACKSPACE
 
 				// ----------------------------------------
 		
 				&sl mSSShift
-				&kp LG(LC(F1))
-				&kp LG(LC(F2))
-				&kp LG(LC(F3))
-				&kp LG(LC(F4))
-				&kp LG(LC(F5))
+				&kp LG(LS(F5))
+				&kp LG(LS(F6))
+				&kp LG(LS(F7))
+				&kp LG(LS(F8))
+				&none
 
-				&kp LA(LG(M))
+				&kp LG(LC(M))
 				&kp LG(LA(LC(LEFT)))
 				&kp LG(LA(LC(DOWN)))
 				&kp LG(LA(LC(RIGHT)))
-				&kp LG(LA(F14))
-				&kp LA(LG(ENTER))				
+				&kp LG(LA(F11))
+				&kp ENTER
 
 				// ----------------------------------------
 
-				&kp LS(LG(S))
-				&kp LG(LC(F6))
-				&kp LG(LC(F7))
-				&kp LG(LC(F8))
-				&kp LG(LC(F9))
-				&kp LG(LC(F10))
+				&kp LSHFT
+				&kp LG(LS(F9))
+				&kp LG(LS(F10))
+				&kp LG(LS(F11))
+				&kp LG(LS(F12))
+				&none
 
+				&kp LG(LA(F6))
 				&kp LG(LA(F7))
 				&kp LG(LA(F8))
 				&kp LG(LA(F9))
 				&kp LG(LA(F10))
-				&kp LG(LA(F11))
-				&kp LG(LA(F12))
+				&kp RSHFT
 
 				// ----------------------------------------
 		
