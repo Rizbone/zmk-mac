@@ -1420,7 +1420,7 @@
 				&kp LG(LA(F3))
 				&kp LG(LA(F4))
 				&kp LG(LA(F5))
-				&kp LG(LC(Q))
+				&kp LG(LC(LA(Q)))
 
 				// ----------------------------------------
 		
@@ -1487,7 +1487,7 @@
 				&kp LG(LS(F4))
 				&none
 
-				&kp LG(LC(Q))
+				&kp LG(LC(LA(Q)))
 				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
 				&kp LG(LA(LC(LS(RIGHT))))
