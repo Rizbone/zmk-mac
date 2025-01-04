@@ -689,7 +689,7 @@
 				&kp RIGHT 					// @Right
 				&kp LG(LC(G))	
 				
-				&kp LG(TAB)
+				&kp LC(LS(F8))
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
@@ -762,7 +762,7 @@
 				&kp RIGHT
 				&kp LG(LC(LS(G)))	
 
-				&kp LG(LS(TAB))					
+				&kp LC(LS(F9))			
 				&kp LCTL				
 				&kp PG_DN
 				&kp LGUI			
