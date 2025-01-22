@@ -349,6 +349,18 @@
 
 
 
+
+		mAltShot: mAltShot {
+            label = "mAltShot";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp LALT>
+                ; 
+    	};
+
+
+
 	};
 
 
@@ -549,7 +561,7 @@
 
 				// ----------------------------------------
 
-				&mMdLs
+				&mShiftReset
 				&kp SLASH 				// -
 				&kp LS(RBKT)			// *				
 				&kp LS(N7)				// /
@@ -561,14 +573,14 @@
 				&kp COMMA				// ,
 				&kp LS(LA(N7))			// backlslash
 				&kp LA(E)				// €
-				&mMdRs
+				&mShiftReset
 
 				// ----------------------------------------
 		
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&sl mPRG 
+				&mPrgReset
 				&sl mNAV
 				&none
 			>;		
@@ -621,7 +633,7 @@
 
 				// ----------------------------------------
 
-				&mMdLs
+				&mShiftReset
 				&kp LS(F)
 				&kp LS(V)
 				&kp LS(MINUS)
@@ -633,7 +645,7 @@
 				&kp LS(LBKT)
 				&kp LS(SQT)
 				&kp LS(K)
-				&mMdRs					
+				&mShiftReset					
 
 				// ----------------------------------------
 
@@ -739,7 +751,7 @@
 
 				// ----------------------------------------
 
-				&kp ESC
+				&kp LC(ESC)
 				&kp LG(LS(UP))					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						
@@ -751,7 +763,7 @@
 				&kp PG_UP
 				&kp LG(KP_MINUS)
 				&kp LC(LS(F13))
-				&kp BACKSPACE
+				&kp LC(BACKSPACE)
 
 				// ----------------------------------------
 		
@@ -767,7 +779,7 @@
 				&kp PG_DN
 				&kp LGUI			
 				&kp LC(LS(F11))
-				&kp ENTER
+				&kp LC(ENTER)
 
 				// ----------------------------------------
 
@@ -1021,7 +1033,7 @@
 				&sl mSFUNC					// deep
 				&sl mPRG
 				&mNavReset
-				&to mNRhard
+				&mMdNr
 
 				// ----------------------------------------
 			>;
@@ -1095,7 +1107,7 @@
 				&sl mFUNC						// 
 				&sl mPRG
 				&mReset
-				&to mNRhard
+				&mMdNr
 
 				// ----------------------------------------       
 			>;
@@ -1461,7 +1473,7 @@
 				&mFuncReset
 				&mPrgReset
 				&kp LG(SPACE)
-				&mNrReset
+				&to mNRhard
 
 				// ----------------------------------------
 			>;
@@ -1533,7 +1545,7 @@
 				&mFuncReset
 				&mPrgReset
 				&kp LG(LA(SPACE))
-				&mNrReset
+				&to mNRhard
 
 				// ----------------------------------------
 			>;
