@@ -500,9 +500,9 @@
 				// ----------------------------------------
 
 				&mShiftReset
-				&kp SLASH 				// -
-				&kp LS(RBKT)			// *				
+				&kp SLASH 				// -			
 				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *	
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
@@ -572,9 +572,9 @@
 				// ----------------------------------------
 
 				&mShiftReset
-				&kp SLASH 				// -
-				&kp LS(RBKT)			// *				
+				&kp SLASH 				// -	
 				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
@@ -1318,8 +1318,8 @@
 
 				&kp LG(TAB)
 				&kp SLASH 				// -
-				&kp LS(RBKT)			// *				
 				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
