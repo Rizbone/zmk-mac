@@ -365,7 +365,7 @@
             #binding-cells = <0>;
             bindings
 				= < &macro_tap &kp LS(N0)>
-				; < &macro_tap &kp LS(NUBS)>
+				, < &macro_tap &kp LS(NUBS)>
                 ; 
     	};
 
