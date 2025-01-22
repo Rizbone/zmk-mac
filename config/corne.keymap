@@ -446,7 +446,7 @@
 				// ----------------------------------------
 
 				&kp ESC	
-				&kp RBKT  				// +
+				&kp LS(SLASH)			// _
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
@@ -456,7 +456,7 @@
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LS(RBKT)			// *				
+				&kp LS(N5)				// %
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -478,17 +478,17 @@
 				// ----------------------------------------
 
 				&mShiftReset
+				&kp SLASH 				// -
+				&kp LS(RBKT)			// *				
 				&kp LS(N7)				// /
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(N5)				// %
-				&kp LA(E)				// €
+				&kp RBKT  				// +
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp SLASH 				// -
+				&kp LS(LA(N7))			// backlslash
+				&kp LA(E)				// €
 				&mShiftReset
 
 				// ----------------------------------------
@@ -518,7 +518,7 @@
 				// ----------------------------------------
 
 				&kp ESC	
-				&kp RBKT  				// +
+				&kp LS(SLASH)			// _
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
@@ -528,7 +528,7 @@
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LS(RBKT)			// *	
+				&kp LS(N5)				// %
 				&kp BSPC
 
 				// ----------------------------------------
@@ -550,17 +550,17 @@
 				// ----------------------------------------
 
 				&mMdLs
+				&kp SLASH 				// -
+				&kp LS(RBKT)			// *				
 				&kp LS(N7)				// /
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(N5)				// %
-				&kp LA(E)				// €
+				&kp RBKT  				// +
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp SLASH 				// -
+				&kp LS(LA(N7))			// backlslash
+				&kp LA(E)				// €
 				&mMdRs
 
 				// ----------------------------------------
@@ -1263,7 +1263,7 @@
 				// ----------------------------------------
 				
 				&kp ESC
-				&kp RBKT  				// +
+				&kp LS(SLASH)			// _
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
 				&kp NUHS				// #
@@ -1273,7 +1273,7 @@
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp LS(N6)				// &
-				&kp LS(RBKT)			// *	
+				&kp LS(N5)				// %
 				&kp BACKSPACE			// Backspace
 
 				// ----------------------------------------
@@ -1295,17 +1295,17 @@
 				// ----------------------------------------
 
 				&kp LG(TAB)
+				&kp SLASH 				// -
+				&kp LS(RBKT)			// *				
 				&kp LS(N7)				// /
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(N5)				// %
-				&kp LA(E)				// €
+				&kp RBKT  				// +
 				&kp NUBS				// ^
 
 				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp SLASH 				// -
+				&kp LS(LA(N7))			// backlslash
+				&kp LA(E)				// €
 				&kp RSHFT
 		
 				// ----------------------------------------
