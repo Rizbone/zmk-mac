@@ -1446,7 +1446,7 @@
 
 				// ----------------------------------------
 		
-				&sl mSShift
+				&sl mSSShift
 				&kp LC(LA(F11))
 				&kp LC(LA(F12))
 				&kp LSHFT
