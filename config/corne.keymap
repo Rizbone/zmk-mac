@@ -479,16 +479,16 @@
 
 				&kp ESC	
 				&kp LS(NUHS)			// '
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
 				&kp LS(N2)				// "
+				&kp LS(RBKT)			// *			
+				&kp LS(N7)				// /
 				&kp X
 				
-				&kp LA(L)				// @
+				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LA(E)				// €
+				&kp LS(NUBS)			// Grad
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -510,11 +510,11 @@
 				// ----------------------------------------
 
 				&mShiftReset
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp SLASH 				// -
-				&kp LS(N7)				// /
-				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
-				&kp NUBS				// ^
+				&kp LA(N7)				// grader strich
 
 				&kp LS(N6)				// &
 				&kp DOT					// .
@@ -551,16 +551,16 @@
 
 				&kp ESC	
 				&kp LS(NUHS)			// '
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
 				&kp LS(N2)				// "
+				&kp LS(RBKT)			// *			
+				&kp LS(N7)				// /
 				&kp X
 				
-				&kp LA(L)				// @
+				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LA(E)				// €
+				&kp LS(NUBS)			// Grad
 				&kp BSPC
 
 				// ----------------------------------------
@@ -582,11 +582,11 @@
 				// ----------------------------------------
 
 				&mShiftReset
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp SLASH 				// -
-				&kp LS(N7)				// /
-				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
-				&kp NUBS				// ^
+				&kp LA(N7)				// grader strich
 
 				&kp LS(N6)				// &
 				&kp DOT					// .
