@@ -1304,8 +1304,8 @@
 				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
-				&kp NUBS				// ^
-				&kp LS(NUBS)			// Grad
+				&kp GRAVE			// ^
+				&kp LS(GRAVE)			// Grad
 				&kp BACKSPACE			// Backspace
 
 				// ----------------------------------------
