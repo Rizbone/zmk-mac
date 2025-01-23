@@ -369,6 +369,16 @@
                 ; 
     	};
 
+		mCalc: mCalc {
+            label = "mCalc";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+				= < &macro_tap &kp LG(LC(N6))>
+				, < &to mNRhard>
+                ; 
+    	};
+
 
 
 	};
@@ -447,7 +457,7 @@
 				&sl mFUNC
 				&sl mPRG 
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------
 			>;
@@ -520,7 +530,7 @@
 				&mFuncReset
 				&mPrgReset
 				&mNavReset
-				&mMdNr
+				&sl mSYM
 			>;		
 		};
 
@@ -592,7 +602,7 @@
 				&sl mFUNC
 				&mPrgReset
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 			>;		
 		};
 
@@ -659,12 +669,12 @@
 
 				// ----------------------------------------
 
-				&mSymReset
+				&sl mSYM
 				&mSpaceReset 
 				&mFuncReset
 				&mPrgReset
 				&mNavReset
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------		
 			>;
@@ -741,7 +751,7 @@
 				&sl mFUNC
 				&sl mPRG
 				&sl mSNAV
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------							
 			>;
@@ -814,7 +824,7 @@
 				&sl mFUNC
 				&sl mPRG
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------							
 			>;
@@ -885,11 +895,11 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&mReset
+				&to mNRhard
 				&sl mFUNC
 				&sl mSPRG					// deep						
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------
 
@@ -961,11 +971,11 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&mReset
+				&to mNRhard
 				&sl mFUNC
 				&sl mPRG 
 				&sl mNAV
-				&mMdNr				
+				&sl mSYM		
 
 				// ----------------------------------------
 
@@ -1038,12 +1048,12 @@
 				
 				// ----------------------------------------
 
-				&mModSGuiReset
+				&sl mSYM
 				&sl mGUI					//
 				&sl mSFUNC					// deep
-				&sl mPRG
-				&mNavReset
-				&mMdNr
+				&mModCtlReset
+				&mModSGuiReset
+				&sl mSYM
 
 				// ----------------------------------------
 			>;
@@ -1112,12 +1122,12 @@
 				
 				// ----------------------------------------
 
+				&sl mSYM
+				&sl mOGUI					
+				&sl mFUNC						
 				&mModCtlReset
-				&sl mOGUI					//
-				&sl mFUNC						// 
-				&sl mPRG
-				&mReset
-				&mMdNr
+				&mModSGuiReset
+				&sl mSYM
 
 				// ----------------------------------------       
 			>;
@@ -1192,7 +1202,7 @@
 				&sl mFUNC
 				&sl mPRG
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 
 				// ----------------------------------------
 			>;
@@ -1263,7 +1273,7 @@
 				&sl mFUNC
 				&sl mPRG						//
 				&sl mNAV
-				&mMdNr
+				&sl mSYM
 			>;
 		};
 		
@@ -1333,11 +1343,11 @@
 				// ----------------------------------------
 
 				&sl mSSYM				// deep
-				&kp SPACE
+				&mReset
 				&sl mFUNC				
 				&sl mPRG						
 				&sl mNAV
-				&mMdNr				
+				&sl mSYM				
 
 				// ----------------------------------------
 			>;
@@ -1405,11 +1415,11 @@
 				// ----------------------------------------
 
 				&sl mSYM					
-				&kp SPACE
+				&mReset
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
-				&mMdNr				
+				&sl mSYM
 
 				// ----------------------------------------
 			>;
@@ -1479,11 +1489,11 @@
 				// ----------------------------------------
 		
 				&mSymReset
-				&sl mSSShift
+				&mMdNr
 				&mFuncReset
 				&mPrgReset
-				&mNavReset
-				&to mNRhard
+				&sl mSSShift
+				&mSymReset
 
 				// ----------------------------------------
 			>;
@@ -1551,11 +1561,11 @@
 				// ----------------------------------------
 		
 				&mSymReset
-				&sl mSSShift
+				&mMdNr
 				&mFuncReset
 				&mPrgReset
-				&mNavReset
-				&to mNRhard
+				&sl mSSShift
+				&mSymReset
 
 				// ----------------------------------------
 			>;
