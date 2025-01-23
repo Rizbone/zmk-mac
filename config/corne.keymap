@@ -478,17 +478,17 @@
 				// ----------------------------------------
 
 				&kp ESC	
-				&kp LS(SLASH)			// _
+				&kp LS(NUHS)			// '
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
-				&kp NUHS				// #
+				&kp LS(N2)				// "
 				&kp X
 				
 				&kp LA(L)				// @
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LS(N5)				// %
+				&kp LA(E)				// €
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -510,17 +510,17 @@
 				// ----------------------------------------
 
 				&mShiftReset
-				&kp SLASH 				// -			
+				&kp SLASH 				// -
 				&kp LS(N7)				// /
-				&kp LS(RBKT)			// *	
+				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
-				&kp LS(N0)				// =
+				&kp LS(N6)				// &
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(LA(N7))			// backlslash
-				&kp LA(E)				// €
+				&kp LS(SLASH)			// _
+				&kp LS(N0)				// =
 				&mShiftReset
 
 				// ----------------------------------------
@@ -550,17 +550,17 @@
 				// ----------------------------------------
 
 				&kp ESC	
-				&kp LS(SLASH)			// _
+				&kp LS(NUHS)			// '
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
-				&kp NUHS				// #
+				&kp LS(N2)				// "
 				&kp X
 				
 				&kp LA(L)				// @
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
-				&kp LS(N5)				// %
+				&kp LA(E)				// €
 				&kp BSPC
 
 				// ----------------------------------------
@@ -582,17 +582,17 @@
 				// ----------------------------------------
 
 				&mShiftReset
-				&kp SLASH 				// -	
+				&kp SLASH 				// -
 				&kp LS(N7)				// /
 				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
-				&kp LS(N0)				// =
+				&kp LS(N6)				// &
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(LA(N7))			// backlslash
-				&kp LA(E)				// €
+				&kp LS(SLASH)			// _
+				&kp LS(N0)				// =
 				&mShiftReset
 
 				// ----------------------------------------
@@ -1295,17 +1295,17 @@
 				// ----------------------------------------
 				
 				&kp ESC
-				&kp LS(SLASH)			// _
+				&kp LS(NUHS)			// '
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze
-				&kp NUHS				// #
+				&kp LS(N2)				// "
 				&kp LA(N7)				// grader strich
 				
 				&kp LA(L)				// @
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
-				&kp LS(N6)				// &
 				&kp LS(N5)				// %
+				&kp LA(E)				// €
 				&kp BACKSPACE			// Backspace
 
 				// ----------------------------------------
@@ -1315,9 +1315,9 @@
 				&kp LA(N8)				// Geschweift
 				&kp LA(N9)				// Geschweift
 				&kp LA(N6)				// Eckige
-				&kp LS(NUHS)			// '
+				&kp LS(N7)				// /
 
-				&kp LS(N2)				// "
+				&kp NUHS				// #
 				&kp LS(N1)				// !
 				&kp LS(N8)				// Runde
 				&kp LS(N9)				// Runde
@@ -1326,18 +1326,18 @@
 
 				// ----------------------------------------
 
-				&kp LG(TAB)
+				&kp LC(LS(F8)) 			// Programm Wechsel
 				&kp SLASH 				// -
 				&kp LS(N7)				// /
 				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
 				&kp NUBS				// ^
 
-				&kp LS(N0)				// =
+				&kp LS(N6)				// &
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(LA(N7))			// backlslash
-				&kp LA(E)				// €
+				&kp LS(SLASH)			// _
+				&kp LS(N0)				// =
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 		
 				// ----------------------------------------
@@ -1367,27 +1367,27 @@
 				// ----------------------------------------
 				
 				&kp ESC
-				&none					//
-				&none					//
-				&none					//
-				&none					//
-				&none					//
-
-				&bt BT_CLR
 				&bt BT_SEL 1
 				&bt BT_SEL 2
 				&bt BT_SEL 3
 				&bt BT_SEL 0
+				&bt BT_CLR
+
+				&kp LS(N3) 				// $
+				&none
+				&none
+				&kp RA(M)				// my
+				&kp LS(N4) 				// $
 				&kp BACKSPACE			// 
 
 				// ----------------------------------------
 
 				&sl mSShift
-				&none					//
+				&none
 				&kp LS(EQUAL)			//
 				&kp EQUAL				// 
-				&none
-				&none					//
+				&kp LA(N)				// ~
+				&kp LS(LA(N7))			// backlslash
 
 				&mPw0
 				&mPw1
@@ -1398,11 +1398,11 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(TAB))
-				&kp LA(N)				// ~
-				&kp RA(M)				// my
-				&kp LS(N3) 				// $
-				&kp LS(N4) 				// $
+				&kp LC(LS(F9)) 			// Programm Wechsel
+				&none
+				&none
+				&none
+				&none
 				&kp LS(GRAVE)			// Grad
 
 				&none
