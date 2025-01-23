@@ -1296,28 +1296,28 @@
 				
 				&kp ESC
 				&kp LS(NUHS)			// '
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
 				&kp LS(N2)				// "
-				&kp LA(N7)				// grader strich
+				&kp LS(RBKT)			// *			
+				&kp LS(N7)				// /
+				&kp LS(N5)				// %
 				
-				&kp LA(L)				// @
+				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
-				&kp LS(N5)				// %
-				&kp LA(E)				// €
+				&kp NUBS				// ^
+				&kp LS(NUBS)			// Grad
 				&kp BACKSPACE			// Backspace
 
 				// ----------------------------------------
 
 				&sl mSShift
+				&kp LA(L)				// @
 				&kp LA(N5)				// Eckige
-				&kp LA(N8)				// Geschweift
-				&kp LA(N9)				// Geschweift
 				&kp LA(N6)				// Eckige
-				&kp LS(N7)				// /
-
 				&kp NUHS				// #
+				&kp LA(N8)				// Geschweift
+
+				&kp LA(N9)				// Geschweift
 				&kp LS(N1)				// !
 				&kp LS(N8)				// Runde
 				&kp LS(N9)				// Runde
@@ -1327,11 +1327,11 @@
 				// ----------------------------------------
 
 				&kp LC(LS(F8)) 			// Programm Wechsel
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
 				&kp SLASH 				// -
-				&kp LS(N7)				// /
-				&kp LS(RBKT)			// *			
 				&kp RBKT  				// +
-				&kp NUBS				// ^
+				&kp LA(N7)				// grader strich
 
 				&kp LS(N6)				// &
 				&kp DOT					// .
@@ -1343,7 +1343,7 @@
 				// ----------------------------------------
 
 				&sl mSSYM				// deep
-				&mReset
+				&mMdNr
 				&sl mFUNC				
 				&sl mPRG						
 				&sl mNAV
@@ -1367,15 +1367,15 @@
 				// ----------------------------------------
 				
 				&kp ESC
-				&bt BT_SEL 1
-				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&bt BT_SEL 0
-				&bt BT_CLR
+				&kp LS(EQUAL)			//
+				&kp EQUAL				// 
+				&kp LA(N)				// ~
+				&kp LS(LA(N7))			// backlslash
+				&kp LS(N3) 				// Para
 
-				&kp LS(N3) 				// $
-				&none
-				&none
+				&kp LS(N4) 				// $
+				&kp GRAVE
+				&kp GRAVE
 				&kp RA(M)				// my
 				&kp LS(N4) 				// $
 				&kp BACKSPACE			// 
@@ -1384,10 +1384,10 @@
 
 				&sl mSShift
 				&none
-				&kp LS(EQUAL)			//
-				&kp EQUAL				// 
-				&kp LA(N)				// ~
-				&kp LS(LA(N7))			// backlslash
+				&none
+				&none
+				&none
+				&none
 
 				&mPw0
 				&mPw1
@@ -1399,11 +1399,11 @@
 				// ----------------------------------------
 
 				&kp LC(LS(F9)) 			// Programm Wechsel
-				&none
-				&none
-				&none
-				&none
-				&kp LS(GRAVE)			// Grad
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
+				&bt BT_SEL 0
+				&bt BT_CLR
 
 				&none
 				&mEm1
@@ -1415,7 +1415,7 @@
 				// ----------------------------------------
 
 				&sl mSYM					
-				&mReset
+				&mMdNr
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
@@ -1484,12 +1484,12 @@
 				&kp LC(LA(LG(F8)))	
 				&kp LC(LA(LG(F9)))
 				&kp LC(LA(LG(F10)))
-				&kp RSHFT
+				&kp LC(P)
 
 				// ----------------------------------------
 		
 				&mSymReset
-				&mMdNr
+				&mReset
 				&mFuncReset
 				&mPrgReset
 				&sl mSSShift
@@ -1517,13 +1517,13 @@
 				&kp LG(LS(F2))
 				&kp LG(LS(F3))
 				&kp LG(LS(F4))
-				&none
+				&kp LC(LS(F1))
 
 				&kp LG(LA(F13))
 				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
 				&kp LG(LA(LC(LS(RIGHT))))
-				&kp LG(LA(F12))
+				&kp LG(LA(F6))
 				&kp LG(LC(LA(LS(Q))))
 
 				// ----------------------------------------
@@ -1539,8 +1539,8 @@
 				&kp LG(LA(LC(LEFT)))
 				&kp LG(LA(LC(DOWN)))
 				&kp LG(LA(LC(RIGHT)))
-				&kp LG(LA(F11))
-				&kp ENTER
+				&kp LG(LA(F7))
+				&kp LA(ENTER)
 
 				// ----------------------------------------
 
@@ -1551,17 +1551,17 @@
 				&kp LG(LS(F12))
 				&kp LG(LS(BACKSPACE))
 
-				&kp LG(LA(F6))
-				&kp LG(LA(F7))
 				&kp LG(LA(F8))
 				&kp LG(LA(F9))
 				&kp LG(LA(F10))
-				&kp RSHFT
+				&kp LG(LA(F11))
+				&kp LG(LA(F12))
+				&kp LC(LS(P))
 
 				// ----------------------------------------
 		
 				&mSymReset
-				&mMdNr
+				&mReset
 				&mFuncReset
 				&mPrgReset
 				&sl mSSShift
