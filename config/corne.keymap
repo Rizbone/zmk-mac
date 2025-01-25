@@ -1441,78 +1441,6 @@
 				// ----------------------------------------
 
 				&mReset
-				&none
-				&none
-				&none
-				&none
-				&none
-
-				&kp LG(LA(F1))
-				&kp LG(LA(F2))
-				&kp LG(LA(F3))
-				&kp LG(LA(F4))
-				&kp LG(LA(F5))
-				&kp BACKSPACE
-
-				// ----------------------------------------
-		
-				&none
-				&kp LC(LA(F11))
-				&kp LC(LA(F12))
-				&kp LSHFT
-				&kp LCTL
-				&kp DEL
-
-				&kp LC(LA(LG(F1)))
-				&kp LC(LA(LG(F2)))
-				&kp LC(LA(LG(F3)))	
-				&kp LC(LA(LG(F4)))
-				&kp LC(LA(LG(F5)))
-				&kp LC(LA(LG(F6)))
-
-				// ----------------------------------------
-
-				&none
-				&none
-				&none
-				&none
-				&none
-				&none
-
-				&kp LC(LA(LG(F7)))
-				&kp LC(LA(LG(F8)))	
-				&kp LC(LA(LG(F9)))
-				&kp LC(LA(LG(F10)))
-				&kp LC(LA(LG(F11)))
-				&kp LC(LA(LG(F12)))
-
-				// ----------------------------------------
-		
-				&sl mSYM					
-				&kp SPACE
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-			>;
-		};
-
-
-		// -----------------------------------------------------|
-		// Layer 15 - SSideShift =	S Side Shift				|
-		// -----------------------------------------------------|
-
-		mac_mProgramJump
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&mReset
 				&kp LS(F1)
 				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
@@ -1568,6 +1496,81 @@
 				&sl mSYM
 
 				// ----------------------------------------
+
+				
+			>;
+		};
+
+
+		// -----------------------------------------------------|
+		// Layer 15 - SSideShift =	S Side Shift				|
+		// -----------------------------------------------------|
+
+		mac_mProgramJump
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&mReset
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				&kp LG(LA(F1))
+				&kp LG(LA(F2))
+				&kp LG(LA(F3))
+				&kp LG(LA(F4))
+				&kp LG(LA(F5))
+				&kp BACKSPACE
+
+				// ----------------------------------------
+		
+				&none
+				&kp LC(LA(F11))
+				&kp LC(LA(F12))
+				&kp LSHFT
+				&kp LCTL
+				&kp DEL
+
+				&kp LC(LA(LG(F1)))
+				&kp LC(LA(LG(F2)))
+				&kp LC(LA(LG(F3)))	
+				&kp LC(LA(LG(F4)))
+				&kp LC(LA(LG(F5)))
+				&kp LC(LA(LG(F6)))
+
+				// ----------------------------------------
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				&kp LC(LA(LG(F7)))
+				&kp LC(LA(LG(F8)))	
+				&kp LC(LA(LG(F9)))
+				&kp LC(LA(LG(F10)))
+				&kp LC(LA(LG(F11)))
+				&kp LC(LA(LG(F12)))
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&kp SPACE
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+				
 			>;
 		};
 
