@@ -404,7 +404,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp ESC
 				&kp J 
 				&kp D	 
 				&kp U
@@ -420,7 +420,7 @@
 
 				// ----------------------------------------
 	
-				&mMdNr
+				&to mNR
 				&kp C
 				&kp T
 				&kp I
@@ -432,7 +432,7 @@
 				&kp R
 				&kp S
 				&kp G
-				&mMdNr
+				&to mNR
 
 				// ----------------------------------------
 	
@@ -477,14 +477,14 @@
 
 				// ----------------------------------------
 
-				&mReset
-				&kp LS(NUHS)			// '
-				&kp LS(N2)				// "
+				&kp ESC
+				&kp GRAVE				// ^
+				&kp LS(LA(N7))			// backlslash
 				&kp LS(RBKT)			// *			
 				&kp LS(N7)				// /
 				&kp X
 				
-				&kp LA(E)				// €
+				&kp LS(N2)				// "
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
@@ -493,7 +493,7 @@
 
 				// ----------------------------------------
 
-				&to mNRhard
+				&to mNR
 				&kp N1				
 				&kp N2				
 				&kp N3				
@@ -505,18 +505,18 @@
 				&kp N8			
 				&kp N9				
 				&kp N0				
-				&to mNRhard
+				&to mNR
 
 				// ----------------------------------------
 
 				&mMdLs
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
+				&kp LA(E)				// €
+				&kp LS(N5)				// %
 				&kp SLASH 				// -
 				&kp RBKT  				// +
-				&kp LA(N7)				// grader strich
+				&kp NUBS				// Spitze
 
-				&kp LS(N6)				// &
+				&kp LS(NUBS)			// Spitze
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
@@ -549,14 +549,14 @@
 
 				// ----------------------------------------
 
-				&mReset
-				&kp LS(NUHS)			// '
-				&kp LS(N2)				// "
+				&kp ESC
+				&kp GRAVE				// ^
+				&kp LS(LA(N7))			// backlslash
 				&kp LS(RBKT)			// *			
 				&kp LS(N7)				// /
 				&kp X
 				
-				&kp LA(E)				// €
+				&kp LS(N2)				// "
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp M
@@ -565,7 +565,7 @@
 
 				// ----------------------------------------
 
-				&to mNRhard
+				&to mNR
 				&kp N1				
 				&kp N2				
 				&kp N3				
@@ -577,18 +577,18 @@
 				&kp N8				
 				&kp N9				
 				&kp N0				
-				&to mNRhard
+				&to mNR
 
 				// ----------------------------------------
 
 				&mMdLs
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
+				&kp LA(E)				// €
+				&kp LS(N5)				// %
 				&kp SLASH 				// -
 				&kp RBKT  				// +
-				&kp LA(N7)				// grader strich
+				&kp NUBS				// Spitze
 
-				&kp LS(N6)				// &
+				&kp LS(NUBS)			// Spitze
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
@@ -621,7 +621,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp ESC
 				&kp LS(J) 
 				&kp LS(D)	 
 				&kp LS(U)
@@ -637,7 +637,7 @@
 
 				// ----------------------------------------
 	
-				&mMdNr
+				&to mNR
 				&kp LS(C)
 				&kp LS(T)
 				&kp LS(I)
@@ -649,7 +649,7 @@
 				&kp LS(R)
 				&kp LS(S)
 				&kp LS(G)
-				&mMdNr
+				&to mNR
 
 				// ----------------------------------------
 
@@ -697,35 +697,35 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp ESC
 				&kp LG(UP)					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
 				&kp LG(Y)
 
-				&kp DELETE
+				&kp LG(LC(Z))	
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
-				&mAltShot
+				&kp LG(LC(W))	
 				&kp BSPC					
 
 
 				// ----------------------------------------
 
-				&kp ESC
+				&kp DELETE
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
 				&kp RIGHT 					// @Right
 				&kp ENTER					// -
 				
-				&kp LG(LC(Z))				// umbennen
+				&kp LG(LC(Y))				// umbennen
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LC(LS(F10))
+				&kp LG(LC(X))				// umbennen
 				&kp LC(LS(F8))				// prg wechsel
 				
 				// ----------------------------------------
@@ -737,7 +737,7 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(G))				// go
 
-				&kp LG(LC(X))				// Seitenleiste
+				&kp LC(LS(F10))				// 
 				&kp LG(LS(LEFT))			// @Home 
 				&kp LA(LS(LEFT))			// @Wort Sprung
 				&kp LA(LS(RIGHT))			// @Wort Sprung
@@ -771,34 +771,34 @@
 
 				// ----------------------------------------
 
-				&mReset 
+				&kp ESC 
 				&kp LG(LS(UP))					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						
 				&kp TAB
 				&kp LG(LS(Y))
 
-				&kp INSERT
-				&kp LG(KP_PLUS)
+				&kp LG(LC(LS(Z)))				// umbennen
+				&kp LG(LC(LS(A)))				// umbennen
 				&kp PG_UP
-				&kp LG(KP_MINUS)
-				&kp LC(LS(F13))
-				&kp LC(BACKSPACE)
+				&kp LG(LC(LS(B)))				// umbennen
+				&kp LG(LC(LS(W)))				// umbennen
+				&kp LA(BACKSPACE) 
 
 				// ----------------------------------------
 		
-				&kp LC(ESC)
+				&kp DEL
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
 				&kp LC(ENTER)					// Enter
 
-				&kp LG(LC(LS(Z)))				// umbennen
+				&kp LG(LC(LS(Y)))				// umbennen
 				&kp LCTL				
 				&kp PG_DN
 				&kp LGUI			
-				&kp LC(LS(F11))					// Kontext
+				&kp LG(LC(LS(W)))				// umbennen
 				&kp LC(LS(F9))					// Prg Wechsel
 
 				// ----------------------------------------
@@ -810,7 +810,7 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(G)))	
 				
-				&kp LG(LC(LS(X)))	
+				&mAltShot
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -846,7 +846,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp LG(W)
 				&kp LS(LA(N1))			// 21 			
 				&kp LS(LA(N2))			// 22
 				&kp LS(LA(N3))			// 23
@@ -858,7 +858,7 @@
 				&kp LS(LA(N8))			// 28
 				&kp LS(LA(N9))			// 29
 				&kp LS(LA(N0))			// 30
-				&kp BACKSPACE
+				&kp LG(H)
 
 				// ----------------------------------------
 
@@ -895,7 +895,7 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&kp LG(SPACE)
+				&mReset
 				&sl mFUNC
 				&sl mSPRG					// deep						
 				&sl mNAV
@@ -922,7 +922,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp LG(Q)
 				&kp F1
 				&kp F2
 				&kp F3
@@ -934,7 +934,7 @@
 				&kp F8
 				&kp F9
 				&kp F10
-				&kp BACKSPACE
+				&kp LG(LA(H))
 		
 				// ----------------------------------------
 
@@ -971,7 +971,7 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&kp LG(LA(SPACE))
+				&mReset
 				&sl mFUNC
 				&sl mPRG 
 				&sl mNAV
@@ -1000,7 +1000,7 @@
 
 				// ----------------------------------------
 	
-				&mReset
+				&kp LC(LA(J))	
 				&kp LC(LA(F1))	
 				&kp LC(LA(F2))	
 				&kp LC(LA(F3))	
@@ -1012,11 +1012,11 @@
 				&kp LC(LA(F8))	
 				&kp LC(LA(F9))	
 				&kp LC(LA(F10))	
-				&kp BACKSPACE
+				&kp LC(LA(X))	
 				
 				// ----------------------------------------
 
-				&sl mProgramJump
+				&sl mWindowMove
 				&kp LG(A)
 				&kp LC(LA(A))	
 				&kp LC(LA(B))	
@@ -1044,7 +1044,7 @@
 				&kp LC(LA(M))	
 				&kp LC(LA(N))	
 				&kp LC(LA(E))
-				&kp LC(LA(J))	
+				&kp LC(LA(Y))	
 				
 				// ----------------------------------------
 
@@ -1052,7 +1052,7 @@
 				&sl mGUI					// gui
 				&sl mSFUNC					// deep
 				&sl mPRG
-				&sl mWindowMove
+				&sl mNAV
 				&sl mSYM
 
 				// ----------------------------------------
@@ -1073,7 +1073,7 @@
 
 			// ----------------------------------------
 	
-				&mReset
+				&kp LC(LS(LA(J)))	
 				&kp LC(LA(LS(F1)))	
 				&kp LC(LA(LS(F2)))	
 				&kp LC(LA(LS(F3)))	
@@ -1085,7 +1085,7 @@
 				&kp LC(LA(LS(F8)))	
 				&kp LC(LA(LS(F9)))
 				&kp LC(LA(LS(F10)))
-				&kp BACKSPACE
+				&kp LC(LS(LA(X)))	
 				
 				// ----------------------------------------
 
@@ -1118,7 +1118,7 @@
 				&kp LC(LS(LA(M)))
 				&kp LC(LS(LA(N)))
 				&kp LC(LS(LA(E)))
-				&kp LC(LS(LA(J)))	
+				&kp LC(LS(LA(Y)))	
 				
 				// ----------------------------------------
 
@@ -1149,7 +1149,7 @@
 
 				// ----------------------------------------
 
-				&mReset
+				&kp LG(ESC)
 				&kp LG(J)					//
 				&kp LG(D)					//
 				&kp LG(U)					//
@@ -1161,11 +1161,11 @@
 				&kp LG(L) 					//
 				&kp LG(M)					//
 				&kp LG(W) 					//
-				&kp LG(BACKSPACE)			//
+				&kp LG(BSPC)
 
 				// ----------------------------------------
 		
-				&kp LCTRL
+				&kp LCTL
 				&kp LG(C)					//
 				&kp LG(T)					//
 				&kp LG(I)					//
@@ -1177,7 +1177,7 @@
 				&kp LG(R)					//
 				&kp LG(S)					//
 				&kp LG(G)					//
-				&kp LCTRL
+				&kp LCTL
 
 				// ----------------------------------------
 
@@ -1220,7 +1220,7 @@
 
 			bindings = <
 
-				&mReset
+				&kp LG(LA(ESC))					//
 				&kp LG(LA(J))					//
 				&kp LG(LA(D))					//
 				&kp LG(LA(U))					//
@@ -1294,23 +1294,23 @@
 
 				// ----------------------------------------
 				
-				&mReset
-				&kp LS(NUHS)			// '
-				&kp LS(N2)				// "
+				&kp LC(LS(F8))			// prg wechsel
+				&kp GRAVE				// ^
+				&kp LS(LA(N7))			// backlslash
 				&kp LS(RBKT)			// *			
 				&kp LS(N7)				// /
-				&kp LS(N5)				// %
+				&kp LS(NUHS)			// '
 				
-				&kp LA(E)				// €
+				&kp LS(N2)				// "
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
-				&kp GRAVE				// ^
+				&kp LS(N6)				// &
 				&mGleich
-				&kp BACKSPACE			// Backspace
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
 
 				// ----------------------------------------
 
-				&kp LC(LS(F8))			// prg wechsel
+				&to mNRhard
 				&kp LA(L)				// @
 				&kp LA(N5)				// Eckige
 				&kp LA(N6)				// Eckige
@@ -1322,23 +1322,23 @@
 				&kp LS(N8)				// Runde
 				&kp LS(N9)				// Runde
 				&kp LS(MINUS)			// ?
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&to mNRhard
 
 				// ----------------------------------------
 
-				&kp LS(LA(N7))			// backlslash
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
+				&to mLCHAR
+				&kp LA(E)				// €
+				&kp LS(N5)				// %
 				&kp SLASH 				// -
 				&kp RBKT  				// +
-				&kp LA(N7)				// grader strich
+				&kp NUBS				// Spitze
 
-				&kp LS(N6)				// &
+				&kp LS(NUBS)			// Spitze
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
 				&kp LS(N0)				// =
-				&kp LA(N)				// ~
+				&to mLCHAR
 		
 				// ----------------------------------------
 
@@ -1366,23 +1366,23 @@
 
 				// ----------------------------------------
 				
-				&mReset
-				&none
+				&kp LC(LS(F9))			// prg wechsel
+				&kp LS(GRAVE)
 				&kp C_VOL_DN
 				&kp C_MUTE
 				&kp C_VOL_UP
-				&none
+				&kp LA(N7)				// grader strich
 
+				&kp LA(N)				// ~
+				&kp LS(N3) 				// $
 				&kp LS(N4) 				// $
-				&kp GRAVE
-				&kp LS(GRAVE)
 				&kp RA(M)				// my
-				&kp LS(N3) 				// Para
-				&kp BACKSPACE			// 
+				&kp GRAVE
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
 
 				// ----------------------------------------
 
-				&kp LC(LS(F9)) 			// Programm Wechsel
+				&to mNRhard
 				&none
 				&kp C_NEXT
 				&kp C_PLAY
@@ -1394,23 +1394,23 @@
 				&mPw2
 				&mPw3
 				&mPw4
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&to mNRhard
 
 				// ----------------------------------------
 
-				&sys_reset
+				&to mLCHAR
 				&bt BT_SEL 0
 				&bt BT_SEL 1
 				&bt BT_SEL 2
 				&bt BT_SEL 3
 				&bt BT_CLR
 
-				&none
+				&sys_reset
 				&mEm1
 				&mEm2
 				&mEm3
 				&mEm4
-				&sys_reset
+				&to mLCHAR
 
 				// ----------------------------------------
 
@@ -1429,7 +1429,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 14 - mSSideShift =	Side Shift					|
+		// Layer 14 - Window Move								|
 		// -----------------------------------------------------|
 
 		mac_mWindowMove
@@ -1440,44 +1440,44 @@
 
 				// ----------------------------------------
 
-				&mReset
-				&kp LS(F1)
+				&none
+				&none
+				&none
+				&kp LC(LA(LG(P)))
+				&kp LC(LA(LG(C)))
+				&none
+
+				&kp LG(LA(F1))
 				&kp LG(LA(LC(LS(LEFT))))
 				&kp LG(LA(LC(UP)))
 				&kp LG(LA(LC(LS(RIGHT))))
-				&kp LS(F2)
-
-				&kp LG(LA(F6))
-				&kp LG(LA(F7))
-				&kp LG(LA(F8))
-				&kp LG(LA(F9))
-				&kp LG(LA(F10))
-				&kp BACKSPACE
+				&kp LG(LA(F2))
+				&kp LG(LA(F3))
 
 				// ----------------------------------------
 		
-				&kp LS(F3)
-				&kp LS(F4)
+				&none
+				&none
+				&kp LC(LA(F12))
+				&kp LSHFT
+				&kp LCTRL
+				&kp LG(BACKSPACE)
+
+				&kp LG(LS(F4))
 				&kp LG(LA(LC(LEFT)))
 				&kp LG(LA(LC(DOWN)))
 				&kp LG(LA(LC(RIGHT)))
-				&kp LS(F5)
-
-				&kp LG(LS(F1))
-				&kp LG(LS(F2))
-				&kp LG(LS(F3))
-				&kp LG(LS(F4))
 				&kp LG(LS(F5))
 				&kp LG(LS(F6))
 
 				// ----------------------------------------
 
-				&kp LS(F6)
-				&kp LS(F7)
-				&kp LS(F8)
-				&kp LS(F9)
-				&kp LS(F10)
-				&kp LS(F11)
+				&none
+				&none
+				&none
+				&kp LC(P)
+				&kp LG(LS(S))
+				&none
 
 				&kp LG(LS(F7))
 				&kp LG(LS(F8))
@@ -1489,7 +1489,7 @@
 				// ----------------------------------------
 		
 				&sl mSYM					
-				&kp SPACE
+				&kp LG(LA(LC(SPACE)))
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
@@ -1503,7 +1503,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 15 - SSideShift =	S Side Shift				|
+		// Layer 15 - PRG JUMP									|
 		// -----------------------------------------------------|
 
 		mac_mProgramJump
@@ -1517,25 +1517,25 @@
 				&mReset
 				&none
 				&none
-				&none
-				&none
-				&none
+				&kp LG(LA(F7))
+				&kp LG(LA(F8))
+				&kp LG(LA(F9))
 
 				&kp LG(LA(F1))
 				&kp LG(LA(F2))
 				&kp LG(LA(F3))
 				&kp LG(LA(F4))
 				&kp LG(LA(F5))
-				&kp BACKSPACE
+				&kp LG(LA(F6))
 
 				// ----------------------------------------
 		
 				&none
-				&kp LC(LA(F11))
-				&kp LC(LA(F12))
-				&kp LSHFT
-				&kp LCTL
-				&kp DEL
+				&none
+				&kp LG(LA(LC(O)))
+				&kp LG(LA(LC(K)))
+				&kp LG(LA(LC(U)))
+				&kp LC(R)
 
 				&kp LC(LA(LG(F1)))
 				&kp LC(LA(LG(F2)))
@@ -1548,9 +1548,9 @@
 
 				&none
 				&none
-				&none
-				&none
-				&none
+				&kp LG(LA(F10))
+				&kp LG(LA(F11))
+				&kp LG(LA(F12))
 				&none
 
 				&kp LC(LA(LG(F7)))
@@ -1563,7 +1563,7 @@
 				// ----------------------------------------
 		
 				&sl mSYM					
-				&kp SPACE
+				&kp LG(LA(LC(SPACE)))
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
