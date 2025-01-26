@@ -702,9 +702,9 @@
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LG(Y)
+				&kp DELETE
 
-				&kp LG(LC(Z))	
+				&mAltShot
 				&kp LG(LC(A))	
 				&kp LG(LC(T))	
 				&kp LG(LC(B))	
@@ -714,19 +714,19 @@
 
 				// ----------------------------------------
 
-				&kp DELETE
+				&kp LG(Y)
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
 				&kp RIGHT 					// @Right
 				&kp ENTER					// -
 				
-				&kp LG(LC(Y))				// umbennen
+				&kp LC(LS(F8))				// prg wechsel
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LG(LC(X))				// umbennen
-				&kp LC(LS(F8))				// prg wechsel
+				&kp LG(LC(X))				// 
+				&kp LG(LC(Y))				// 
 				
 				// ----------------------------------------
 
@@ -776,9 +776,9 @@
 				&kp LS(TAB)
 				&kp UP						
 				&kp TAB
-				&kp LG(LS(Y))
+				&kp DEL
 
-				&kp LG(LC(LS(Z)))				// umbennen
+				&mAltShot
 				&kp LG(LC(LS(A)))				// umbennen
 				&kp PG_UP
 				&kp LG(LC(LS(B)))				// umbennen
@@ -787,19 +787,19 @@
 
 				// ----------------------------------------
 		
-				&kp DEL
+				&kp LG(LS(Y))
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
-				&kp LC(ENTER)					// Enter
+				&kp ENTER					
 
-				&kp LG(LC(LS(Y)))				// umbennen
+				&kp LC(LS(F9))					// Prg Wechsel
 				&kp LCTL				
 				&kp PG_DN
 				&kp LGUI			
 				&kp LG(LC(LS(W)))				// umbennen
-				&kp LC(LS(F9))					// Prg Wechsel
+				&kp LG(LC(LS(Y)))				// umbennen
 
 				// ----------------------------------------
 
@@ -874,7 +874,7 @@
 				&kp LC(LG(N8))			//
 				&kp LC(LG(N9))			//
 				&kp LC(LG(N0))			//
-				&kp LC(LS(F8))			// prg wechsel
+				&kp LG(LA(H))
 
 				// ----------------------------------------
 
@@ -950,7 +950,7 @@
 				&kp LG(N8)					// 18
 				&kp LG(N9)					// 19
 				&kp LG(N0)					// 20
-				&kp LC(LS(F9))				// prg wechsel
+				&kp LG(LA(H))
 
 				// ----------------------------------------
 
@@ -1384,9 +1384,9 @@
 
 				&to mNRhard
 				&none
-				&kp C_NEXT
-				&kp C_PLAY
 				&kp C_PREV
+				&kp C_PLAY
+				&kp C_NEXT
 				&none
 
 				&mPw0
@@ -1576,5 +1576,4 @@
 
 	};
 };
-
 
