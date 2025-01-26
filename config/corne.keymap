@@ -810,7 +810,7 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(G)))	
 				
-				&mAltShot
+				&kp LC(LS(F10))					
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
