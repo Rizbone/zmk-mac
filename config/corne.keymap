@@ -50,18 +50,10 @@
         };
 
 		//Tab Dance Shift
-		mMdLs: tap_dance_mMdLs 
+		mMdShift: tap_dance_mMdShift 
 		{
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mMdLs";
-            #binding-cells = <0>;
-            tapping-term-ms = <1000>;
-            bindings = <&sl mLCHAR>, <&to mLCHAR>;
-        };
-		mMdRs: tap_dance_mMdRs 
-		{
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mMdRs";
+            label = "TAP_DANCE_mMdShift";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
             bindings = <&sl mLCHAR>, <&to mLCHAR>;
@@ -436,7 +428,7 @@
 
 				// ----------------------------------------
 	
-				&mMdLs
+				&mMdShift
 				&kp F
 				&kp V
 				&kp MINUS
@@ -448,7 +440,7 @@
 				&kp LBKT
 				&kp SQT
 				&kp K
-				&mMdRs
+				&mMdShift
 
 				// ----------------------------------------
 
@@ -509,7 +501,7 @@
 
 				// ----------------------------------------
 
-				&mMdLs
+				&mMdShift
 				&kp LA(E)				// €
 				&kp LS(N5)				// %
 				&kp SLASH 				// -
@@ -521,7 +513,7 @@
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
 				&kp LS(N0)				// =
-				&mMdRs
+				&mMdShift
 
 				// ----------------------------------------
 		
@@ -581,7 +573,7 @@
 
 				// ----------------------------------------
 
-				&mMdLs
+				&mMdShift
 				&kp LA(E)				// €
 				&kp LS(N5)				// %
 				&kp SLASH 				// -
@@ -593,7 +585,7 @@
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
 				&kp LS(N0)				// =
-				&mMdRs
+				&mMdShift
 
 				// ----------------------------------------
 		
@@ -653,7 +645,7 @@
 
 				// ----------------------------------------
 
-				&mMdLs
+				&mMdShift
 				&kp LS(F)
 				&kp LS(V)
 				&kp LS(MINUS)
@@ -665,7 +657,7 @@
 				&kp LS(LBKT)
 				&kp LS(SQT)
 				&kp LS(K)
-				&mMdRs			
+				&mMdShift			
 
 				// ----------------------------------------
 
