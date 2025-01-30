@@ -17,20 +17,21 @@
 #define mNAV 4
 #define mSNAV 5
 
-#define mPRG 6
-#define mSPRG 7
+#define mSYM 6
+#define mSSYM 7
 
-#define mFUNC 8
-#define mSFUNC 9
+#define mPRG 8
+#define mSPRG 9
+#define mSSPRG 10
 
-#define mGUI 10
-#define mOGUI 11
+#define mFUNC 11
+#define mSFUNC 12
+#define mSSFunc 13
+#define mNative 14
 
-#define mSYM 12
-#define mSSYM 13
 
-#define mWindowMove 14
-#define mProgramJump 15
+
+
 
 
 
@@ -110,9 +111,9 @@
             #binding-cells = <0>;
             bindings
                 = <&to mCHAR>
-                , <&macro_press &sl mWindowMove>
+                , <&macro_press &sl mSSPRG>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl mWindowMove>
+				, <&macro_release &sl mSSPRG>
 				;
     	};
 
@@ -366,7 +367,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp LG(LC(N6))>
+				= < &macro_tap &kp &kp LS(LG(N6))> 
 				, < &to mNRhard>
                 ; 
     	};
@@ -385,7 +386,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 0 - mChar = 	  Buchstaben					|
+		// 							Buchstaben					|
 		// -----------------------------------------------------|
 	
 		mac_buchstaben
@@ -412,7 +413,7 @@
 
 				// ----------------------------------------
 	
-				&to mNR
+				&mMdNr
 				&kp C
 				&kp T
 				&kp I
@@ -424,7 +425,7 @@
 				&kp R
 				&kp S
 				&kp G
-				&to mNR
+				&mMdNr
 
 				// ----------------------------------------
 	
@@ -458,7 +459,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 1 - mNR = 	  Zahlen 							|
+		//						Zahlen 							|
 		// -----------------------------------------------------|
 
 		mac_zahlen
@@ -485,7 +486,7 @@
 
 				// ----------------------------------------
 
-				&to mNR
+				&mMdNr
 				&kp N1				
 				&kp N2				
 				&kp N3				
@@ -497,7 +498,7 @@
 				&kp N8			
 				&kp N9				
 				&kp N0				
-				&to mNR
+				&mMdNr
 
 				// ----------------------------------------
 
@@ -530,7 +531,7 @@
 
 
 		// -----------------------------------------------------|
-		// 2 Layer  - wNRhard = 	  Zahlen Hard Lock			|
+		// 				 Zahlen Hard Lock						
 		// -----------------------------------------------------|
 
 		mac_zahlenhard
@@ -557,7 +558,7 @@
 
 				// ----------------------------------------
 
-				&to mNR
+				&to mNRhard
 				&kp N1				
 				&kp N2				
 				&kp N3				
@@ -569,7 +570,7 @@
 				&kp N8				
 				&kp N9				
 				&kp N0				
-				&to mNR
+				&to mNRhard
 
 				// ----------------------------------------
 
@@ -602,7 +603,7 @@
 
 
 		// -----------------------------------------------------|
-		// 3 Layer  - mLCHAR = 	  Buchstaben Lock				|
+		// 							Buchstaben Lock				|
 		// -----------------------------------------------------|
 	
 		mac_lchar
@@ -629,7 +630,7 @@
 
 				// ----------------------------------------
 	
-				&to mNR
+				&mMdNr
 				&kp LS(C)
 				&kp LS(T)
 				&kp LS(I)
@@ -641,7 +642,7 @@
 				&kp LS(R)
 				&kp LS(S)
 				&kp LS(G)
-				&to mNR
+				&mMdNr
 
 				// ----------------------------------------
 
@@ -678,7 +679,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer = 4 - wNAV - Navigation						|
+		// 						Navigation						|
 		// -----------------------------------------------------|
 
 		mac_navigation
@@ -694,7 +695,7 @@
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp DELETE
+				&kp LG(LC(X))				// 
 
 				&mAltShot
 				&kp LG(LC(A))	
@@ -706,18 +707,18 @@
 
 				// ----------------------------------------
 
-				&kp LG(Y)
+				&kp LC(LS(F8))				// prg wechsel
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
 				&kp RIGHT 					// @Right
 				&kp ENTER					// -
 				
-				&kp LC(LS(F8))				// prg wechsel
+				&kp LG(Y)
 				&kp LS(LC(TAB))			 	// 
 				&kp LG(LC(U))	
 				&kp LC(TAB)				 	// 
-				&kp LG(LC(X))				// 
+				&kp DELETE
 				&kp LG(LC(Y))				// 
 				
 				// ----------------------------------------
@@ -752,7 +753,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer = 5 - wSNAV - Navigation						|
+		//						 Navigation						|
 		// -----------------------------------------------------|
 
 		mac_snavigation
@@ -768,29 +769,29 @@
 				&kp LS(TAB)
 				&kp UP						
 				&kp TAB
-				&kp DEL
+				&kp LG(LC(LS(X)))				// umbennen
 
+				&kp LG(LS(Y))
+				&kp LG(LC(LS(A)))				// 
+				&kp LG(LC(LS(T)))				// hoch
+				&kp LG(LC(LS(B)))				// 
 				&mAltShot
-				&kp LG(LC(LS(A)))				// umbennen
-				&kp PG_UP
-				&kp LG(LC(LS(B)))				// umbennen
-				&kp LG(LC(LS(W)))				// umbennen
 				&kp LA(BACKSPACE) 
 
 				// ----------------------------------------
 		
-				&kp LG(LS(Y))
+				&kp LC(LS(F9))					// Prg Wechsel
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
 				&kp ENTER					
 
-				&kp LC(LS(F9))					// Prg Wechsel
-				&kp LCTL				
-				&kp PG_DN
-				&kp LGUI			
-				&kp LG(LC(LS(W)))				// umbennen
+				&kp LG(Y)						// zurueck
+				&kp LC(LA(LS(TAB)))
+				&kp LG(LC(LS(U)))				// 
+				&kp LC(LA(TAB))
+				&kp DEL
 				&kp LG(LC(LS(Y)))				// umbennen
 
 				// ----------------------------------------
@@ -803,10 +804,10 @@
 				&kp LG(LC(LS(G)))	
 				
 				&kp LC(LS(F10))					
-				&kp LG(LS(LEFT))				// @Home 
-				&kp LA(LS(LEFT))				// @Wort Sprung
-				&kp LA(LS(RIGHT))				// @Wort Sprung
-				&kp LG(LS(RIGHT))				// @End  					
+				&kp LCTL	
+				&kp LSFT
+				&kp LALT
+				&kp LGUI			
 				&kp RSHIFT						
 
 				// ----------------------------------------
@@ -825,12 +826,163 @@
 
 
 
+		
 		// -----------------------------------------------------|
-		// Layer 6 - mPRG =	Programme							|
+		// 						Symoble							|
+		// -----------------------------------------------------|
+
+		mac_symbole
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+				
+				&kp ESC
+				&kp GRAVE				// ^
+				&kp LS(LA(N7))			// backlslash
+				&kp LS(RBKT)			// *			
+				&kp LS(N7)				// /
+				&kp LS(NUHS)			// '
+				
+				&kp LS(N2)				// "
+				&kp LS(DOT)				// :
+				&kp LS(COMMA)			// ;
+				&kp LS(N6)				// &
+				&kp GRAVE				// ^
+				&kp BACKSPACE
+
+				// ----------------------------------------
+
+				&kp LC(LS(F8))			// prg wechsel
+				&kp LA(L)				// @
+				&kp LA(N5)				// Eckige
+				&kp LA(N6)				// Eckige
+				&kp NUHS				// #
+				&kp LA(N8)				// Geschweift
+
+				&kp LA(N9)				// Geschweift
+				&kp LS(N1)				// !
+				&kp LS(N8)				// Runde
+				&kp LS(N9)				// Runde
+				&kp LS(MINUS)			// ?
+				&mGleich
+
+				// ----------------------------------------
+
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&kp LA(E)				// €
+				&kp LS(N5)				// %
+				&kp SLASH 				// -
+				&kp RBKT  				// +
+				&kp NUBS				// Spitze
+
+				&kp LS(NUBS)			// Spitze
+				&kp DOT					// .
+				&kp COMMA				// ,
+				&kp LS(SLASH)			// _
+				&kp LS(N0)				// =
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
+		
+				// ----------------------------------------
+
+				&sl mSSYM				// deep
+				&kp SPACE
+				&sl mFUNC				
+				&sl mPRG						
+				&sl mNAV
+				&sl mSSYM				
+
+				// ----------------------------------------
+			>;
+		};
+
+
+		// -----------------------------------------------------|
+		// 						Special Symbole					|
+		// -----------------------------------------------------|
+
+		mac_specialsonderzeichen
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+				
+				&kp LC(LS(F9))			// prg wechsel
+				&kp LS(GRAVE)
+				&kp EQUAL
+				&kp LS(EQUAL)
+				&kp LA(N7)				// grader strich
+				&kp LS(N4) 				// $
+
+				&kp LS(N3) 				// $
+				&kp LA(N)				// ~
+				&none
+				&kp RA(M)				// my
+				&kp GRAVE
+				&kp BACKSPACE
+
+				// ----------------------------------------
+
+				&kp LC(LS(F9))			// prg wechsel
+				&mEm4
+				&mEm3
+				&mEm2
+				&mEm1
+				&none
+
+				&mPw0
+				&mPw1
+				&mPw2
+				&mPw3
+				&mPw4
+				&mGleich
+
+				// ----------------------------------------
+
+				&sys_reset
+				&bt BT_SEL 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
+				&bt BT_CLR
+
+				&none
+				&kp C_VOL_DN    // &kp C_PREV
+				&kp C_MUTE		// &kp C_PLAY
+				&kp C_VOL_UP	// &kp C_NEXT
+				&none
+				&sys_reset
+
+				// ----------------------------------------
+
+				&sl mSYM					
+				&kp SPACE
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+			>;
+		};	
+
+
+		
+		
+		
+
+
+
+		// -----------------------------------------------------|
+		//  				Programme							|
 		// -----------------------------------------------------|
 
 
-		mac_programme
+		mac_prg
 		{
 			label = "mac";
 
@@ -838,51 +990,51 @@
 
 				// ----------------------------------------
 
-				&kp LG(W)
-				&kp LS(LA(N1))			// 21 			
-				&kp LS(LA(N2))			// 22
-				&kp LS(LA(N3))			// 23
-				&kp LS(LA(N4))			// 24
-				&kp LS(LA(N5))			// 25
+				&kp LG(Q)
+				&kp LS(LG(N1))			// 21 			
+				&kp LS(LG(N2))			// 22
+				&kp LS(LG(N3))			// 23
+				&kp LS(LG(N4))			// 24
+				&kp LS(LG(N5))			// 25
 	
-				&kp LS(LA(N6))			// 26
-				&kp LS(LA(N7))			// 27
-				&kp LS(LA(N8))			// 28
-				&kp LS(LA(N9))			// 29
-				&kp LS(LA(N0))			// 30
-				&kp LG(H)
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
 
 				// ----------------------------------------
 
-				&sl mProgramJump
+				&mCalc
 				&kp LC(LG(N1))			//
 				&kp LC(LG(N2))			//
 				&kp LC(LG(N3))			//
 				&kp LC(LG(N4))			//
 				&kp LC(LG(N5))			//
 
-				&mCalc
-				&kp LC(LG(N7))			//
-				&kp LC(LG(N8))			//
-				&kp LC(LG(N9))			//
-				&kp LC(LG(N0))			//
-				&kp LG(LA(H))
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))
 
 				// ----------------------------------------
 
-				&kp LG(LS(SLASH))			// 21 	
-				&kp LG(LS(N1))				// 11
-				&kp LG(LS(N2))				// 12
-				&kp LG(LS(N3))				// 13
-				&kp LG(LS(N4))				// 14
-				&kp LG(LS(N5))				// 15
+				&kp LS(LG(N7))			// Aussen unten
+				&kp LC(LG(N6))				
+				&kp LC(LG(N7))				
+				&kp LC(LG(N8))				
+				&kp LC(LG(N9))				
+				&kp LC(LG(N0))			
 
-				&kp LG(LS(N6))				// 16
-				&kp LG(LS(N7))				// 17
-				&kp LG(LS(N8))				// 18
-				&kp LG(LS(N9))				// 19
-				&kp LG(LS(N0))				// 20
-				&kp LG(LS(RBRC))			// 21 			
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
 		
 				// ----------------------------------------
 
@@ -890,7 +1042,7 @@
 				&mReset
 				&sl mFUNC
 				&sl mSPRG					// deep						
-				&sl mNAV
+				&sl mSSPRG					// special
 				&sl mSYM
 
 				// ----------------------------------------
@@ -901,11 +1053,11 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 7 - mSPRG =	Spezial Prgramme				|
+		// 		Spezial Prgramme								|
 		// -----------------------------------------------------|
 
 
-		mac_sprogramme
+		mac_sprg
 		{
 
 			label = "mac";
@@ -914,59 +1066,59 @@
 
 				// ----------------------------------------
 
-				&kp LG(Q)
-				&kp F1
-				&kp F2
-				&kp F3
-				&kp F4
-				&kp F5
+				&kp LG(LC(LS(Q)))
+				&kp LS(LA(N1))			// 21 			
+				&kp LS(LA(N2))			// 22
+				&kp LS(LA(N3))			// 23
+				&kp LS(LA(N4))			// 24
+				&kp LS(LA(N5))			// 25
 
-				&kp F6
-				&kp F7
-				&kp F8
-				&kp F9
-				&kp F10
-				&kp LG(LA(H))
+				&kp LG(LA(F7))			// 26
+				&kp LG(LA(F8))			// 26
+				&kp LG(LA(F9))			// 26
+				&kp LG(LA(F10))			// 26
+				&kp LG(LA(F11))			// 26
+				&kp LG(LA(F12))			// 26
 		
 				// ----------------------------------------
 
-				&sl mProgramJump
-				&kp LG(N1)					// 11
-				&kp LG(N2)					// 12
-				&kp LG(N3)					// 13
-				&kp LG(N4)					// 14
-				&kp LG(N5)					// 15
+				&kp LG(LC(LS(M)))
+				&kp LG(LC(LA(N1)))
+				&kp LG(LC(LA(N2)))
+				&kp LG(LC(LA(N3)))
+				&kp LG(LC(LA(N4)))
+				&kp LG(LC(LA(N5)))
 
-				&kp LG(N6)					// 16
-				&kp LG(N7)					// 17
-				&kp LG(N8)					// 18
-				&kp LG(N9)					// 19
-				&kp LG(N0)					// 20
-				&kp LG(LA(H))
+				&kp LG(LS(F1))					
+				&kp LG(LS(F2))					
+				&kp LG(LS(F3))					
+				&kp LG(LS(F4))					
+				&kp LG(LS(F5))					
+				&kp LG(LS(F6))					
 
 				// ----------------------------------------
 
-				&kp LS(LA(SLASH))	
-				&kp F11
-				&kp F12
-				&kp F13
-				&kp F14
-				&kp F15
+				&kp LG(LC(LS(N)))
+				&kp LG(LC(LA(N6)))
+				&kp LG(LC(LA(N7)))
+				&kp LG(LC(LA(N8)))
+				&kp LG(LC(LA(N9)))
+				&kp LG(LC(LA(N0)))
 
-				&kp F16
-				&kp F17
-				&kp F18
-				&kp F19
-				&kp F20
-				&kp LS(LA(RBRC))
+				&kp LG(LS(F7))					
+				&kp LG(LS(F8))					
+				&kp LG(LS(F9))					
+				&kp LG(LS(F10))					
+				&kp LG(LS(F11))					
+				&kp LG(LS(F12))					
 		
 				// ----------------------------------------
 
 				&sl mSYM
 				&mReset
 				&sl mFUNC
-				&sl mPRG 
-				&sl mNAV
+				&sl mPRG 				// from
+				&sl mSSPRG				// Special
 				&sl mSYM		
 
 				// ----------------------------------------
@@ -977,14 +1129,89 @@
 
 
 
+
+		// -----------------------------------------------------|
+		// 		Super Special Program
+		// -----------------------------------------------------|
+
+		mac_mSSPRG
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp LG(F1)
+				&kp LG(F2)
+				&kp LG(LA(LC(LS(LEFT))))
+				&kp LG(LA(LC(UP)))
+				&kp LG(LA(LC(LS(RIGHT))))
+				&kp LG(F3)
+
+				&kp LG(LS(A))
+				&kp LG(LS(B))
+				&kp LG(LS(C))
+				&kp LG(LS(D))
+				&kp LG(LS(E))
+				&kp LG(LS(F))
+
+				// ----------------------------------------
+		
+				&kp LG(F4)
+				&kp LG(F5)
+				&kp LG(LA(LC(LEFT)))
+				&kp LG(LA(LC(DOWN)))
+				&kp LG(LA(LC(RIGHT)))
+				&kp LG(F6)
+
+				&kp LG(LS(G))
+				&kp LG(LS(I))
+				&kp LG(LS(J))
+				&kp LG(LS(K))
+				&kp LG(LS(L))
+				&kp LG(LS(M))
+
+				// ----------------------------------------
+
+				&kp LG(F7)
+				&kp LG(F8)
+				&kp LG(F9)
+				&kp LG(F10)
+				&kp LG(F11)
+				&kp LG(F12)
+
+				&kp LG(LS(N))
+				&kp LG(LS(O))
+				&kp LG(LS(P))
+				&kp LG(LS(Q))
+				&kp LG(LS(R))
+				&kp LG(LS(S))
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&kp LG(LA(LC(SPACE)))
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+
+				
+			>;
+		};
+
+
 				
 
 
 		// -----------------------------------------------------|
-		// Layer 8 - mFUNC =	Funktionen						|
+		// Funktionen											|
 		// -----------------------------------------------------|
 
-		mac_function
+		mac_func
 		{
 			label = "mac";
 
@@ -1008,7 +1235,7 @@
 				
 				// ----------------------------------------
 
-				&sl mWindowMove
+				&kp LC(LA(V))	
 				&kp LG(A)
 				&kp LC(LA(A))	
 				&kp LC(LA(B))	
@@ -1040,11 +1267,11 @@
 				
 				// ----------------------------------------
 
-				&sl mSYM					// nichts
-				&sl mGUI					// gui
-				&sl mSFUNC					// deep
-				&sl mPRG
-				&sl mNAV
+				&none						// ToDo
+				&sl mSSFunc
+				&sl mSFUNC					
+				&none						// ToDo
+				&sl mNative
 				&sl mSYM
 
 				// ----------------------------------------
@@ -1054,10 +1281,10 @@
 
 
 		// -----------------------------------------------------|
-		// Layer 9 - mSFUNC =	Spezial Funktionen				|
+		// sezial Funktionen				|
 		// -----------------------------------------------------|
 
-		mac_specialfunction
+		mac_sfunc
 		{
 			label = "mac";
 
@@ -1081,7 +1308,7 @@
 				
 				// ----------------------------------------
 
-				&sl mProgramJump
+				&kp LC(LS(LA(V)))	
 				&kp LG(LS(A))
 				&kp LC(LS(LA(A)))	
 				&kp LC(LS(LA(B)))
@@ -1114,11 +1341,11 @@
 				
 				// ----------------------------------------
 
-				&mModCtlReset			
-				&mModSGuiReset
+				&none						// ToDo
+				&sl mSSFunc
 				&sl mFUNC
-				&sl mPRG
-				&sl mWindowMove
+				&none						// ToDo
+				&sl mNative
 				&sl mSYM
 
 				// ----------------------------------------       
@@ -1128,377 +1355,14 @@
 
 
 
-		
-		// -----------------------------------------------------|
-		// Layer 10 - mGUI =	GUI								|
-		// -----------------------------------------------------|
-
-		mac_gui
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&kp LG(ESC)
-				&kp LG(J)					//
-				&kp LG(D)					//
-				&kp LG(U)					//
-				&kp LG(A)					//
-				&kp LG(X)					//
-
-				&kp LG(P)					//
-				&kp LG(H)					//
-				&kp LG(L) 					//
-				&kp LG(M)					//
-				&kp LG(W) 					//
-				&kp LG(BSPC)
-
-				// ----------------------------------------
-		
-				&kp LCTL
-				&kp LG(C)					//
-				&kp LG(T)					//
-				&kp LG(I)					//
-				&kp LG(E)					//
-				&kp LG(O)					//
-
-				&kp LG(B)					//
-				&kp LG(N)					//
-				&kp LG(R)					//
-				&kp LG(S)					//
-				&kp LG(G)					//
-				&kp LCTL
-
-				// ----------------------------------------
-
-				&kp LSHIFT
-				&kp LG(F)					//
-				&kp LG(V)					//
-				&kp LG(MINUS)				//
-				&kp LG(Y)					//
-				&kp LG(Q)					//
-
-				&kp LG(Z)					//
-				&kp LG(SEMICOLON)			//
-				&kp LG(LEFT_BRACKET)		//
-				&kp LG(SINGLE_QUOTE)		//
-				&kp LG(K) 					//
-				&kp LSHIFT
-
-				// ----------------------------------------
-		
-				&sl mSYM
-				&kp LG(SPC)
-				&sl mFUNC
-				&sl mPRG
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-			>;
-		};
 
 
 
 		// -----------------------------------------------------|
-		// Layer 11 - ogui =	Option gui						|
+		// 				Super Special Function					|
 		// -----------------------------------------------------|
 
-		mac_ogui
-		{
-			label = "mac";
-
-			bindings = <
-
-				&kp LG(LA(ESC))					//
-				&kp LG(LA(J))					//
-				&kp LG(LA(D))					//
-				&kp LG(LA(U))					//
-				&kp LG(LA(A))					//
-				&kp LG(LA(X))					//
-
-				&kp LG(LA(P))					//
-				&kp LG(LA(H))					//
-				&kp LG(LA(L))					//
-				&kp LG(LA(M))					//
-				&kp LG(LA(W))					//
-				&kp LG(LA(BACKSPACE))			//
-
-				// ----------------------------------------
-		
-				&kp LCTRL
-				&kp LG(LA(C))					//
-				&kp LG(LA(T))					//
-				&kp LG(LA(I))					//
-				&kp LG(LA(E))					//
-				&kp LG(LA(O))					//
-
-				&kp LG(LA(B))					//
-				&kp LG(LA(N))					//
-				&kp LG(LA(R))					//
-				&kp LG(LA(S))					//
-				&kp LG(LA(G))					//
-				&kp LCTRL
-
-				// ----------------------------------------
-
-				&kp LSHIFT
-				&kp LG(LA(F))					//
-				&kp LG(LA(V))					//
-				&kp LG(LA(MINUS))				//
-				&kp LG(LA(Y))					//
-				&kp LG(LA(Q))					//
-
-				&kp LG(LA(Z))					//
-				&kp LG(LA(SEMICOLON))			//
-				&kp LG(LA(LEFT_BRACKET))		//
-				&kp LG(LA(SINGLE_QUOTE))		//
-				&kp LG(LA(K)) 					//
-				&kp LSHIFT
-
-				// ----------------------------------------
-		
-				&sl mSYM
-				&kp LG(LA(SPC))
-				&sl mFUNC
-				&sl mPRG						//
-				&sl mNAV
-				&sl mSYM
-			>;
-		};
-		
-
-
-
-
-
-		// -----------------------------------------------------|
-		// Layer 12 - mSYM =	Symoble							|
-		// -----------------------------------------------------|
-
-		mac_symbole
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-				
-				&kp LC(LS(F8))			// prg wechsel
-				&kp GRAVE				// ^
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(RBKT)			// *			
-				&kp LS(N7)				// /
-				&kp LS(NUHS)			// '
-				
-				&kp LS(N2)				// "
-				&kp LS(DOT)				// :
-				&kp LS(COMMA)			// ;
-				&kp LS(N6)				// &
-				&mGleich
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
-
-				// ----------------------------------------
-
-				&to mNRhard
-				&kp LA(L)				// @
-				&kp LA(N5)				// Eckige
-				&kp LA(N6)				// Eckige
-				&kp NUHS				// #
-				&kp LA(N8)				// Geschweift
-
-				&kp LA(N9)				// Geschweift
-				&kp LS(N1)				// !
-				&kp LS(N8)				// Runde
-				&kp LS(N9)				// Runde
-				&kp LS(MINUS)			// ?
-				&to mNRhard
-
-				// ----------------------------------------
-
-				&to mLCHAR
-				&kp LA(E)				// €
-				&kp LS(N5)				// %
-				&kp SLASH 				// -
-				&kp RBKT  				// +
-				&kp NUBS				// Spitze
-
-				&kp LS(NUBS)			// Spitze
-				&kp DOT					// .
-				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp LS(N0)				// =
-				&to mLCHAR
-		
-				// ----------------------------------------
-
-				&sl mSSYM				// deep
-				&kp SPACE
-				&sl mFUNC				
-				&sl mPRG						
-				&sl mNAV
-				&sl mSSYM				
-
-				// ----------------------------------------
-			>;
-		};
-
-
-		// -----------------------------------------------------|
-		// Layer 13 - mSSYM =	Special Symbole					|
-		// -----------------------------------------------------|
-
-		mac_specialsonderzeichen
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-				
-				&kp LC(LS(F9))			// prg wechsel
-				&kp LS(GRAVE)
-				&kp C_VOL_DN
-				&kp C_MUTE
-				&kp C_VOL_UP
-				&kp LA(N7)				// grader strich
-
-				&kp LA(N)				// ~
-				&kp LS(N3) 				// $
-				&kp LS(N4) 				// $
-				&kp RA(M)				// my
-				&kp GRAVE
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
-
-				// ----------------------------------------
-
-				&to mNRhard
-				&none
-				&kp C_PREV
-				&kp C_PLAY
-				&kp C_NEXT
-				&none
-
-				&mPw0
-				&mPw1
-				&mPw2
-				&mPw3
-				&mPw4
-				&to mNRhard
-
-				// ----------------------------------------
-
-				&to mLCHAR
-				&bt BT_SEL 0
-				&bt BT_SEL 1
-				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&bt BT_CLR
-
-				&sys_reset
-				&mEm1
-				&mEm2
-				&mEm3
-				&mEm4
-				&to mLCHAR
-
-				// ----------------------------------------
-
-				&sl mSYM					
-				&kp SPACE
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-			>;
-		};	
-
-
-
-
-		// -----------------------------------------------------|
-		// Layer 14 - Window Move								|
-		// -----------------------------------------------------|
-
-		mac_mWindowMove
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&none
-				&none
-				&none
-				&kp LC(LA(LG(P)))
-				&kp LC(LA(LG(C)))
-				&none
-
-				&kp LG(LA(F1))
-				&kp LG(LA(LC(LS(LEFT))))
-				&kp LG(LA(LC(UP)))
-				&kp LG(LA(LC(LS(RIGHT))))
-				&kp LG(LA(F2))
-				&kp LG(LA(F3))
-
-				// ----------------------------------------
-		
-				&none
-				&none
-				&kp LC(LA(F12))
-				&kp LSHFT
-				&kp LCTRL
-				&kp LG(BACKSPACE)
-
-				&kp LG(LS(F4))
-				&kp LG(LA(LC(LEFT)))
-				&kp LG(LA(LC(DOWN)))
-				&kp LG(LA(LC(RIGHT)))
-				&kp LG(LS(F5))
-				&kp LG(LS(F6))
-
-				// ----------------------------------------
-
-				&none
-				&none
-				&none
-				&kp LC(P)
-				&kp LG(LS(S))
-				&none
-
-				&kp LG(LS(F7))
-				&kp LG(LS(F8))
-				&kp LG(LS(F9))
-				&kp LG(LS(F10))
-				&kp LG(LS(F11))
-				&kp LG(LS(F12))
-
-				// ----------------------------------------
-		
-				&sl mSYM					
-				&kp LG(LA(LC(SPACE)))
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-
-				
-			>;
-		};
-
-
-		// -----------------------------------------------------|
-		// Layer 15 - PRG JUMP									|
-		// -----------------------------------------------------|
-
-		mac_mProgramJump
+		mac_ssfunction
 		{
 			label = "mac";
 
@@ -1506,59 +1370,132 @@
 
 			// ----------------------------------------
 
-				&mReset
 				&none
 				&none
-				&kp LG(LA(F7))
-				&kp LG(LA(F8))
-				&kp LG(LA(F9))
+				&none
+				&none
+				&none
+				&none
 
-				&kp LG(LA(F1))
-				&kp LG(LA(F2))
-				&kp LG(LA(F3))
-				&kp LG(LA(F4))
-				&kp LG(LA(F5))
-				&kp LG(LA(F6))
+				&kp LC(LG(LA(A)))
+				&kp LC(LG(LA(B)))
+				&kp LC(LG(LA(C)))
+				&kp LC(LG(LA(D)))
+				&kp LC(LG(LA(E)))
+				&kp LC(LG(LA(F)))
 
 				// ----------------------------------------
 		
 				&none
 				&none
-				&kp LG(LA(LC(O)))
-				&kp LG(LA(LC(K)))
-				&kp LG(LA(LC(U)))
-				&kp LC(R)
+				&none
+				&none
+				&none
+				&none
 
-				&kp LC(LA(LG(F1)))
-				&kp LC(LA(LG(F2)))
-				&kp LC(LA(LG(F3)))	
-				&kp LC(LA(LG(F4)))
-				&kp LC(LA(LG(F5)))
-				&kp LC(LA(LG(F6)))
+				&kp LC(LG(LA(G)))
+				&kp LC(LG(LA(I)))
+				&kp LC(LG(LA(J)))
+				&kp LC(LG(LA(K)))
+				&kp LC(LG(LA(L)))
+				&kp LC(LG(LA(M)))
 
 				// ----------------------------------------
 
 				&none
 				&none
-				&kp LG(LA(F10))
-				&kp LG(LA(F11))
-				&kp LG(LA(F12))
+				&none
+				&none
+				&none
 				&none
 
-				&kp LC(LA(LG(F7)))
-				&kp LC(LA(LG(F8)))	
-				&kp LC(LA(LG(F9)))
-				&kp LC(LA(LG(F10)))
-				&kp LC(LA(LG(F11)))
-				&kp LC(LA(LG(F12)))
+				&kp LC(LG(LA(N)))
+				&kp LC(LG(LA(O)))
+				&kp LC(LG(LA(P)))
+				&kp LC(LG(LA(Q)))
+				&kp LC(LG(LA(R)))
+				&kp LC(LG(LA(S)))
 
 				// ----------------------------------------
 		
 				&sl mSYM					
-				&kp LG(LA(LC(SPACE)))
+				&sl mSSFunc
 				&sl mFUNC				
 				&sl mPRG				
 				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+				
+			>;
+		};
+
+
+		// -----------------------------------------------------|
+		// Super Special Function							|
+		// -----------------------------------------------------|
+
+		mac_native
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				// ----------------------------------------
+		
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				// ----------------------------------------
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&sl mSSFunc
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNative
 				&sl mSYM
 
 				// ----------------------------------------
