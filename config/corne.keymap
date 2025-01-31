@@ -719,19 +719,19 @@
 
 				// ----------------------------------------
 
-				&kp LC(LS(F8))				// prg wechsel
+				&kp DELETE
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
 				&kp RIGHT 					// @Right
 				&kp ENTER					// -
 				
-				&kp LG(LC(V))				// 
+				&kp LC(LS(F8))				// prg wechsel
 				&kp LG(LC(A))	
 				&kp LG(LC(U))	
 				&kp LG(LC(B))	
 				&kp LG(LC(X))				// 
-				&kp DELETE
+				&kp LG(LC(V))				// 
 				
 				// ----------------------------------------
 
@@ -792,19 +792,19 @@
 
 				// ----------------------------------------
 		
-				&kp LC(LS(F9))					// Prg Wechsel
+				&kp LG(DELETE)				// umbennen
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
 				&kp ENTER					
 
-				&kp LG(LC(LS(V)))				// 
+				&kp LC(LS(F9))					// Prg Wechsel	
 				&kp LG(LC(LS(A)))				// 
 				&kp LG(LC(LS(U)))				// 
 				&kp LG(LC(LS(B)))				// 
 				&kp LG(LC(LS(X)))				// 
-				&kp LG(DELETE)				// umbennen
+				&kp LG(LC(LS(V)))				// 
 
 				// ----------------------------------------
 
