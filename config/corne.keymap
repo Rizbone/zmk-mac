@@ -186,6 +186,19 @@
 
 		// Special Layer Reset
 
+		mModGuiReset: mModGuiReset
+		{
+            label = "mModGuiReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to mCHAR>
+                , <&macro_press &sk LGUI>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sk LGUI>
+                ;
+    	};
+
 		mModSGuiReset: mModSGuiReset
 		{
             label = "mModSGuiReset";
@@ -212,16 +225,16 @@
                 ;
     	};
 
-		mModGuiReset: mModGuiReset 
+		mModSCtlReset: mModSCtlReset
 		{
             label = "mModGuiReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&to mCHAR>
-                , <&macro_press &sk LGUI>
+                , <&macro_press &sk LS(LCTL)>
     			, <&macro_pause_for_release>
-				, <&macro_release &sk LGUI>
+				, <&macro_release &sk LS(LCTL)>
                 ;
     	};
 
@@ -1039,7 +1052,7 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&mReset
+				&sl mWindow					
 				&sl mFUNC
 				&sl mSPRG					// deep						
 				&sl mSSPRG					// special
@@ -1115,7 +1128,7 @@
 				// ----------------------------------------
 
 				&sl mSYM
-				&mReset
+				&sl mWindow					
 				&sl mFUNC
 				&sl mPRG 				// from
 				&sl mSSPRG				// Special
@@ -1349,10 +1362,10 @@
 				
 				// ----------------------------------------
 
-				&none						// ToDo
+				&mModSGuiReset
 				&sl mSSFunc
 				&sl mSFUNC					
-				&none						// ToDo
+				&mModGuiReset	
 				&sl mNative
 				&sl mSYM
 
@@ -1423,10 +1436,10 @@
 				
 				// ----------------------------------------
 
-				&none						// ToDo
+				&mModSCtlReset	
 				&sl mSSFunc
 				&sl mFUNC
-				&none						// ToDo
+				&mModCtlReset	
 				&sl mNative
 				&sl mSYM
 
