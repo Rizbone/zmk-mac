@@ -1298,6 +1298,305 @@
 		};
 
 
+				
+
+
+		// -----------------------------------------------------|
+		// Funktionen											|
+		// -----------------------------------------------------|
+
+		mac_func
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+	
+				&kp LC(LA(J))	
+				&kp LC(LA(F1))	
+				&kp LC(LA(F2))	
+				&kp LC(LA(F3))	
+				&kp LC(LA(F4))	
+				&kp LC(LA(F5))	
+
+				&kp LC(LA(F6))	
+				&kp LC(LA(F7))	
+				&kp LC(LA(F8))	
+				&kp LC(LA(F9))	
+				&kp LC(LA(F10))	
+				&kp LC(LA(X))	
+				
+				// ----------------------------------------
+
+				&kp LC(LA(V))	
+				&kp LG(A)
+				&kp LC(LA(A))	
+				&kp LC(LA(B))	
+				&kp LG(C)			
+				&kp LG(X)
+
+				&kp LC(LA(O))	
+				&kp LG(V)
+				&kp LC(LA(T))	
+				&kp LC(LA(U))	
+				&kp LC(LA(V))	
+				&kp LC(LA(W))	
+
+				// ----------------------------------------
+
+				&kp LC(LA(I))	
+				&kp LC(LA(S))
+				&kp LC(LA(C))	
+				&kp LC(LA(D))	
+				&kp LC(LA(R))	
+				&kp LC(LA(G))
+
+				&kp LC(LA(H))
+				&kp LC(LA(F))	
+				&kp LC(LA(M))	
+				&kp LC(LA(N))	
+				&kp LC(LA(E))
+				&kp LC(LA(Y))	
+				
+				// ----------------------------------------
+
+				&mModSGuiReset
+				&sl mSSFunc
+				&sl mSFUNC					
+				&mModGuiReset	
+				&sl mNative
+				&sl mSYM
+
+				// ----------------------------------------
+			>;
+		};
+
+
+
+		// -----------------------------------------------------|
+		// 						Spezial Funktionen				|
+		// -----------------------------------------------------|
+
+		mac_sfunc
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+	
+				&kp LC(LS(LA(J)))	
+				&kp LC(LA(LS(F1)))	
+				&kp LC(LA(LS(F2)))	
+				&kp LC(LA(LS(F3)))	
+				&kp LC(LA(LS(F4)))	
+				&kp LC(LA(LS(F5)))	
+
+				&kp LC(LA(LS(F6)))	
+				&kp LC(LA(LS(F7)))	
+				&kp LC(LA(LS(F8)))	
+				&kp LC(LA(LS(F9)))
+				&kp LC(LA(LS(F10)))
+				&kp LC(LS(LA(X)))	
+				
+				// ----------------------------------------
+
+				&kp LC(LS(LA(V)))	
+				&kp LG(LS(A))
+				&kp LC(LS(LA(A)))	
+				&kp LC(LS(LA(B)))
+				&kp LG(LS(C))			
+				&kp LG(LS(X))
+
+				&kp LC(LS(LA(O)))
+				&kp LG(LS(V))	
+				&kp LC(LS(LA(T)))	
+				&kp LC(LS(LA(U)))	
+				&kp LC(LS(LA(V)))
+				&kp LC(LS(LA(W)))	
+					
+
+				// ----------------------------------------
+
+				&kp LC(LS(LA(I)))	
+				&kp LC(LS(LA(S)))	
+				&kp LC(LS(LA(C)))
+				&kp LC(LS(LA(D)))
+				&kp LC(LS(LA(R)))	
+				&kp LC(LS(LA(G)))	
+
+				&kp LC(LA(LS(H)))	
+				&kp LC(LS(LA(F)))	
+				&kp LC(LS(LA(M)))
+				&kp LC(LS(LA(N)))
+				&kp LC(LS(LA(E)))
+				&kp LC(LS(LA(Y)))	
+				
+				// ----------------------------------------
+
+				&mModSCtlReset	
+				&sl mSSFunc
+				&sl mFUNC
+				&mModCtlReset	
+				&sl mNative
+				&sl mSYM
+
+				// ----------------------------------------       
+			>;
+		};
+
+
+
+
+
+
+
+		// -----------------------------------------------------|
+		// 				Super Special Function					|
+		// -----------------------------------------------------|
+
+		mac_ssfunction
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&kp ESC
+				&kp LC(F1)
+				&kp LCTL(KP_PLUS)
+				&kp LCTL(KP_MINUS)
+				&kp LC(LS(S))
+				&kp LS(B)
+
+				&kp LC(LG(LA(A)))
+				&kp LC(LG(LA(B)))
+				&kp LC(LG(LA(C)))
+				&kp LC(LG(LA(D)))
+				&kp LC(LG(LA(E)))
+				&kp LC(LG(LA(F)))
+
+				// ----------------------------------------
+		
+				&kp PAGE_UP
+				&kp LC(LA(F10))
+				&kp DEL
+				&kp LSHFT
+				&kp LCTRL
+				&kp LC(P)
+
+				&kp LC(LG(LA(G)))
+				&kp LC(LG(LA(I)))
+				&kp LC(LG(LA(J)))
+				&kp LC(LG(LA(K)))
+				&kp LC(LG(LA(L)))
+				&kp LC(LG(LA(M)))
+
+				// ----------------------------------------
+
+				&kp PAGE_DOWN
+				&kp LC(S)
+				&kp LC(Y)
+				&kp LC(Z)
+				&kp LC(F)
+				&kp LS(DEL)
+
+				&kp LC(LG(LA(N)))
+				&kp LC(LG(LA(O)))
+				&kp LC(LG(LA(P)))
+				&kp LC(LG(LA(Q)))
+				&kp LC(LG(LA(R)))
+				&kp LC(LG(LA(S)))
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&sl mSSFunc
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNative
+				&sl mSYM
+
+				// ----------------------------------------
+				
+			>;
+		};
+
+
+		// -----------------------------------------------------|
+		// Super Special Function							|
+		// -----------------------------------------------------|
+
+		mac_native
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&kp F11
+				&kp F1
+				&kp F2
+				&kp F3
+				&kp F4
+				&kp F5
+
+				&kp F6
+				&kp F7
+				&kp F8
+				&kp F9
+				&kp F10
+				&kp F12
+
+				// ----------------------------------------
+		
+				&kp LGUI
+				&kp LC(N1)
+				&kp LC(N2)
+				&kp LC(N3)
+				&kp LC(N4)
+				&kp LC(N5)
+
+				&kp LC(N6)
+				&kp LC(N7)
+				&kp LC(N8)
+				&kp LC(N9)
+				&kp LC(N0)
+				&kp LGUI
+
+				// ----------------------------------------
+
+				&kp LSHFT
+				&kp LA(N1)
+				&kp LA(N2)
+				&kp LA(N3)
+				&kp LA(N4)
+				&kp LA(N5)
+
+				&kp LA(N6)
+				&kp LA(N7)
+				&kp LA(N8)
+				&kp LA(N9)
+				&kp LA(N0)
+				&kp LSHFT
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&sl mSSFunc
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+				
+			>;
+		};
+
 	};
 };
 
