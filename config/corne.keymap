@@ -1468,8 +1468,8 @@
 				&kp LS(B)
 				&kp LC(KP_PLUS)
 				&kp LC(KP_MINUS)
-				&kp LC(P)
-				&kp LC(LS(S))
+				&kp LC(F)
+				&kp LC(F1)
 
 				&kp LC(LG(LA(A)))
 				&kp LC(LG(LA(B)))
@@ -1500,8 +1500,8 @@
 				&kp LC(S)
 				&kp LC(Y)
 				&kp LC(Z)
-				&kp LC(F)
-				&kp LC(F1)
+				&kp LC(P)
+				&kp LC(LS(S))
 
 				&kp LC(LG(LA(N)))
 				&kp LC(LG(LA(O)))
