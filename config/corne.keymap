@@ -710,10 +710,10 @@
 				&kp LG(Y)
 
 				&kp LG(LS(Y))
-				&kp LG(LC(LA(S)))
-				&kp LG(LC(LA(T)))
-				&kp LG(LC(LA(U)))
-				&kp LG(LC(LA(V)))
+				&kp LC(LS(F10))				// Kontext
+				&kp LC(LA(PAGE_UP))
+				&mAltShot
+				&kp LA(BSPC)
 				&kp BSPC					
 
 
@@ -727,11 +727,11 @@
 				&kp ENTER					// -
 				
 				&kp LC(LS(F8))				// prg wechsel
-				&kp LG(LC(LA(W)))
-				&kp LG(LC(LA(X)))
-				&kp LG(LC(LA(Y)))
-				&kp LG(LC(LA(Z)))
-				&mAltShot
+				&kp LCTRL
+				&kp LC(LA(PAGE_DOWN))
+				&kp LG(LC(A))
+				&kp LSHFT
+				&kp LGUI
 				
 				// ----------------------------------------
 
@@ -742,12 +742,12 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(G))				// go
 
-				&kp LC(LS(F10))				// 
+				&kp LG(LC(LS(H)))			// zurueck deep
 				&kp LG(LS(LEFT))			// @Home 
 				&kp LA(LS(LEFT))			// @Wort Sprung
 				&kp LA(LS(RIGHT))			// @Wort Sprung
 				&kp LG(LS(RIGHT))			// @End  
-				&kp LSHFT
+				&kp LG(LC(LS(G)))			// go deep
 
 				// ----------------------------------------
 
@@ -755,7 +755,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&sl mSNAV
+				&sl mNAV
 				&sl mSYM
 
 				// ----------------------------------------							
@@ -1464,12 +1464,12 @@
 
 			// ----------------------------------------
 
-				&kp ESC
-				&kp LC(F1)
+				&kp INSERT
 				&kp LS(B)
-				&kp LC(LS(S))
+				&kp LC(KP_PLUS)
+				&kp LC(KP_MINUS)
 				&kp LC(P)
-				&kp LC(LS(ESC))
+				&kp LC(LS(S))
 
 				&kp LC(LG(LA(A)))
 				&kp LC(LG(LA(B)))
@@ -1501,7 +1501,7 @@
 				&kp LC(Y)
 				&kp LC(Z)
 				&kp LC(F)
-				&kp LS(DEL)
+				&kp LC(F1)
 
 				&kp LC(LG(LA(N)))
 				&kp LC(LG(LA(O)))
