@@ -727,10 +727,10 @@
 				&kp ENTER					// -
 				
 				&kp LC(LS(F8))				// prg wechsel
-				&kp LCTRL
+				&kp LSHFT
 				&kp LC(LA(PAGE_DOWN))
 				&kp LG(LC(A))
-				&kp LSHFT
+				&kp LCTRL
 				&kp LGUI
 				
 				// ----------------------------------------
@@ -1011,8 +1011,8 @@
 	
 				&kp LG(LA(F1))			// 26
 				&kp LG(LA(F2))			// 26
-				&kp LC(LS(TAB))
-				&kp LC(TAB)
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
 				&kp LG(LA(F5))			// 26
 				&kp LG(LA(F6))			// 26
 
@@ -1553,7 +1553,7 @@
 
 				// ----------------------------------------
 		
-				&kp LGUI
+				&kp LC(LS(TAB))
 				&kp LC(N1)
 				&kp LC(N2)
 				&kp LC(N3)
@@ -1565,7 +1565,7 @@
 				&kp LC(N8)
 				&kp LC(N9)
 				&kp LC(N0)
-				&kp LGUI
+				&kp LC(TAB)
 
 				// ----------------------------------------
 
