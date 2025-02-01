@@ -709,11 +709,11 @@
 				&kp TAB
 				&kp LG(Y)
 
-				&kp LG(LS(Y))
+				&kp LA(BSPC)
 				&kp LC(LS(F10))				// Kontext
 				&kp LC(LA(PAGE_UP))
 				&mAltShot
-				&kp LA(BSPC)
+				&kp LG(LS(Y))
 				&kp BSPC					
 
 
