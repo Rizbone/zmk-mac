@@ -512,9 +512,9 @@
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
 				&kp LS(N2)				// "
-				&kp LS(N0)				// =
-
 				&kp LS(SLASH)			// _
+
+				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(DOT)				// :
@@ -584,9 +584,9 @@
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
 				&kp LS(N2)				// "
-				&kp LS(N0)				// =
-
 				&kp LS(SLASH)			// _
+
+				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(DOT)				// :
@@ -705,7 +705,7 @@
 				&kp LG(LC(LS(H)))			// zurueck deep
 				&kp LC(LS(F10))				// Kontext
 				&kp LC(LA(PAGE_UP))
-				&kp LC(LA(LG(ENT)))		// Altshot bzw Shortcat
+				&kp LC(LA(LG(ENT)))			// Altshot bzw Shortcat
 				&kp LG(LC(LS(G)))			// go deep
 				&kp BSPC					
 
@@ -1493,9 +1493,9 @@
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
 				&kp LS(N2)				// "
-				&kp LS(N0)				// =
-
 				&kp LS(SLASH)			// _
+
+				&kp LS(N0)				// =
 				&kp DOT					// .
 				&kp COMMA				// ,
 				&kp LS(DOT)				// :
