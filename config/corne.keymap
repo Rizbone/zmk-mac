@@ -33,6 +33,9 @@
 
 
 
+
+
+
 / {
 
     behaviors 
@@ -834,7 +837,6 @@
 		};
 
 
-
 		
 
 
@@ -1449,7 +1451,7 @@
 
 
 
-		
+
 		// -----------------------------------------------------|
 		// 						Symoble							|
 		// -----------------------------------------------------|
@@ -1464,16 +1466,16 @@
 				
 				&kp ESC
 				&kp GRAVE				// ^
-				&kp NUBS				// Spitze
-				&kp LS(NUBS)			// Spitze
-				&kp LS(SLASH)			// _		
-				&kp GRAVE				// ^ HOCH
-
-				&kp LS(N6)				// &
+				&kp LS(LA(N7))			// backlslash
+				&kp LS(RBKT)			// *			
+				&kp LS(N7)				// /
 				&kp LS(NUHS)			// '
+				
 				&kp LS(N2)				// "
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
+				&kp LS(N6)				// &
+				&kp GRAVE				// ^
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -1499,12 +1501,12 @@
 				&kp LS(N5)				// %
 				&kp RBKT  				// +
 				&kp SLASH 				// -
-				&kp COMMA				// ,
-				
+				&kp NUBS				// Spitze
+
+				&kp LS(NUBS)			// Spitze
 				&kp DOT					// .
-				&kp LS(N7)				// /
-				&kp LS(RBKT)			// *
-				&kp LS(LA(N7))			// backlslash
+				&kp COMMA				// ,
+				&kp LS(SLASH)			// _
 				&kp LS(N0)				// =
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 		
@@ -1593,6 +1595,9 @@
 			>;
 		};	
 
+
+		
+		
 
 	};
 };
