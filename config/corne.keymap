@@ -1499,13 +1499,13 @@
 				&kp LS(N5)				// %
 				&kp RBKT  				// +
 				&kp SLASH 				// -
-				&kp LS(N0)				// =
+				&kp COMMA				// ,
 				
-				&kp LS(LA(N7))			// backlslash
+				&kp DOT					// .
 				&kp LS(N7)				// /
 				&kp LS(RBKT)			// *
-				&kp COMMA				// ,
-				&kp DOT					// .
+				&kp LS(LA(N7))			// backlslash
+				&kp LS(N0)				// =
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 		
 				// ----------------------------------------
