@@ -382,6 +382,7 @@
             #binding-cells = <0>;
             bindings
 				= < &macro_tap &kp LS(LG(N6))> 
+				, < &to mNRhard>
                 ; 
     	};
 
