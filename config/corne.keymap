@@ -714,7 +714,7 @@
 				&kp LG(LC(LS(H)))			// zurueck deep
 				&kp LC(LS(F10))				// Kontext
 				&kp LC(LA(PAGE_UP))
-				&mAltShot
+				&kp LC(LA(LG(Enter)))		// Altshot bzw Shortcat
 				&kp LG(LC(LS(G)))			// go deep
 				&kp BSPC					
 
