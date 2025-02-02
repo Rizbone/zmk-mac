@@ -1504,8 +1504,8 @@
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N7)				// /
 				&kp LS(RBKT)			// *
-				&kp DOT					// .
 				&kp COMMA				// ,
+				&kp DOT					// .
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 		
 				// ----------------------------------------
