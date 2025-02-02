@@ -1468,11 +1468,11 @@
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(NUHS)			// '
 				&kp LS(N2)				// "
-				&kp GRAVE				// ^ Hoch
+				&kp LA(L)				// @
 				&kp LA(E)				// €
 				
 				&kp LS(N5)				// %
-				&kp LS(N6)				// &
+				&kp GRAVE				// ^ Hoch
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
 				&kp GRAVE				// ^ 
@@ -1481,7 +1481,7 @@
 				// ----------------------------------------
 
 				&kp LC(LS(F8))			// prg wechsel
-				&kp LA(L)				// @
+				&kp LS(N6)				// &
 				&kp LA(N5)				// Eckige
 				&kp LA(N6)				// Eckige
 				&kp NUHS				// #
