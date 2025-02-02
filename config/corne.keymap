@@ -484,17 +484,17 @@
 				// ----------------------------------------
 
 				&kp ESC
-				&kp GRAVE				// ^
 				&kp LS(LA(N7))			// backlslash
-				&kp LS(RBKT)			// *			
-				&kp LS(N7)				// /
+				&kp LS(NUHS)			// '
+				&kp LS(N2)				// "
+				&kp LA(L)				// @
 				&kp X
 				
-				&kp LS(N2)				// "
-				&kp LS(DOT)				// :
-				&kp LS(COMMA)			// ;
-				&kp M
-				&mGleich
+				&kp LS(N5)				// %
+				&kp GRAVE				// ^2
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze 
+				&kp GRAVE				// ^ 
 				&kp BACKSPACE
 
 				// ----------------------------------------
@@ -516,17 +516,17 @@
 				// ----------------------------------------
 
 				&mMdShift
-				&kp LA(E)				// €
-				&kp LS(N5)				// %
+				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp SLASH 				// -
-				&kp NUBS				// Spitze
+				&kp LS(N0)				// =
 
-				&kp LS(NUBS)			// Spitze
+				&kp LS(SLASH)			// _
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp LS(N0)				// =
+				&kp LS(DOT)				// :
+				&kp LS(COMMA)			// ;
 				&mMdShift
 
 				// ----------------------------------------
@@ -556,17 +556,17 @@
 				// ----------------------------------------
 
 				&kp ESC
-				&kp GRAVE				// ^
 				&kp LS(LA(N7))			// backlslash
-				&kp LS(RBKT)			// *			
-				&kp LS(N7)				// /
+				&kp LS(NUHS)			// '
+				&kp LS(N2)				// "
+				&kp LA(L)				// @
 				&kp X
 				
-				&kp LS(N2)				// "
-				&kp LS(DOT)				// :
-				&kp LS(COMMA)			// ;
-				&kp M
-				&mGleich
+				&kp LS(N5)				// %
+				&kp GRAVE				// ^2
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze 
+				&kp GRAVE				// ^ 
 				&kp BSPC
 
 				// ----------------------------------------
@@ -588,17 +588,17 @@
 				// ----------------------------------------
 
 				&mMdShift
-				&kp LA(E)				// €
-				&kp LS(N5)				// %
+				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp SLASH 				// -
-				&kp NUBS				// Spitze
+				&kp LS(N0)				// =
 
-				&kp LS(NUBS)			// Spitze
+				&kp LS(SLASH)			// _
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp LS(N0)				// =
+				&kp LS(DOT)				// :
+				&kp LS(COMMA)			// ;
 				&mMdShift
 
 				// ----------------------------------------
@@ -1472,7 +1472,7 @@
 				&kp LA(E)				// €
 				
 				&kp LS(N5)				// %
-				&kp GRAVE				// ^ Hoch
+				&kp GRAVE				// ^2
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
 				&kp GRAVE				// ^ 
@@ -1536,18 +1536,18 @@
 
 				// ----------------------------------------
 				
-				&kp LC(LS(F9))			// prg wechsel
-				&kp LS(GRAVE)
+				&kp ESC
+				&kp LA(N7)				// grader strich
 				&kp EQUAL
 				&kp LS(EQUAL)
-				&kp LA(N7)				// grader strich
-				&kp LS(N4) 				// $
-
-				&kp LS(N3) 				// $
-				&kp LA(N)				// ~
 				&none
+				&kp LS(N3) 				// Dollar
+
+				&kp LS(N4) 				// Para
+				&kp GRAVE				// hoch3
+				&kp LA(N)				// ~
 				&kp RA(M)				// my
-				&kp GRAVE
+				&kp LS(GRAVE)
 				&kp BACKSPACE
 
 				// ----------------------------------------
