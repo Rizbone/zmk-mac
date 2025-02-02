@@ -17,20 +17,18 @@
 #define mNAV 4
 #define mSNAV 5
 
-#define mSYM 6
-#define mSSYM 7
+#define mPRG 6
+#define mSPRG 7
+#define mSSPRG 8
+#define mWindow 9
 
-#define mPRG 8
-#define mSPRG 9
-#define mSSPRG 10
-#define mWindow 11
+#define mFUNC 10
+#define mSFUNC 11
+#define mSSFunc 12
+#define mNative 13
 
-#define mFUNC 12
-#define mSFUNC 13
-#define mSSFunc 14
-#define mNative 15
-
-
+#define mSYM 14
+#define mSSYM 15
 
 
 
@@ -837,154 +835,6 @@
 
 
 
-
-		
-		// -----------------------------------------------------|
-		// 						Symoble							|
-		// -----------------------------------------------------|
-
-		mac_symbole
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-				
-				&kp ESC
-				&kp GRAVE				// ^
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(RBKT)			// *			
-				&kp LS(N7)				// /
-				&kp LS(NUHS)			// '
-				
-				&kp LS(N2)				// "
-				&kp LS(DOT)				// :
-				&kp LS(COMMA)			// ;
-				&kp LS(N6)				// &
-				&kp GRAVE				// ^
-				&kp BACKSPACE
-
-				// ----------------------------------------
-
-				&kp LC(LS(F8))			// prg wechsel
-				&kp LA(L)				// @
-				&kp LA(N5)				// Eckige
-				&kp LA(N6)				// Eckige
-				&kp NUHS				// #
-				&kp LA(N8)				// Geschweift
-
-				&kp LA(N9)				// Geschweift
-				&kp LS(N1)				// !
-				&kp LS(N8)				// Runde
-				&kp LS(N9)				// Runde
-				&kp LS(MINUS)			// ?
-				&mGleich
-
-				// ----------------------------------------
-
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
-				&kp LA(E)				// €
-				&kp LS(N5)				// %
-				&kp RBKT  				// +
-				&kp SLASH 				// -
-				&kp NUBS				// Spitze
-
-				&kp LS(NUBS)			// Spitze
-				&kp DOT					// .
-				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp LS(N0)				// =
-				&kp LG(LC(SPACE))   	// @Sonderzeichen
-		
-				// ----------------------------------------
-
-				&sl mSSYM				// deep
-				&mReset
-				&sl mFUNC				
-				&sl mPRG						
-				&to mNRhard
-				&sl mSSYM				
-
-				// ----------------------------------------
-			>;
-		};
-
-
-		// -----------------------------------------------------|
-		// 						Special Symbole					|
-		// -----------------------------------------------------|
-
-		mac_specialsonderzeichen
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-				
-				&kp LC(LS(F9))			// prg wechsel
-				&kp LS(GRAVE)
-				&kp EQUAL
-				&kp LS(EQUAL)
-				&kp LA(N7)				// grader strich
-				&kp LS(N4) 				// $
-
-				&kp LS(N3) 				// $
-				&kp LA(N)				// ~
-				&none
-				&kp RA(M)				// my
-				&kp GRAVE
-				&kp BACKSPACE
-
-				// ----------------------------------------
-
-				&kp LC(LS(F9))			// prg wechsel
-				&mEm4
-				&mEm3
-				&mEm2
-				&mEm1
-				&none
-
-				&mPw0
-				&mPw1
-				&mPw2
-				&mPw3
-				&mPw4
-				&mGleich
-
-				// ----------------------------------------
-
-				&none
-				&kp C_PREV
-				&kp C_VOL_DN  
-				&kp C_VOL_UP
-				&kp C_NEXT
-				&kp C_MUTE		
-
-				&none
-				&kp C_BRI_INC
-				&kp LC(LS(F1))
-				&kp LC(LS(F2))			
-				&kp C_BRI_DEC
-				&sys_reset
-
-				// ----------------------------------------
-
-				&sl mSYM					
-				&mReset
-				&sl mFUNC				
-				&sl mPRG				
-				&to mNRhard
-				&sl mSYM
-
-				// ----------------------------------------
-			>;
-		};	
-
-
-		
-		
 		
 
 
@@ -1466,8 +1316,8 @@
 
 				&kp INSERT
 				&kp LS(B)
-				&kp LC(KP_PLUS)
 				&kp LC(KP_MINUS)
+				&kp LC(KP_PLUS)
 				&kp LC(F)
 				&kp LC(F1)
 
@@ -1596,6 +1446,153 @@
 				
 			>;
 		};
+
+
+
+		
+		// -----------------------------------------------------|
+		// 						Symoble							|
+		// -----------------------------------------------------|
+
+		mac_symbole
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+				
+				&kp ESC
+				&kp GRAVE				// ^
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
+				&kp LS(SLASH)			// _		
+				&kp GRAVE				// ^ HOCH
+
+				&kp LS(N6)				// &
+				&kp LS(NUHS)			// '
+				&kp LS(N2)				// "
+				&kp LS(DOT)				// :
+				&kp LS(COMMA)			// ;
+				&kp BACKSPACE
+
+				// ----------------------------------------
+
+				&kp LC(LS(F8))			// prg wechsel
+				&kp LA(L)				// @
+				&kp LA(N5)				// Eckige
+				&kp LA(N6)				// Eckige
+				&kp NUHS				// #
+				&kp LA(N8)				// Geschweift
+
+				&kp LA(N9)				// Geschweift
+				&kp LS(N1)				// !
+				&kp LS(N8)				// Runde
+				&kp LS(N9)				// Runde
+				&kp LS(MINUS)			// ?
+				&mGleich
+
+				// ----------------------------------------
+
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
+				&kp LA(E)				// €
+				&kp LS(N5)				// %
+				&kp RBKT  				// +
+				&kp SLASH 				// -
+				&kp LS(N0)				// =
+				
+				&kp LS(LA(N7))			// backlslash
+				&kp LS(N7)				// /
+				&kp LS(RBKT)			// *
+				&kp DOT					// .
+				&kp COMMA				// ,
+				&kp LG(LC(SPACE))   	// @Sonderzeichen
+		
+				// ----------------------------------------
+
+				&sl mSSYM				// deep
+				&mReset
+				&sl mFUNC				
+				&sl mPRG						
+				&to mNRhard
+				&sl mSSYM				
+
+				// ----------------------------------------
+			>;
+		};
+
+
+		// -----------------------------------------------------|
+		// 						Special Symbole					|
+		// -----------------------------------------------------|
+
+		mac_specialsonderzeichen
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+				
+				&kp LC(LS(F9))			// prg wechsel
+				&kp LS(GRAVE)
+				&kp EQUAL
+				&kp LS(EQUAL)
+				&kp LA(N7)				// grader strich
+				&kp LS(N4) 				// $
+
+				&kp LS(N3) 				// $
+				&kp LA(N)				// ~
+				&none
+				&kp RA(M)				// my
+				&kp GRAVE
+				&kp BACKSPACE
+
+				// ----------------------------------------
+
+				&kp LC(LS(F9))			// prg wechsel
+				&mEm4
+				&mEm3
+				&mEm2
+				&mEm1
+				&none
+
+				&mPw0
+				&mPw1
+				&mPw2
+				&mPw3
+				&mPw4
+				&mGleich
+
+				// ----------------------------------------
+
+				&none
+				&kp C_PREV
+				&kp C_VOL_DN  
+				&kp C_VOL_UP
+				&kp C_NEXT
+				&kp C_MUTE		
+
+				&none
+				&kp C_BRI_INC
+				&kp LC(LS(F1))
+				&kp LC(LS(F2))			
+				&kp C_BRI_DEC
+				&sys_reset
+
+				// ----------------------------------------
+
+				&sl mSYM					
+				&mReset
+				&sl mFUNC				
+				&sl mPRG				
+				&to mNRhard
+				&sl mSYM
+
+				// ----------------------------------------
+			>;
+		};	
+
 
 	};
 };
