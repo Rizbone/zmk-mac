@@ -705,7 +705,7 @@
 				&kp LG(LC(LS(H)))			// zurueck deep
 				&kp LC(LS(F10))				// Kontext
 				&kp LC(LA(PAGE_UP))
-				&kp LC(LA(LG(ENTER)))			// Altshot bzw Shortcat
+				&kp LC(LA(LG(ENTER)))		// Altshot bzw Shortcat
 				&kp LG(LC(LS(G)))			// go deep
 				&kp BSPC					
 
@@ -724,7 +724,7 @@
 				&kp LC(LA(PAGE_DOWN))
 				&kp LC(TAB)
 				&kp LCTRL
-				&kp ALT
+				&kp LALT
 				
 				// ----------------------------------------
 
