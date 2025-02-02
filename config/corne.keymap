@@ -1466,12 +1466,12 @@
 				
 				&kp ESC
 				&kp GRAVE				// ^
-				&kp LS(LA(N7))			// backlslash
-				&kp LS(RBKT)			// *			
-				&kp LS(N7)				// /
 				&kp LS(NUHS)			// '
-				
 				&kp LS(N2)				// "
+				&kp LS(N0)				// =
+				&kp LA(E)				// €
+				
+				&kp LS(N5)				// %
 				&kp LS(DOT)				// :
 				&kp LS(COMMA)			// ;
 				&kp LS(N6)				// &
@@ -1497,8 +1497,8 @@
 				// ----------------------------------------
 
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
-				&kp LA(E)				// €
-				&kp LS(N5)				// %
+				&kp LS(SLASH)			// _
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp SLASH 				// -
 				&kp NUBS				// Spitze
@@ -1506,8 +1506,8 @@
 				&kp LS(NUBS)			// Spitze
 				&kp DOT					// .
 				&kp COMMA				// ,
-				&kp LS(SLASH)			// _
-				&kp LS(N0)				// =
+				&kp LS(N7)				// /
+				&kp LS(LA(N7))			// backlslash
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 		
 				// ----------------------------------------
