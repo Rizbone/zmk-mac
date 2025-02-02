@@ -644,7 +644,7 @@
 
 				// ----------------------------------------
 	
-				&to mNRhard
+				&mMdNr
 				&kp LS(C)
 				&kp LS(T)
 				&kp LS(I)
@@ -656,7 +656,7 @@
 				&kp LS(R)
 				&kp LS(S)
 				&kp LS(G)
-				&to mNRhard
+				&mMdNr
 
 				// ----------------------------------------
 
@@ -733,7 +733,7 @@
 				&kp LC(LA(PAGE_DOWN))
 				&kp LC(TAB)
 				&kp LCTRL
-				&kp LGUI
+				&kp ALT
 				
 				// ----------------------------------------
 
