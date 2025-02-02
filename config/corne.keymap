@@ -477,14 +477,14 @@
 
 				&kp ESC
 				&kp GRAVE				// ^ 
-				&kp SLASH 				// -
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp LA(L)				// @
 				&kp X
 				
 				&kp LS(N5)				// %
 				&kp GRAVE				// ^2
-				&kp LS(RBKT)			// *
+				&kp SLASH 				// -
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp BACKSPACE
@@ -549,14 +549,14 @@
 
 				&kp ESC
 				&kp GRAVE				// ^ 
-				&kp SLASH 				// -
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp LA(L)				// @
 				&kp X
 				
 				&kp LS(N5)				// %
 				&kp GRAVE				// ^2
-				&kp LS(RBKT)			// *
+				&kp SLASH 				// -
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp BSPC
@@ -1458,14 +1458,14 @@
 				
 				&kp ESC
 				&kp GRAVE				// ^ 
-				&kp SLASH 				// -
+				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp LA(L)				// @
 				&kp LA(E)				// €
 				
 				&kp LS(N5)				// %
 				&kp GRAVE				// ^2
-				&kp LS(RBKT)			// *
+				&kp SLASH 				// -
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp BACKSPACE
