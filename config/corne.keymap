@@ -720,10 +720,10 @@
 				&kp ENTER					// -
 				
 				&kp LC(LS(F8))				// prg wechsel
-				&kp LCTL
+				&kp LSHFT
 				&kp LC(LA(PAGE_DOWN))
 				&kp LC(LS(F10))				// Kontext
-				&kp LALT
+				&kp LCTL
 				&kp LC(ENTER)
 				
 				// ----------------------------------------
@@ -736,10 +736,10 @@
 				&kp LG(LC(G))				// go
 
 				&kp LG(LC(R))				// zurueck
-				&kp LSHFT
+				&kp LCTL
 				&kp LG(Y)
 				&kp LG(LS(Y))
-				&kp LCTL
+				&kp LALT
 				&kp LG(LC(V))				// Vor
 
 				// ----------------------------------------
