@@ -482,7 +482,7 @@
 				&kp LA(L)				// @
 				&kp X
 				
-				&kp LS(N5)				// %
+				&kp LA(E)				// €
 				&kp GRAVE				// ^2
 				&kp SLASH 				// -
 				&kp LS(N7)				// /
@@ -554,7 +554,7 @@
 				&kp LA(L)				// @
 				&kp X
 				
-				&kp LS(N5)				// %
+				&kp LA(E)				// €
 				&kp GRAVE				// ^2
 				&kp SLASH 				// -
 				&kp LS(N7)				// /
@@ -700,19 +700,19 @@
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LG(Y)
+				&kp DELETE
 
-				&kp LG(LC(LS(H)))			// zurueck deep
-				&kp LC(LS(F10))				// Kontext
+				&kp LG(LC(SPACE))   		// @Sonderzeichen
+				&kp LG(LC(A))				// 
 				&kp LC(LA(PAGE_UP))
 				&kp LC(LA(LG(ENTER)))		// Altshot bzw Shortcat
-				&kp LG(LC(LS(G)))			// go deep
+				&kp LG(LC(B))				// 
 				&kp BSPC					
 
 
 				// ----------------------------------------
 
-				&kp DELETE
+				&kp BACKSPACE
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
@@ -720,11 +720,11 @@
 				&kp ENTER					// -
 				
 				&kp LC(LS(F8))				// prg wechsel
-				&kp LC(LS(TAB))
+				&kp LSHFT
 				&kp LC(LA(PAGE_DOWN))
-				&kp LC(TAB)
+				&kp LC(LS(F10))				// Kontext
 				&kp LCTRL
-				&kp LALT
+				&kp LC(ENTER)
 				
 				// ----------------------------------------
 
@@ -735,12 +735,12 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(G))				// go
 
+				&kp LG(LC(R))				// zurueck
+				&kp LCTRL
+				&kp LG(Y)
 				&kp LG(LS(Y))
-				&kp LG(LS(LEFT))			// @Home 
-				&kp LA(LS(LEFT))			// @Wort Sprung
-				&kp LA(LS(RIGHT))			// @Wort Sprung
-				&kp LG(LS(RIGHT))			// @End  
-				&kp LSHFT
+				&kp LALT
+				&kp LG(LC(V))				// Vor
 
 				// ----------------------------------------
 
@@ -771,33 +771,33 @@
 
 				&kp ESC 
 				&kp LG(LS(UP))					// @Home Sprung
-				&kp LS(TAB)
-				&kp UP						
-				&kp TAB
-				&kp LG(Y)
+				&kp LG(LC(LA(LS(LEFT))))
+				&kp LG(LC(LA(UP)))
+				&kp LG(LC(LA(LS(RIGHT))))
+				&kp LS(DELETE)
 
-				&kp LG(LS(Y))
+				&kp LG(LC(LS(SPACE)))   	// @Sonderzeichen deep
 				&kp LC(KP_PLUS)
-				&kp PG_UP
+				&kp LC(LA(LS(PG_UP)))
 				&kp LC(KP_MINUS)
-				&kp LC(PG_UP)
-				&kp LA(BACKSPACE) 
+				&kp PG_UP
+				&kp BACKSPACE 
 
 				// ----------------------------------------
 		
-				&kp LG(DELETE)					// umbennen
+				&kp LG(BACKSPACE)					
 				&kp LG(LS(DOWN))				// @End Sprung
-				&kp LEFT
-				&kp DOWN
-				&kp RIGHT
-				&kp ENTER					
+				&kp LG(LC(LA(LEFT)))
+				&kp LG(LC(LA(DOWN)))
+				&kp LG(LC(LA(RIGHT)))
+				&kp LA(ENTER)					
 
 				&kp LC(LS(F9))					// Prg Wechsel	
-				&kp LC(LS(TAB))
+				&kp LSHFT
+				&kp LC(LA(LS(PG_DN)))
+				&kp LC(LS(F11))					// Deep kontext
 				&kp PG_DN
-				&kp LC(TAB)	
-				&kp LC(PG_DN)
-				&mAltShot
+				&kp LC(LS(ENTER))					// Deep kontext
 
 				// ----------------------------------------
 
@@ -808,12 +808,12 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(G)))	
 				
-				&kp LC(LS(F10))					
-				&kp LCTL	
-				&kp LSFT
-				&kp LALT
-				&kp LGUI			
-				&kp RSHIFT						
+				&kp LG(LC(LS(R)))				
+				&kp LG(BACKSPACE)	
+				&kp LA(BACKSPACE)	
+				&kp LA(BACKSPACE)	
+				&kp LG(BACKSPACE)	
+				&kp LG(LC(LS(V)))				
 
 				// ----------------------------------------
 		
@@ -929,13 +929,13 @@
 				&kp LS(LA(N4))			// 24
 				&kp LS(LA(N5))			// 25
 
-				&kp LG(LA(F7))			// 26
-				&kp LG(LA(F8))			// 26
-				&kp LG(LA(F9))			// 26
-				&kp LG(LA(F10))			// 26
-				&kp LG(LA(F11))			// 26
-				&kp LG(LA(F12))			// 26
-		
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
+				
 				// ----------------------------------------
 
 				&kp LG(LC(LS(M)))
@@ -945,12 +945,12 @@
 				&kp LG(LC(LA(N4)))
 				&kp LG(LC(LA(N5)))
 
-				&kp LG(LS(F1))					
-				&kp LG(LS(F2))					
-				&kp LG(LS(F3))					
-				&kp LG(LS(F4))					
-				&kp LG(LS(F5))					
-				&kp LG(LS(F6))					
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))			
 
 				// ----------------------------------------
 
@@ -961,13 +961,13 @@
 				&kp LG(LC(LA(N9)))
 				&kp LG(LC(LA(N0)))
 
-				&kp LG(LS(F7))					
-				&kp LG(LS(F8))					
-				&kp LG(LS(F9))					
-				&kp LG(LS(F10))					
-				&kp LG(LS(F11))					
-				&kp LG(LS(F12))					
-		
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
+
 				// ----------------------------------------
 
 				&sl mSYM
@@ -1005,12 +1005,12 @@
 				&kp LG(LS(E))
 				&kp LG(LS(F))
 
-				&kp LG(LA(F7))			// 26
-				&kp LG(LA(F8))			// 26
-				&kp LG(LA(F9))			// 26
-				&kp LG(LA(F10))			// 26
-				&kp LG(LA(F11))			// 26
-				&kp LG(LA(F12))			// 26
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
 
 
 				// ----------------------------------------
@@ -1022,12 +1022,12 @@
 				&kp LG(LS(L))
 				&kp LG(LS(M))
 
-				&kp LG(LS(F1))					
-				&kp LG(LS(F2))					
-				&kp LG(LS(F3))					
-				&kp LG(LS(F4))					
-				&kp LG(LS(F5))					
-				&kp LG(LS(F6))	
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))
 
 
 				// ----------------------------------------
@@ -1039,13 +1039,12 @@
 				&kp LG(LS(R))
 				&kp LG(LS(S))
 
-				&kp LG(LS(F7))					
-				&kp LG(LS(F8))					
-				&kp LG(LS(F9))					
-				&kp LG(LS(F10))					
-				&kp LG(LS(F11))					
-				&kp LG(LS(F12))		
-
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
 
 				// ----------------------------------------
 		
@@ -1084,12 +1083,12 @@
 				&bt BT_SEL 3
 				&bt BT_CLR
 
-				&kp LG(F1)
-				&kp LG(LA(LC(LS(LEFT))))
-				&kp LG(LA(LC(UP)))
-				&kp LG(LA(LC(LS(RIGHT))))
-				&kp LG(F2)
-				&kp LG(F3)
+				&kp LG(LA(F7))			// 26
+				&kp LG(LA(F8))			// 26
+				&kp LG(LA(F9))			// 26
+				&kp LG(LA(F10))			// 26
+				&kp LG(LA(F11))			// 26
+				&kp LG(LA(F12))			// 26
 
 
 				// ----------------------------------------
@@ -1101,12 +1100,12 @@
 				&none
 				&none
 
-				&kp LG(F4)
-				&kp LG(LA(LC(LEFT)))
-				&kp LG(LA(LC(DOWN)))
-				&kp LG(LA(LC(RIGHT)))
-				&kp LG(F5)
-				&kp LG(F6)
+				&kp LG(LS(F1))
+				&kp LG(LS(F2))					
+				&kp LG(LS(F3))					
+				&kp LG(LS(F4))					
+				&kp LG(LS(F5))					
+				&kp LG(LS(F6))					
 
 
 				// ----------------------------------------
@@ -1118,12 +1117,12 @@
 				&none
 				&none
 
-				&kp LG(F7)
-				&kp LG(F8)
-				&kp LG(F9)
-				&kp LG(F10)
-				&kp LG(F11)
-				&kp LG(F12)
+				&kp LG(LS(F7))					
+				&kp LG(LS(F8))					
+				&kp LG(LS(F9))					
+				&kp LG(LS(F10))					
+				&kp LG(LS(F11))					
+				&kp LG(LS(F12))					
 
 
 				// ----------------------------------------
@@ -1309,11 +1308,11 @@
 			// ----------------------------------------
 
 				&kp INSERT
-				&kp LS(B)
-				&kp LC(KP_MINUS)
-				&kp LC(KP_PLUS)
-				&kp LC(F)
 				&kp LC(F1)
+				&kp LC(Y)
+				&kp LC(LS(Y))
+				&kp LC(P)
+				&kp LC(LS(P))
 
 				&kp LC(LG(LA(A)))
 				&kp LC(LG(LA(B)))
@@ -1324,9 +1323,9 @@
 
 				// ----------------------------------------
 		
-				&kp PAGE_UP
-				&kp LC(LA(F10))
-				&kp LC(LA(A))	
+				&kp LC(LS(S))
+				&kp LC(LA(F11))
+				&kp LC(LA(F12))
 				&kp LSHFT
 				&kp LCTRL
 				&kp DEL
@@ -1340,12 +1339,12 @@
 
 				// ----------------------------------------
 
-				&kp PAGE_DOWN
+				&kp LC(LA(LS(S)))
 				&kp LC(S)
-				&kp LC(Y)
-				&kp LC(Z)
-				&kp LC(P)
-				&kp LC(LS(S))
+				&kp LC(LG(LA(X)))
+				&kp LC(LG(LA(U)))
+				&kp LC(R)
+				&kp LC(LS(R))
 
 				&kp LC(LG(LA(N)))
 				&kp LC(LG(LA(O)))
@@ -1461,9 +1460,9 @@
 				&kp LS(RBKT)			// *
 				&kp RBKT  				// +
 				&kp LA(L)				// @
-				&kp LA(E)				// €
-				
 				&kp LS(N5)				// %
+				
+				&kp LA(E)				// €
 				&kp GRAVE				// ^2
 				&kp SLASH 				// -
 				&kp LS(N7)				// /
@@ -1533,9 +1532,9 @@
 				&kp EQUAL
 				&kp LS(EQUAL)
 				&none
-				&kp LS(N3) 				// Dollar
+				&kp LS(N3) 				// Para
 
-				&kp LS(N4) 				// Para
+				&kp LS(N4) 				// Dollar
 				&kp GRAVE				// hoch3
 				&kp LA(N)				// ~
 				&kp RA(M)				// my
