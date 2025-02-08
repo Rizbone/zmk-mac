@@ -748,7 +748,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&sl mNAV
+				&sl mSNAV
 				&sl mSYM
 
 				// ----------------------------------------							
@@ -894,9 +894,9 @@
 		
 				// ----------------------------------------
 
-				&sl mSYM
+				&kp LC(LS(TAB))
 				&sl mWindow					
-				&sl mFUNC
+				&kp LC(TAB)
 				&sl mSPRG					// deep						
 				&sl mSSPRG					// special
 				&sl mSYM
@@ -970,9 +970,9 @@
 
 				// ----------------------------------------
 
-				&sl mSYM
+				&kp LC(LS(TAB))
 				&sl mWindow					
-				&sl mFUNC
+				&kp LC(TAB)
 				&sl mPRG 				// from
 				&sl mSSPRG				// Special
 				&sl mSYM		
@@ -1048,9 +1048,9 @@
 
 				// ----------------------------------------
 		
-				&sl mSYM					
+				&kp LC(LS(TAB))		
 				&kp LG(LA(LC(SPACE)))
-				&sl mFUNC				
+				&kp LC(TAB)
 				&sl mPRG				
 				&sl mNAV
 				&sl mSYM
