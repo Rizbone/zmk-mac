@@ -17,19 +17,19 @@
 #define mNAV 4
 #define mSNAV 5
 
-#define mSYM 5
-#define mSSYM 6
+#define mSYM 6
+#define mSSYM 7
 
-#define mFUNC 7
-#define mSFUNC 8
-#define mSSFunc 9
+#define mFUNC 8
+#define mSFUNC 9
+#define mSSFunc 10
 
-#define mNativeFunc 10
-#define mNativSonder 11
+#define mNativeFunc 11
+#define mNativSonder 12
 
-#define mPRG 12
-#define mSPRG 13
-#define mSSPRG 14
+#define mPRG 13
+#define mSPRG 14
+#define mSSPRG 15
 
 
 
@@ -830,6 +830,14 @@
 		};
 
 
+
+
+
+
+
+
+
+
 		// -----------------------------------------------------|
 		// 						Symoble							|
 		// -----------------------------------------------------|
@@ -973,6 +981,7 @@
 			>;
 		};	
 		
+
 
 				
 
