@@ -17,18 +17,20 @@
 #define mNAV 4
 #define mSNAV 5
 
-#define mPRG 6
-#define mSPRG 7
-#define mSSPRG 8
-#define mWindow 9
+#define mSYM 5
+#define mSSYM 6
 
-#define mFUNC 10
-#define mSFUNC 11
-#define mSSFunc 12
-#define mNative 13
+#define mFUNC 7
+#define mSFUNC 8
+#define mSSFunc 9
 
-#define mSYM 14
-#define mSSYM 15
+#define mNativeFunc 10
+#define mNativSonder 11
+
+#define mPRG 12
+#define mSPRG 13
+#define mSSPRG 14
+
 
 
 
@@ -703,10 +705,10 @@
 				&kp DELETE
 
 				&kp LG(LC(SPACE))   		// @Sonderzeichen
-				&kp LG(LC(A))				// 
+				&kp LC(LS(F10))				// Kontext
 				&kp LC(LA(PAGE_UP))
+				&kp LC(PAGE_UP)
 				&kp LC(LA(LG(ENTER)))		// Altshot bzw Shortcat
-				&kp LG(LC(B))				// 
 				&kp BSPC					
 
 
@@ -722,9 +724,9 @@
 				&kp LC(LS(F8))				// prg wechsel
 				&kp LSHFT
 				&kp LC(LA(PAGE_DOWN))
-				&kp LC(LS(F10))				// Kontext
+				&kp LC(PAGE_DOWN)
 				&kp LCTL
-				&kp LC(ENTER)
+				&kp LALT
 				
 				// ----------------------------------------
 
@@ -735,12 +737,12 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(LC(G))				// go
 
-				&kp LG(LC(R))				// zurueck
-				&kp LCTL
+				&kp LG(LC(L))				// zurueck
+				&kp LG(LC(A))				// 
 				&kp LG(Y)
 				&kp LG(LS(Y))
-				&kp LALT
-				&kp LG(LC(V))				// Vor
+				&kp LG(LC(B))				// 
+				&kp LG(LC(R))				// Vor
 
 				// ----------------------------------------
 
@@ -775,16 +777,16 @@
 				&kp LG(LC(LA(LS(RIGHT))))
 				&kp LS(DELETE)
 
-				&kp LG(LC(LS(SPACE)))   	// @Sonderzeichen deep
-				&kp LC(KP_PLUS)
+				&kp INSERT
+				&kp LC(LS(F11))				// Kontext
 				&kp LC(LA(LS(PG_UP)))
-				&kp LC(KP_MINUS)
+				&kp LC(KP_PLUS)
 				&kp PG_UP
-				&kp BACKSPACE 
+				&kp LS(DELETE)
 
 				// ----------------------------------------
 		
-				&kp LG(BACKSPACE)					
+				&kp LC(BACKSPACE)					
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LG(LC(LA(LEFT)))
 				&kp LG(LC(LA(DOWN)))
@@ -794,9 +796,9 @@
 				&kp LC(LS(F9))					// Prg Wechsel	
 				&kp LSHFT
 				&kp LC(LA(LS(PG_DN)))
-				&kp LC(LS(F11))					// Deep kontext
+				&kp LC(KP_MINUS)
 				&kp PG_DN
-				&kp LC(LS(ENTER))					// Deep kontext
+				&kp LALT
 
 				// ----------------------------------------
 
@@ -807,12 +809,12 @@
 				&kp LG(LS(RIGHT))				// @End  
 				&kp LG(LC(LS(G)))	
 				
+				&kp LG(LC(LS(L)))				
+				&kp LG(BACKSPACE)	
+				&kp LA(BACKSPACE)	
+				&kp LA(DELETE)	
+				&kp LG(DELETE)	
 				&kp LG(LC(LS(R)))				
-				&kp LG(BACKSPACE)	
-				&kp LA(BACKSPACE)	
-				&kp LA(BACKSPACE)	
-				&kp LG(BACKSPACE)	
-				&kp LG(LC(LS(V)))				
 
 				// ----------------------------------------
 		
@@ -826,619 +828,6 @@
 				// ----------------------------------------							
 			>;
 		};
-
-
-		
-
-
-
-		// -----------------------------------------------------|
-		//  				Programme							|
-		// -----------------------------------------------------|
-
-		mac_prg
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&kp LG(Q)
-				&kp LS(LG(N1))			// 21 			
-				&kp LS(LG(N2))			// 22
-				&kp LS(LG(N3))			// 23
-				&kp LS(LG(N4))			// 24
-				&kp LS(LG(N5))			// 25
-	
-				&kp LG(LA(F1))			// 26
-				&kp LG(LA(F2))			// 26
-				&kp LG(LA(F3))			// 26
-				&kp LG(LA(F4))			// 26
-				&kp LG(LA(F5))			// 26
-				&kp LG(LA(F6))			// 26
-
-				// ----------------------------------------
-
-				&kp LS(LG(N6))			
-				&kp LC(LG(N1))			//
-				&kp LC(LG(N2))			//
-				&kp LC(LG(N3))			//
-				&kp LC(LG(N4))			//
-				&kp LC(LG(N5))			//
-
-				&kp LG(LC(LA(F1)))
-				&kp LG(LC(LA(F2)))
-				&kp LG(LC(LA(F3)))
-				&kp LG(LC(LA(F4)))
-				&kp LG(LC(LA(F5)))
-				&kp LG(LC(LA(F6)))
-
-				// ----------------------------------------
-
-				&kp LS(LG(N7))			// Aussen unten
-				&kp LC(LG(N6))				
-				&kp LC(LG(N7))				
-				&kp LC(LG(N8))				
-				&kp LC(LG(N9))				
-				&kp LC(LG(N0))			
-
-				&kp LG(LC(LA(F7)))
-				&kp LG(LC(LA(F8)))
-				&kp LG(LC(LA(F9)))
-				&kp LG(LC(LA(F10)))
-				&kp LG(LC(LA(F11)))
-				&kp LG(LC(LA(F12)))
-		
-				// ----------------------------------------
-
-				&kp LC(LS(TAB))
-				&sl mWindow					
-				&kp LC(TAB)
-				&sl mSPRG					// deep						
-				&sl mSSPRG					// special
-				&sl mSYM
-
-				// ----------------------------------------
-
-			>;
-		};
-		
-
-
-		// -----------------------------------------------------|
-		// 		Spezial Prgramme								|
-		// -----------------------------------------------------|
-
-
-		mac_sprg
-		{
-
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&kp LG(LC(LS(Q)))
-				&kp LS(LA(N1))			// 21 			
-				&kp LS(LA(N2))			// 22
-				&kp LS(LA(N3))			// 23
-				&kp LS(LA(N4))			// 24
-				&kp LS(LA(N5))			// 25
-
-				&kp LG(LA(F1))			// 26
-				&kp LG(LA(F2))			// 26
-				&kp LG(LA(F3))			// 26
-				&kp LG(LA(F4))			// 26
-				&kp LG(LA(F5))			// 26
-				&kp LG(LA(F6))			// 26
-				
-				// ----------------------------------------
-
-				&kp LG(LC(LS(M)))
-				&kp LG(LC(LA(N1)))
-				&kp LG(LC(LA(N2)))
-				&kp LG(LC(LA(N3)))
-				&kp LG(LC(LA(N4)))
-				&kp LG(LC(LA(N5)))
-
-				&kp LG(LC(LA(F1)))
-				&kp LG(LC(LA(F2)))
-				&kp LG(LC(LA(F3)))
-				&kp LG(LC(LA(F4)))
-				&kp LG(LC(LA(F5)))
-				&kp LG(LC(LA(F6)))			
-
-				// ----------------------------------------
-
-				&kp LG(LC(LS(N)))
-				&kp LG(LC(LA(N6)))
-				&kp LG(LC(LA(N7)))
-				&kp LG(LC(LA(N8)))
-				&kp LG(LC(LA(N9)))
-				&kp LG(LC(LA(N0)))
-
-				&kp LG(LC(LA(F7)))
-				&kp LG(LC(LA(F8)))
-				&kp LG(LC(LA(F9)))
-				&kp LG(LC(LA(F10)))
-				&kp LG(LC(LA(F11)))
-				&kp LG(LC(LA(F12)))
-
-				// ----------------------------------------
-
-				&kp LC(LS(TAB))
-				&sl mWindow					
-				&kp LC(TAB)
-				&sl mPRG 				// from
-				&sl mSSPRG				// Special
-				&sl mSYM		
-
-				// ----------------------------------------
-
-			>;
-		};
-
-
-
-
-
-		// -----------------------------------------------------|
-		// 		Super Special Program
-		// -----------------------------------------------------|
-
-		mac_mSSPRG
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&kp LG(LS(A))
-				&kp LG(LS(B))
-				&kp LG(LS(C))
-				&kp LG(LS(D))
-				&kp LG(LS(E))
-				&kp LG(LS(F))
-
-				&kp LG(LA(F1))			// 26
-				&kp LG(LA(F2))			// 26
-				&kp LG(LA(F3))			// 26
-				&kp LG(LA(F4))			// 26
-				&kp LG(LA(F5))			// 26
-				&kp LG(LA(F6))			// 26
-
-
-				// ----------------------------------------
-		
-				&kp LG(LS(G))
-				&kp LG(LS(I))
-				&kp LG(LS(J))
-				&kp LG(LS(K))
-				&kp LG(LS(L))
-				&kp LG(LS(M))
-
-				&kp LG(LC(LA(F1)))
-				&kp LG(LC(LA(F2)))
-				&kp LG(LC(LA(F3)))
-				&kp LG(LC(LA(F4)))
-				&kp LG(LC(LA(F5)))
-				&kp LG(LC(LA(F6)))
-
-
-				// ----------------------------------------
-
-				&kp LG(LS(N))
-				&kp LG(LS(O))
-				&kp LG(LS(P))
-				&kp LG(LS(Q))
-				&kp LG(LS(R))
-				&kp LG(LS(S))
-
-				&kp LG(LC(LA(F7)))
-				&kp LG(LC(LA(F8)))
-				&kp LG(LC(LA(F9)))
-				&kp LG(LC(LA(F10)))
-				&kp LG(LC(LA(F11)))
-				&kp LG(LC(LA(F12)))
-
-				// ----------------------------------------
-		
-				&kp LC(LS(TAB))		
-				&kp LG(LA(LC(SPACE)))
-				&kp LC(TAB)
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-
-				
-			>;
-		};
-
-
-
-
-		// -----------------------------------------------------|
-		// 				Window control
-		// -----------------------------------------------------|
-
-		mac_mWindow
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&none
-				&bt BT_SEL 0
-				&bt BT_SEL 1
-				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&bt BT_CLR
-
-				&kp LG(LA(F7))			// 26
-				&kp LG(LA(F8))			// 26
-				&kp LG(LA(F9))			// 26
-				&kp LG(LA(F10))			// 26
-				&kp LG(LA(F11))			// 26
-				&kp LG(LA(F12))			// 26
-
-
-				// ----------------------------------------
-		
-				&none
-				&none
-				&none
-				&none
-				&none
-				&none
-
-				&kp LG(LS(F1))
-				&kp LG(LS(F2))					
-				&kp LG(LS(F3))					
-				&kp LG(LS(F4))					
-				&kp LG(LS(F5))					
-				&kp LG(LS(F6))					
-
-
-				// ----------------------------------------
-
-				&none
-				&none
-				&none
-				&none
-				&none
-				&none
-
-				&kp LG(LS(F7))					
-				&kp LG(LS(F8))					
-				&kp LG(LS(F9))					
-				&kp LG(LS(F10))					
-				&kp LG(LS(F11))					
-				&kp LG(LS(F12))					
-
-
-				// ----------------------------------------
-		
-				&sl mSYM					
-				&kp LG(LA(LC(SPACE)))
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-
-				
-			>;
-		};
-
-
-				
-
-
-		// -----------------------------------------------------|
-		// Funktionen											|
-		// -----------------------------------------------------|
-
-		mac_func
-		{
-			label = "mac";
-
-			bindings = <
-
-				// ----------------------------------------
-	
-				&kp LC(LA(J))	
-				&kp LC(LA(F1))	
-				&kp LC(LA(F2))	
-				&kp LC(LA(F3))	
-				&kp LC(LA(F4))	
-				&kp LC(LA(F5))	
-
-				&kp LC(LA(F6))	
-				&kp LC(LA(F7))	
-				&kp LC(LA(F8))	
-				&kp LC(LA(F9))	
-				&kp LC(LA(F10))	
-				&kp LC(LA(X))	
-				
-				// ----------------------------------------
-
-				&kp LC(LA(K))	
-				&kp LG(A)
-				&kp LC(LA(A))	
-				&kp LC(LA(B))	
-				&kp LG(C)			
-				&kp LG(X)
-
-				&kp LC(LA(O))	
-				&kp LG(V)
-				&kp LC(LA(T))	
-				&kp LC(LA(U))	
-				&kp LC(LA(V))	
-				&kp LC(LA(W))	
-
-				// ----------------------------------------
-
-				&kp LC(LA(I))	
-				&kp LC(LA(S))
-				&kp LC(LA(C))	
-				&kp LC(LA(D))	
-				&kp LC(LA(R))	
-				&kp LC(LA(G))
-
-				&kp LC(LA(H))
-				&kp LC(LA(F))	
-				&kp LC(LA(M))	
-				&kp LC(LA(N))	
-				&kp LC(LA(E))
-				&kp LC(LA(Y))	
-				
-				// ----------------------------------------
-
-				&mModSGuiReset
-				&sl mSSFunc
-				&sl mSFUNC					
-				&mModGuiReset	
-				&sl mNative
-				&sl mSYM
-
-				// ----------------------------------------
-			>;
-		};
-
-
-
-		// -----------------------------------------------------|
-		// 						Spezial Funktionen				|
-		// -----------------------------------------------------|
-
-		mac_sfunc
-		{
-			label = "mac";
-
-			bindings = <
-
-			// ----------------------------------------
-	
-				&kp LC(LS(LA(J)))	
-				&kp LC(LA(LS(F1)))	
-				&kp LC(LA(LS(F2)))	
-				&kp LC(LA(LS(F3)))	
-				&kp LC(LA(LS(F4)))	
-				&kp LC(LA(LS(F5)))	
-
-				&kp LC(LA(LS(F6)))	
-				&kp LC(LA(LS(F7)))	
-				&kp LC(LA(LS(F8)))	
-				&kp LC(LA(LS(F9)))
-				&kp LC(LA(LS(F10)))
-				&kp LC(LS(LA(X)))	
-				
-				// ----------------------------------------
-
-				&kp LC(LS(LA(K)))	
-				&kp LG(LS(A))
-				&kp LC(LS(LA(A)))	
-				&kp LC(LS(LA(B)))
-				&kp LG(LS(C))			
-				&kp LG(LS(X))
-
-				&kp LC(LS(LA(O)))
-				&kp LG(LS(V))	
-				&kp LC(LS(LA(T)))	
-				&kp LC(LS(LA(U)))	
-				&kp LC(LS(LA(V)))
-				&kp LC(LS(LA(W)))	
-					
-
-				// ----------------------------------------
-
-				&kp LC(LS(LA(I)))	
-				&kp LC(LS(LA(S)))	
-				&kp LC(LS(LA(C)))
-				&kp LC(LS(LA(D)))
-				&kp LC(LS(LA(R)))	
-				&kp LC(LS(LA(G)))	
-
-				&kp LC(LA(LS(H)))	
-				&kp LC(LS(LA(F)))	
-				&kp LC(LS(LA(M)))
-				&kp LC(LS(LA(N)))
-				&kp LC(LS(LA(E)))
-				&kp LC(LS(LA(Y)))	
-				
-				// ----------------------------------------
-
-				&mModSCtlReset	
-				&sl mSSFunc
-				&sl mFUNC
-				&mModCtlReset	
-				&sl mNative
-				&sl mSYM
-
-				// ----------------------------------------       
-			>;
-		};
-
-
-
-
-
-
-
-		// -----------------------------------------------------|
-		// 				Super Special Function					|
-		// -----------------------------------------------------|
-
-		mac_ssfunction
-		{
-			label = "mac";
-
-			bindings = <
-
-			// ----------------------------------------
-
-				&kp INSERT
-				&kp LC(F1)
-				&kp LC(Y)
-				&kp LC(LS(Y))
-				&kp LC(P)
-				&kp LC(LS(P))
-
-				&kp LC(LG(LA(A)))
-				&kp LC(LG(LA(B)))
-				&kp LC(LG(LA(C)))
-				&kp LC(LG(LA(D)))
-				&kp LC(LG(LA(E)))
-				&kp LC(LG(LA(F)))
-
-				// ----------------------------------------
-		
-				&kp LC(LS(S))
-				&kp LC(LA(F11))
-				&kp LC(LA(F12))
-				&kp LSHFT
-				&kp LCTRL
-				&kp DEL
-
-				&kp LC(LG(LA(G)))
-				&kp LC(LG(LA(I)))
-				&kp LC(LG(LA(J)))
-				&kp LC(LG(LA(K)))
-				&kp LC(LG(LA(L)))
-				&kp LC(LG(LA(M)))
-
-				// ----------------------------------------
-
-				&kp LC(LA(LS(S)))
-				&kp LC(S)
-				&kp LC(LG(LA(X)))
-				&kp LC(LG(LA(U)))
-				&kp LC(R)
-				&kp LC(LS(R))
-
-				&kp LC(LG(LA(N)))
-				&kp LC(LG(LA(O)))
-				&kp LC(LG(LA(P)))
-				&kp LC(LG(LA(Q)))
-				&kp LC(LG(LA(R)))
-				&kp LC(LG(LA(S)))
-
-				// ----------------------------------------
-		
-				&sl mSYM					
-				&sl mSSFunc
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNative
-				&sl mSYM
-
-				// ----------------------------------------
-				
-			>;
-		};
-
-
-		// -----------------------------------------------------|
-		// Super Special Function								|
-		// -----------------------------------------------------|
-
-		mac_native
-		{
-			label = "mac";
-
-			bindings = <
-
-			// ----------------------------------------
-
-				&kp F11
-				&kp F1
-				&kp F2
-				&kp F3
-				&kp F4
-				&kp F5
-
-				&kp F6
-				&kp F7
-				&kp F8
-				&kp F9
-				&kp F10
-				&kp F12
-
-				// ----------------------------------------
-		
-				&kp LGUI
-				&kp LC(N1)
-				&kp LC(N2)
-				&kp LC(N3)
-				&kp LC(N4)
-				&kp LC(N5)
-
-				&kp LC(N6)
-				&kp LC(N7)
-				&kp LC(N8)
-				&kp LC(N9)
-				&kp LC(N0)
-				&kp LGUI
-
-				// ----------------------------------------
-
-				&kp LSHFT
-				&kp LA(N1)
-				&kp LA(N2)
-				&kp LA(N3)
-				&kp LA(N4)
-				&kp LA(N5)
-
-				&kp LA(N6)
-				&kp LA(N7)
-				&kp LA(N8)
-				&kp LA(N9)
-				&kp LA(N0)
-				&kp LSHFT
-
-				// ----------------------------------------
-		
-				&sl mSYM					
-				&sl mSSFunc
-				&sl mFUNC				
-				&sl mPRG				
-				&sl mNAV
-				&sl mSYM
-
-				// ----------------------------------------
-				
-			>;
-		};
-
-
 
 
 		// -----------------------------------------------------|
@@ -1502,7 +891,7 @@
 				// ----------------------------------------
 
 				&sl mSSYM				// deep
-				&mReset
+				&sl mNativSonder
 				&sl mFUNC				
 				&sl mPRG						
 				&to mNRhard
@@ -1583,7 +972,643 @@
 				// ----------------------------------------
 			>;
 		};	
+		
 
+				
+
+
+
+
+
+
+
+
+
+
+
+		// -----------------------------------------------------|
+		// Funktionen											|
+		// -----------------------------------------------------|
+
+		mac_func
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+	
+				&kp LC(LA(J))	
+				&kp LC(LA(F1))	
+				&kp LC(LA(F2))	
+				&kp LC(LA(F3))	
+				&kp LC(LA(F4))	
+				&kp LC(LA(F5))	
+
+				&kp LC(LA(F6))	
+				&kp LC(LA(F7))	
+				&kp LC(LA(F8))	
+				&kp LC(LA(F9))	
+				&kp LC(LA(F10))	
+				&kp LC(LA(X))	
+				
+				// ----------------------------------------
+
+				&kp LC(LA(K))	
+				&kp LG(A)
+				&kp LC(LA(A))	
+				&kp LC(LA(B))	
+				&kp LG(C)			
+				&kp LG(X)
+
+				&kp LC(LA(O))	
+				&kp LG(V)
+				&kp LC(LA(T))	
+				&kp LC(LA(U))	
+				&kp LC(LA(V))	
+				&kp LC(LA(W))	
+
+				// ----------------------------------------
+
+				&kp LC(LA(I))	
+				&kp LC(LA(S))
+				&kp LC(LA(C))	
+				&kp LC(LA(D))	
+				&kp LC(LA(R))	
+				&kp LC(LA(G))
+
+				&kp LC(LA(H))
+				&kp LC(LA(F))	
+				&kp LC(LA(M))	
+				&kp LC(LA(N))	
+				&kp LC(LA(E))
+				&kp LC(LA(Y))	
+				
+				// ----------------------------------------
+
+				&mModCtlReset
+				&sl mSSFunc
+				&sl mSFUNC					
+				&sl mPRG
+				&sl mNativeFunc
+				&mModGuiReset	
+
+				// ----------------------------------------
+			>;
+		};
+
+
+
+		// -----------------------------------------------------|
+		// 						Spezial Funktionen				|
+		// -----------------------------------------------------|
+
+		mac_sfunc
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+	
+				&kp LC(LS(LA(J)))	
+				&kp LC(LA(LS(F1)))	
+				&kp LC(LA(LS(F2)))	
+				&kp LC(LA(LS(F3)))	
+				&kp LC(LA(LS(F4)))	
+				&kp LC(LA(LS(F5)))	
+
+				&kp LC(LA(LS(F6)))	
+				&kp LC(LA(LS(F7)))	
+				&kp LC(LA(LS(F8)))	
+				&kp LC(LA(LS(F9)))
+				&kp LC(LA(LS(F10)))
+				&kp LC(LS(LA(X)))	
+				
+				// ----------------------------------------
+
+				&kp LC(LS(LA(K)))	
+				&kp LG(LS(A))
+				&kp LC(LS(LA(A)))	
+				&kp LC(LS(LA(B)))
+				&kp LG(LS(C))			
+				&kp LG(LS(X))
+
+				&kp LC(LS(LA(O)))
+				&kp LG(LS(V))	
+				&kp LC(LS(LA(T)))	
+				&kp LC(LS(LA(U)))	
+				&kp LC(LS(LA(V)))
+				&kp LC(LS(LA(W)))	
+					
+
+				// ----------------------------------------
+
+				&kp LC(LS(LA(I)))	
+				&kp LC(LS(LA(S)))	
+				&kp LC(LS(LA(C)))
+				&kp LC(LS(LA(D)))
+				&kp LC(LS(LA(R)))	
+				&kp LC(LS(LA(G)))	
+
+				&kp LC(LA(LS(H)))	
+				&kp LC(LS(LA(F)))	
+				&kp LC(LS(LA(M)))
+				&kp LC(LS(LA(N)))
+				&kp LC(LS(LA(E)))
+				&kp LC(LS(LA(Y)))	
+				
+				// ----------------------------------------
+
+				&mModSCtlReset	
+				&sl mSSFunc
+				&sl mFUNC
+				&sl mPRG
+				&sl mNativeFunc
+				&mModSGuiReset
+
+				// ----------------------------------------       
+			>;
+		};
+
+
+
+
+
+
+
+		// -----------------------------------------------------|
+		// 				Super Special Function					|
+		// -----------------------------------------------------|
+
+		mac_ssfunction
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&kp LC(LG(LA(Y)))
+				&kp LC(F1)
+				&kp LC(Y)
+				&kp LC(LS(Y))
+				&kp LC(P)
+				&kp LC(LS(P))
+
+				&kp LC(LG(LA(A)))
+				&kp LC(LG(LA(B)))
+				&kp LC(LG(LA(C)))
+				&kp LC(LG(LA(D)))
+				&kp LC(LG(LA(E)))
+				&kp LC(LG(LA(F)))
+
+				// ----------------------------------------
+		
+				&kp LC(LS(S))
+				&kp LC(LA(F11))
+				&kp LC(LA(F12))
+				&kp LSHFT
+				&kp LCTRL
+				&kp DEL
+
+				&kp LC(LG(LA(G)))
+				&kp LC(LG(LA(I)))
+				&kp LC(LG(LA(J)))
+				&kp LC(LG(LA(K)))
+				&kp LC(LG(LA(L)))
+				&kp LC(LG(LA(M)))
+
+				// ----------------------------------------
+
+				&kp LC(LA(LS(S)))
+				&kp LC(S)
+				&kp LC(LG(LA(X)))
+				&kp LC(LG(LA(U)))
+				&kp LC(R)
+				&kp LC(LS(R))
+
+				&kp LC(LG(LA(N)))
+				&kp LC(LG(LA(O)))
+				&kp LC(LG(LA(P)))
+				&kp LC(LG(LA(Q)))
+				&kp LC(LG(LA(R)))
+				&kp LC(LG(LA(S)))
+
+				// ----------------------------------------
+		
+				&mModSCtlReset	
+				&sl mSSFunc
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNativeFunc
+				&mModSGuiReset
+
+				// ----------------------------------------
+				
+			>;
+		};
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		// -----------------------------------------------------|
+		// 			Nativ Function								|
+		// -----------------------------------------------------|
+
+		mac_native
+		{
+			label = "mac";
+
+			bindings = <
+
+			// ----------------------------------------
+
+				&kp F11
+				&kp F1
+				&kp F2
+				&kp F3
+				&kp F4
+				&kp F5
+
+				&kp F6
+				&kp F7
+				&kp F8
+				&kp F9
+				&kp F10
+				&kp F12
+
+				// ----------------------------------------
+		
+				&kp LGUI
+				&kp LC(N1)
+				&kp LC(N2)
+				&kp LC(N3)
+				&kp LC(N4)
+				&kp LC(N5)
+
+				&kp LC(N6)
+				&kp LC(N7)
+				&kp LC(N8)
+				&kp LC(N9)
+				&kp LC(N0)
+				&kp LGUI
+
+				// ----------------------------------------
+
+				&kp LSHFT
+				&kp LA(N1)
+				&kp LA(N2)
+				&kp LA(N3)
+				&kp LA(N4)
+				&kp LA(N5)
+
+				&kp LA(N6)
+				&kp LA(N7)
+				&kp LA(N8)
+				&kp LA(N9)
+				&kp LA(N0)
+				&kp LSHFT
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&sl mSSFunc
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+				
+			>;
+		};
+
+
+
+
+		// -----------------------------------------------------|
+		// 				mNativSonder
+		// -----------------------------------------------------|
+
+		mac_mNativSonder
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp LG(LA(F7))			// 26
+				&kp LG(LA(F8))			// 26
+				&kp LG(LA(F9))			// 26
+				&kp LG(LA(F10))			// 26
+				&kp LG(LA(F11))			// 26
+				&kp LG(LA(F12))			// 26
+
+				&none
+				&bt BT_SEL 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&bt BT_SEL 3
+				&bt BT_CLR
+
+
+				// ----------------------------------------
+		
+				&kp LG(LS(F1))
+				&kp LG(LS(F2))					
+				&kp LG(LS(F3))					
+				&kp LG(LS(F4))					
+				&kp LG(LS(F5))					
+				&kp LG(LS(F6))					
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+
+				// ----------------------------------------
+
+				&kp LG(LS(F7))					
+				&kp LG(LS(F8))					
+				&kp LG(LS(F9))					
+				&kp LG(LS(F10))					
+				&kp LG(LS(F11))					
+				&kp LG(LS(F12))					
+
+				&none
+				&none
+				&none
+				&none
+				&none
+				&none
+
+
+				// ----------------------------------------
+		
+				&sl mSYM					
+				&sl mNativSonder
+				&sl mFUNC				
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+
+				
+			>;
+		};
+
+
+
+
+
+
+
+
+
+
+		// -----------------------------------------------------|
+		//  				Programme							|
+		// -----------------------------------------------------|
+
+		mac_prg
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp LG(Q)
+				&kp LS(LG(N1))			// 21 			
+				&kp LS(LG(N2))			// 22
+				&kp LS(LG(N3))			// 23
+				&kp LS(LG(N4))			// 24
+				&kp LS(LG(N5))			// 25
+	
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
+
+				// ----------------------------------------
+
+				&kp LS(LG(N6))			
+				&kp LC(LG(N1))			//
+				&kp LC(LG(N2))			//
+				&kp LC(LG(N3))			//
+				&kp LC(LG(N4))			//
+				&kp LC(LG(N5))			//
+
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))
+
+				// ----------------------------------------
+
+				&kp LS(LG(N7))			// Aussen unten
+				&kp LC(LG(N6))				
+				&kp LC(LG(N7))				
+				&kp LC(LG(N8))				
+				&kp LC(LG(N9))				
+				&kp LC(LG(N0))			
+
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
+		
+				// ----------------------------------------
+
+				&kp LC(LS(TAB))
+				&mReset		
+				&kp LC(TAB)
+				&sl mSPRG					// deep						
+				&sl mSSPRG					// special
+				&sl mSYM
+
+				// ----------------------------------------
+
+			>;
+		};
+		
+
+
+		// -----------------------------------------------------|
+		// 		Spezial Prgramme								|
+		// -----------------------------------------------------|
+
+
+		mac_sprg
+		{
+
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp LG(LC(LS(Q)))
+				&kp LS(LA(N1))			// 21 			
+				&kp LS(LA(N2))			// 22
+				&kp LS(LA(N3))			// 23
+				&kp LS(LA(N4))			// 24
+				&kp LS(LA(N5))			// 25
+
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
+				
+				// ----------------------------------------
+
+				&kp LG(LC(LS(M)))
+				&kp LG(LC(LA(N1)))
+				&kp LG(LC(LA(N2)))
+				&kp LG(LC(LA(N3)))
+				&kp LG(LC(LA(N4)))
+				&kp LG(LC(LA(N5)))
+
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))			
+
+				// ----------------------------------------
+
+				&kp LG(LC(LS(N)))
+				&kp LG(LC(LA(N6)))
+				&kp LG(LC(LA(N7)))
+				&kp LG(LC(LA(N8)))
+				&kp LG(LC(LA(N9)))
+				&kp LG(LC(LA(N0)))
+
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
+
+				// ----------------------------------------
+
+				&kp LC(LS(TAB))
+				&mReset		
+				&kp LC(TAB)
+				&sl mPRG 				// from
+				&sl mSSPRG				// Special
+				&sl mSYM		
+
+				// ----------------------------------------
+
+			>;
+		};
+
+
+
+
+
+		// -----------------------------------------------------|
+		// 		Super Special Program
+		// -----------------------------------------------------|
+
+		mac_mSSPRG
+		{
+			label = "mac";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp LG(LS(A))
+				&kp LG(LS(B))
+				&kp LG(LS(C))
+				&kp LG(LS(D))
+				&kp LG(LS(E))
+				&kp LG(LS(F))
+
+				&kp LG(LA(F1))			// 26
+				&kp LG(LA(F2))			// 26
+				&kp LG(LA(F3))			// 26
+				&kp LG(LA(F4))			// 26
+				&kp LG(LA(F5))			// 26
+				&kp LG(LA(F6))			// 26
+
+
+				// ----------------------------------------
+		
+				&kp LG(LS(G))
+				&kp LG(LS(I))
+				&kp LG(LS(J))
+				&kp LG(LS(K))
+				&kp LG(LS(L))
+				&kp LG(LS(M))
+
+				&kp LG(LC(LA(F1)))
+				&kp LG(LC(LA(F2)))
+				&kp LG(LC(LA(F3)))
+				&kp LG(LC(LA(F4)))
+				&kp LG(LC(LA(F5)))
+				&kp LG(LC(LA(F6)))
+
+
+				// ----------------------------------------
+
+				&kp LG(LS(N))
+				&kp LG(LS(O))
+				&kp LG(LS(P))
+				&kp LG(LS(Q))
+				&kp LG(LS(R))
+				&kp LG(LS(S))
+
+				&kp LG(LC(LA(F7)))
+				&kp LG(LC(LA(F8)))
+				&kp LG(LC(LA(F9)))
+				&kp LG(LC(LA(F10)))
+				&kp LG(LC(LA(F11)))
+				&kp LG(LC(LA(F12)))
+
+				// ----------------------------------------
+		
+				&kp LC(LS(TAB))		
+				&mReset
+				&kp LC(TAB)
+				&sl mPRG				
+				&sl mNAV
+				&sl mSYM
+
+				// ----------------------------------------
+
+				
+			>;
+		};
 
 		
 		
