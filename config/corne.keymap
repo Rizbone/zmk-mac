@@ -891,10 +891,10 @@
 				// ----------------------------------------
 
 				&sl mSSYM				// deep
-				&sl mNativSonder
+				&mReset
 				&sl mFUNC				
 				&sl mPRG						
-				&to mNRhard
+				&sl mNativSonder
 				&sl mSSYM				
 
 				// ----------------------------------------
@@ -966,7 +966,7 @@
 				&mReset
 				&sl mFUNC				
 				&sl mPRG				
-				&to mNRhard
+				&sl mNativSonder
 				&sl mSYM
 
 				// ----------------------------------------
