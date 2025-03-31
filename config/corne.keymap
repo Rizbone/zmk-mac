@@ -41,18 +41,6 @@
     behaviors 
 	{
 
-		// Könnten dann weg!
-
-		// Tap Dance Number
-		mMdNr: tap_dance_mMdNr 
-		{
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mMdNr";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&to mNR>, <&to mNRhard>;
-        };
-
 		//Tab Dance Shift
 		mMdShift: tap_dance_mMdShift 
 		{
@@ -106,39 +94,6 @@
 
 
 		// Reset Stickys
-
-
-
-
-		//kann dann auch weg
-
-		mSideShiftReset: mSideShiftReset
-		{
-            label = "mSideShiftReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to mChar>
-                , <&macro_press &sl mSPrg>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mSPrg>
-				;
-    	};
-
-		mNrReset: mNrReset
-		{
-            label = "mNrReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to mChar>
-                , <&macro_press &sl mNR>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mNR>
-				;
-    	};
-
-
 
 
 				
@@ -466,7 +421,7 @@
 
 				// ----------------------------------------
 	
-				&sl mLChar
+				&mMdShift
 				&kp F
 				&kp V
 				&kp MINUS
@@ -478,7 +433,7 @@
 				&kp LBKT
 				&kp SQT
 				&kp K
-				&sl mLChar
+				&mMdShift
 
 				// ----------------------------------------
 
@@ -525,7 +480,7 @@
 
 				&to mNRhard
 				&kp N1				
-				&kp N2				
+				&kp N2 
 				&kp N3				
 				&kp N4					
 				&kp N5		
@@ -539,7 +494,7 @@
 
 				// ----------------------------------------
 
-				&sl mLChar
+				&mMdShift
 				&kp LS(NUHS)			// '
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
@@ -551,7 +506,7 @@
 				&kp COMMA				// ,
 				&kp LA(N)				// ~
 				&kp LA(N7)				// grader strich
-				&sl mLChar
+				&mMdShift
 
 				// ----------------------------------------
 		
@@ -564,8 +519,8 @@
 			>;		
 		};
 
-
-
+		
+		
 
 		// -----------------------------------------------------|
 		// 				 Zahlen Hard Lock						
@@ -611,7 +566,7 @@
 
 				// ----------------------------------------
 
-				&to mLChar
+				&mMdShift
 				&kp LS(NUHS)			// '
 				&kp NUBS				// Spitze
 				&kp LS(NUBS)			// Spitze 
@@ -623,7 +578,7 @@
 				&kp COMMA				// ,
 				&kp LA(N)				// ~
 				&kp LA(N7)				// grader strich
-				&to mLChar
+				&mMdShift
 
 				// ----------------------------------------
 		
@@ -663,7 +618,7 @@
 				&kp LS(L)
 				&kp LS(M)
 				&kp LS(W)
-				&kp LS(BSPC)
+				&kp LS(BSPC) 
 
 				// ----------------------------------------
 	
@@ -683,7 +638,7 @@
 
 				// ----------------------------------------
 
-				&to mLChar
+				&mMdShift
 				&kp LS(F)
 				&kp LS(V)
 				&kp LS(MINUS)
@@ -695,7 +650,7 @@
 				&kp LS(LBKT)
 				&kp LS(SQT)
 				&kp LS(K)
-				&to mLChar
+				&mMdShift
 
 				// ----------------------------------------
 
