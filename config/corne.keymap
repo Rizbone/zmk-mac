@@ -7,6 +7,7 @@
 // ZMK Big
 
 
+
 // ------- MAC -------------------
 
 #define mChar 0
@@ -767,10 +768,10 @@
 				&kp LG(LC(G))				
 
 				&kp LG(LC(L))				
-				&kp LG(LC(A))				
+				&kp LC(LA(F11))				
 				&kp LC(LS(TAB))
 				&kp LC(TAB)
-				&kp LG(LC(B))				
+				&kp LC(LA(F12))				
 				&kp LG(LC(R))				
 
 				// ----------------------------------------
@@ -804,7 +805,7 @@
 				&kp LG(LC(LA(LS(LEFT))))
 				&kp LG(LC(LA(UP)))
 				&kp LG(LC(LA(LS(RIGHT))))
-				&kp LC(LA(F11))				
+				&kp LG(LC(A))		
 
 				&kp C_MUTE
 				&kp LG(BACKSPACE)
@@ -820,14 +821,14 @@
 				&kp LG(LC(LA(LEFT)))
 				&kp LG(LC(LA(DOWN)))
 				&kp LG(LC(LA(RIGHT)))
-				&kp LC(LA(F12))				
+				&kp LG(LC(B))			
 
 				&kp C_PLAY			
 				&kp C_BRI_INC
 				&kp C_PREV
 				&kp C_NEXT
 				&kp C_BRI_DEC
-				&kp C_PLAY_PAUSE
+				&kp LCTL
 
 				// ----------------------------------------
 
@@ -839,10 +840,10 @@
 				&kp LG(LC(LS(G)))	
 				
 				&kp LG(LC(LS(L)))				
-				&kp LG(LC(LS(A)))				
+				&kp LC(LA(LS(F11)))
 				&kp LC(LA(LEFT))
 				&kp LC(LA(RIGHT))
-				&kp LG(LC(LS(B)))				
+				&kp LC(LA(LS(F12)))			
 				&kp LG(LC(LS(R)))				
 
 				// ----------------------------------------
