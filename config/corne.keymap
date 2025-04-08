@@ -490,7 +490,7 @@
 				&kp N8			
 				&kp N9				
 				&kp N0				
-				&to mNRhard
+				&to mNRhard 
 
 				// ----------------------------------------
 
@@ -715,19 +715,19 @@
 				
 				// ----------------------------------------
 
-				&kp LG(LC(H))				
+				&kp F13				
 				&kp LG(LEFT)				// @Home 
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(LC(G))				
+				&kp F14
 
-				&kp LG(LC(L))				
+				&kp F15
 				&kp LC(LA(F11))				
 				&kp LC(LS(TAB))
 				&kp LC(TAB)
 				&kp LC(LA(F12))				
-				&kp LG(LC(R))				
+				&kp F16
 
 				// ----------------------------------------
 
@@ -764,8 +764,8 @@
 
 				&kp C_MUTE
 				&kp LG(BACKSPACE)
-				&kp C_VOL_DN  
 				&kp C_VOL_UP
+				&kp C_VOL_DN
 				&kp LS(DELETE)
 				&kp LC(LS(BACKSPACE))
 
@@ -787,19 +787,19 @@
 
 				// ----------------------------------------
 
-				&kp LG(LC(LS(H)))	
+				&kp LC(F13)
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
 				&kp LG(LS(RIGHT))				// @End  
-				&kp LG(LC(LS(G)))	
+				&kp LC(F14)
 				
-				&kp LG(LC(LS(L)))				
+				&kp LC(F15)
 				&kp LC(LA(LS(F11)))
 				&kp LC(LA(LEFT))
 				&kp LC(LA(RIGHT))
 				&kp LC(LA(LS(F12)))			
-				&kp LG(LC(LS(R)))				
+				&kp LC(F16)
 
 				// ----------------------------------------
 		
