@@ -715,19 +715,19 @@
 				
 				// ----------------------------------------
 
-				&kp F13				
+				&kp LG(F13)
 				&kp LG(LEFT)				// @Home 
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp F14
+				&kp LG(F14)
 
-				&kp F15
+				&kp LG(F15)
 				&kp LC(LA(F11))				
 				&kp LC(LS(TAB))
 				&kp LC(TAB)
 				&kp LC(LA(F12))				
-				&kp F16
+				&kp LG(F16)
 
 				// ----------------------------------------
 
