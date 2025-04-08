@@ -715,19 +715,19 @@
 				
 				// ----------------------------------------
 
-				&kp LG(F17)
+				&kp LG(LBKT)
 				&kp LG(LEFT)				// @Home 
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(F18)
+				&kp LG(SQT)
 
-				&kp LG(F19)
+				&kp LG(MINUS)
 				&kp LC(LA(F11))				
 				&kp LC(LS(TAB))
 				&kp LC(TAB)
 				&kp LC(LA(F12))				
-				&kp LG(F20)
+				&kp LG(SEMI)
 
 				// ----------------------------------------
 
@@ -787,19 +787,19 @@
 
 				// ----------------------------------------
 
-				&kp LC(F17)
+				&kp LC(LBKT)
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
 				&kp LG(LS(RIGHT))				// @End  
-				&kp LC(F18)
+				&kp LC(SQT)
 				
-				&kp LC(F19)
+				&kp LC(MINUS)
 				&kp LC(LA(LS(F11)))
 				&kp LC(LA(LEFT))
 				&kp LC(LA(RIGHT))
 				&kp LC(LA(LS(F12)))			
-				&kp LC(F20)
+				&kp LC(SEMI)
 
 				// ----------------------------------------
 		
