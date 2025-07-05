@@ -312,7 +312,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp M  &kp A  &kp I  &kp L  &kp B  &kp O  &kp X  &kp DOT  &kp O  &kp R  &kp G>
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp A  &kp O  &kp L  &kp DOT  &kp C  &kp O  &kp M>
                 ; 
     	};
 
@@ -321,7 +321,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp M  &kp A  &kp I  &kp L  &kp B  &kp O  &kp X  &kp DOT  &kp O  &kp R  &kp G>
+				= < &macro_tap &kp T &kp I &kp M &kp F &kp E &kp I &kp G &kp E &kp LA(L)  &kp O  &kp U  &kp T  &kp L  &kp O &kp O &kp K  &kp DOT  &kp C  &kp O  &kp M>
                 ; 
     	};
 
@@ -330,7 +330,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp I  &kp C  &kp L  &kp O  &kp U  &kp D  &kp DOT  &kp C  &kp O  &kp M>
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N1 &kp N2  &kp N3 &kp LA(L)  &kp G  &kp M  &kp A  &kp I  &kp L  &kp DOT  &kp C  &kp O  &kp M>
                 ; 
     	};
 
@@ -339,7 +339,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N1 &kp N2  &kp N3 &kp LA(L)  &kp G  &kp M  &kp A  &kp I  &kp L  &kp DOT  &kp C  &kp O  &kp M>
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp M  &kp A  &kp I  &kp L  &kp B  &kp O  &kp X  &kp DOT  &kp O  &kp R  &kp G>
                 ; 
     	};
 
@@ -348,7 +348,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp A  &kp O  &kp L  &kp DOT  &kp C  &kp O  &kp M>
+				= < &macro_tap &kp T &kp F &kp E &kp I &kp G &kp E &kp N0 &kp N4 &kp N0  &kp N6  &kp LA(L)  &kp I  &kp C  &kp L  &kp O  &kp U  &kp D  &kp DOT  &kp C  &kp O  &kp M>
                 ; 
     	};
 
@@ -465,14 +465,14 @@
 				&kp ESC
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N7)				// /
-				&kp SLASH 				// -
+				&kp LS(RBKT)			// *
 				&kp LA(L)				// @
 				&kp X
 				
 				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp RBKT  				// +
-				&kp LS(RBKT)			// *
+				&kp SLASH 				// -
 				&kp LS(COMMA)			// ;
 				&kp BACKSPACE
 
@@ -537,14 +537,14 @@
 				&kp ESC
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N7)				// /
-				&kp SLASH 				// -
+				&kp LS(RBKT)			// *
 				&kp LA(L)				// @
 				&kp X
 				
 				&kp LA(E)				// €
 				&kp LS(DOT)				// :
 				&kp RBKT  				// +
-				&kp LS(RBKT)			// *
+				&kp SLASH 				// -
 				&kp LS(COMMA)			// ;
 				&kp BSPC
 
@@ -689,7 +689,7 @@
 				&kp TAB
 				&kp LG(Y)
 
-				&kp LC(LA(LG(ENTER)))		// Altshot bzw Shortcat
+				&kp LG(LS(Y))
 				&kp BACKSPACE
 				&kp LC(LA(PAGE_UP))
 				&kp LC(PAGE_UP)
@@ -699,7 +699,7 @@
 
 				// ----------------------------------------
 
-				&kp LC(LS(F8))				// prg wechsel
+				&kp LG(LS(SEMI))
 				&kp LG(DOWN)				// @End Sprung
 				&kp LEFT 					// @Left
 				&kp DOWN					// @Down
@@ -711,7 +711,7 @@
 				&kp LC(LA(PAGE_DOWN))
 				&kp LC(PAGE_DOWN)
 				&kp LCTL
-				&kp LALT
+				&kp LG(ENTER)
 				
 				// ----------------------------------------
 
@@ -722,12 +722,12 @@
 				&kp LG(RIGHT)				// @End  
 				&kp LG(SQT)
 
-				&kp LG(LS(SEMI))
+				&kp LC(LA(LG(ENTER)))		// Altshot bzw Shortcat
 				&kp LC(LA(F11))				
 				&kp LC(LS(TAB))
 				&kp LC(TAB)
 				&kp LC(LA(F12))				
-				&kp LG(LS(SQT))
+				&kp LALT
 
 				// ----------------------------------------
 
@@ -771,12 +771,12 @@
 
 				// ----------------------------------------
 		
-				&kp LC(LS(F9))					// Prg Wechsel	
+				&kp LG(LS(SEMI))
 				&kp LG(LS(DOWN))				// @End Sprung
 				&kp LG(LC(LA(LEFT)))
 				&kp LG(LC(LA(DOWN)))
 				&kp LG(LC(LA(RIGHT)))
-				&kp LG(LC(B))			
+				&kp LG(LS(SQT))	
 
 				&kp C_PLAY			
 				&kp C_BRI_INC
@@ -1094,7 +1094,7 @@
 
 				// ----------------------------------------
 
-				&kp LS(LG(N6))			
+				&kp LC(LS(F8))				// prg wechsel
 				&kp LC(LG(N1))			
 				&kp LC(LG(N2))		
 				&kp LC(LG(N3))			
@@ -1110,7 +1110,7 @@
 
 				// ----------------------------------------
 
-				&kp LS(LG(N7))			
+				&kp LC(LS(F9))					// Prg Wechsel	
 				&kp LC(LG(N6))				
 				&kp LC(LG(N7))				
 				&kp LC(LG(N8))				
@@ -1565,22 +1565,6 @@
 				// ----------------------------------------
 
 				&kp LC(LS(F9))			// prg wechsel
-				&mEm4
-				&mEm3
-				&mEm2
-				&mEm1
-				&mEm0
-
-				&mPw0
-				&mPw1
-				&mPw2
-				&mPw3
-				&mPw4
-				&kp GRAVE
-
-				// ----------------------------------------
-
-				&kp LGUI
 				&kp LA(F1)
 				&kp LA(F2)
 				&kp LA(F3)
@@ -1592,6 +1576,22 @@
 				&kp LA(F8)
 				&kp LA(F9)
 				&kp LA(F10)
+				&kp GRAVE
+
+				// ----------------------------------------
+
+				&kp LGUI
+				&mEm4
+				&mEm3
+				&mEm2
+				&mEm1
+				&mEm0
+
+				&mPw0
+				&mPw1
+				&mPw2
+				&mPw3
+				&mPw4
 				&kp LG(LC(SPACE))   	// @Sonderzeichen
 
 				// ----------------------------------------
